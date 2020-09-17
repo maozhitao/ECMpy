@@ -5,6 +5,8 @@ from warnings import warn
 
 import pandas as pd
 import numpy as np
+import json
+import cobra
 from cobra.core import Reaction
 from cobra.io.dict import model_to_dict
 from cobra.util.solver import set_objective
@@ -191,3 +193,101 @@ def set_enzyme_constraint(model, reaction_kcat_mw, lowerbound, upperbound):
     model.solver.update()
     constraint.set_linear_coefficients(coefficients=coefficients)
     return model
+
+def json_load(path) :
+    """Loads the given JSON file and returns it as dictionary.
+
+    Arguments
+    ----------
+    * path: str ~ The path of the JSON file
+    """
+    with open(path) as f:
+        dictionary = json.load(f)
+    return dictionary
+
+def json_write(path, dictionary):
+    """Writes a JSON file at the given path with the given dictionary as content.
+
+    Arguments
+    ----------
+    * path: str ~  The path of the JSON file that shall be written
+    * dictionary: Dict[Any, Any] ~ The dictionary which shalll be the content of
+      the created JSON file
+    """
+    json_output = json.dumps(dictionary, indent=4)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(json_output)
+
+def trans_model2enz_json_model(model_file, reaction_kcat_file, f, ptot, sigma , lowerbound, upperbound):
+    """Tansform cobra model to json mode with  
+    enzyme concentration constraintat.
+
+    Arguments
+    ----------
+    * model_file: str ~  The path of 
+    * reaction_kcat_file: str ~  The path of 
+    *f:
+    * ptot:  ~  
+    * sigma:  ~  
+    *lowerbound:   
+    *upperbound:  
+
+    """
+
+    model = cobra.io.read_sbml_model(model_file)
+    convert_to_irreversible(model)
+    model_name=model_file.split('/')[-1].split('.')[0]
+    json_path="./model/%s_irreversible.json"%model_name
+    cobra.io.save_json_model(model, json_path)
+
+    dictionary_model = json_load(json_path)
+    dictionary_model['enzyme_constraint']={'enzyme_mass_fraction': f, 'total_protein_fraction': ptot,\
+        'average_saturation': sigma, 'lowerbound': lowerbound, 'upperbound': upperbound}
+    dictionary_model['enzyme_constraint']['react']='111'    
+    # Reaction-kcat_mw file.
+    # eg. AADDGT,49389.2889,40.6396,1215.299582180927
+    reaction_kcat_mw=pd.read_csv(reaction_kcat_file, index_col=0)
+
+    reaction_kcay_mw_dict={}
+    for eachreaction in  range(len(dictionary_model['reactions'])): 
+        reaction_id=dictionary_model['reactions'][eachreaction]['id']
+        if reaction_id in reaction_kcat_mw.index:
+            dictionary_model['reactions'][eachreaction]['kcat']=reaction_kcat_mw.loc[reaction_id,'kcat']
+            dictionary_model['reactions'][eachreaction]['kcat_MW']=reaction_kcat_mw.loc[reaction_id,'kcat_MW']
+            reaction_kcay_mw_dict[reaction_id]=reaction_kcat_mw.loc[reaction_id,'kcat_MW']
+        else:
+            dictionary_model['reactions'][eachreaction]['kcat']=''
+            dictionary_model['reactions'][eachreaction]['kcat_MW']=''  
+
+    dictionary_model['enzyme_constraint']['kcat_MW']=reaction_kcay_mw_dict
+
+    json_output_path="./model/%s_irr_enz_constraint.json"%model_name
+    json_write(json_output_path, dictionary_model)
+
+def get_enzyme_constraint_model(json_model_file):
+    """using enzyme concentration constraint
+    json model to create a COBRApy model.
+
+    Arguments
+    ----------
+    *json_model_file: json Model file.
+
+    :return: Construct an enzyme-constrained model.
+    """
+
+    dictionary_model = json_load(json_model_file)
+    model=cobra.io.json.load_json_model(json_model_file) 
+
+    coefficients = dict()
+    for rxn in model.reactions:
+        if rxn.id in dictionary_model['enzyme_constraint']['kcat_MW'].keys():
+            coefficients[rxn.forward_variable] = 1/float(dictionary_model['enzyme_constraint']['kcat_MW'][rxn.id])
+
+    lowerbound=dictionary_model['enzyme_constraint']['lowerbound']
+    upperbound=dictionary_model['enzyme_constraint']['upperbound']
+    constraint = model.problem.Constraint(0, lb=lowerbound, ub=upperbound)
+    model.add_cons_vars(constraint)
+    model.solver.update()
+    constraint.set_linear_coefficients(coefficients=coefficients)
+    return model
+
