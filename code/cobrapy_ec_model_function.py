@@ -1,7 +1,7 @@
 # This code is used to introduce enzyme concentration constraint in GEMs
 # by COBRApy and to calculate the parameters that need to be entered
 # during the construction of the enzyme-constrained model.
-from warnings import warn
+#from warnings import warn
 
 import pandas as pd
 import numpy as np
@@ -24,7 +24,7 @@ def convert_to_irreversible(model):
     *model: cobra.Model ~ A Model object which will be modified in place.
  
     """
-    warn("deprecated, not applicable for optlang solvers", DeprecationWarning)
+    #warn("deprecated, not applicable for optlang solvers", DeprecationWarning)
     reactions_to_add = []
     coefficients = {}
     for reaction in model.reactions:
@@ -242,8 +242,7 @@ def trans_model2enz_json_model(model_file, reaction_kcat_file, f, ptot, sigma , 
 
     dictionary_model = json_load(json_path)
     dictionary_model['enzyme_constraint']={'enzyme_mass_fraction': f, 'total_protein_fraction': ptot,\
-        'average_saturation': sigma, 'lowerbound': lowerbound, 'upperbound': upperbound}
-    dictionary_model['enzyme_constraint']['react']='111'    
+        'average_saturation': sigma, 'lowerbound': lowerbound, 'upperbound': upperbound} 
     # Reaction-kcat_mw file.
     # eg. AADDGT,49389.2889,40.6396,1215.299582180927
     reaction_kcat_mw=pd.read_csv(reaction_kcat_file, index_col=0)
