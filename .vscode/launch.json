@@ -3,6 +3,21 @@
         {
             "type": "aws-sam",
             "request": "direct-invoke",
+            "name": "My_Code:code.ec_model_compare_function.convert_to_irreversible (python2.7)",
+            "invokeTarget": {
+                "target": "code",
+                "projectRoot": "",
+                "lambdaHandler": "code.ec_model_compare_function.convert_to_irreversible"
+            },
+            "lambda": {
+                "runtime": "python2.7",
+                "payload": {},
+                "environmentVariables": {}
+            }
+        },
+        {
+            "type": "aws-sam",
+            "request": "direct-invoke",
             "name": "My_Code:code.cobrapy_ec_model_function.calculate_mw (python3.6)",
             "invokeTarget": {
                 "target": "code",

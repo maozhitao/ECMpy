@@ -10,7 +10,7 @@ import cobra
 from cobra.core import Reaction
 from cobra.io.dict import model_to_dict
 from cobra.util.solver import set_objective
-
+from xml.dom import minidom
 
 def convert_to_irreversible(model):
     """Split reversible reactions into two irreversible reactions
@@ -109,7 +109,42 @@ def calculate_reaction_mw(reaction_gene_subunit_MW):
     reaction_mw.to_csv("./analysis/reaction_MW.csv")
     return reaction_mw
 
-def calculate_reaction_kcat_mw(reaction_kcat_file, reaction_mw):
+def calculate_reaction_mw_not_consider_subunit(reaction_gene_subunit_MW,save_file):
+    """Calculate the molecular weight of the enzyme that catalyzes each
+    reaction in GEM based on the number of subunits and
+    molecular weight of each gene.
+
+    Arguments
+    ----------
+    *reaction_gene_subunit_MW: A CSV file contains the GPR relationship
+     for each reaction in the GEM model,the number of subunit components 
+     of each gene expressed protein, and the molecular weight of each 
+     gene expressed protein.
+     
+    :return: The molecular weight of the enzyme that catalyzes each reaction
+     in the GEM model.
+    """
+    reaction_gene_subunit_MW = pd.read_csv(reaction_gene_subunit_MW, index_col=0)
+    reaction_mw = pd.DataFrame()
+    for reaction_id in reaction_gene_subunit_MW.index:
+        subunit_mw_list = reaction_gene_subunit_MW.loc[reaction_id, 'subunit_mw'].\
+            replace('(', '').replace(")", '').replace(" ", '').split('or')
+        subunit_num_list = reaction_gene_subunit_MW.loc[reaction_id, 'subunit_num'].\
+            replace('(', '').replace(")", '').replace(" ", '').split('or')
+
+        mw_s = ''
+        for mw_i in range(0, len(subunit_mw_list)):
+            mw_list = np.array(subunit_mw_list[mw_i].split('and'))
+            num_list = np.array(subunit_num_list[mw_i].split('and'))
+            mw_list = list(map(float, mw_list))
+            mw_s = mw_s + str(round(np.sum(np.multiply(mw_list,1)), 4)) + ' or '
+
+        mw_s = mw_s.rstrip(' or ')
+        reaction_mw.loc[reaction_id, 'MW'] = mw_s
+    reaction_mw.to_csv(save_file)
+    return reaction_mw
+
+def calculate_reaction_kcat_mw(reaction_kcat_file, reaction_mw,save_file):
     """Calculating kcat/MW
 
     When the reaction is catalyzed by several isozymes,
@@ -135,7 +170,7 @@ def calculate_reaction_kcat_mw(reaction_kcat_file, reaction_mw):
             reaction_kcat.loc[reaction_id, 'kcat']
         reaction_kcat_mw.loc[reaction_id, 'MW'] = min_mw
         reaction_kcat_mw.loc[reaction_id, 'kcat_MW'] = kcat_mw
-    reaction_kcat_mw.to_csv("./analysis/reaction_kcat_mw.csv")
+    reaction_kcat_mw.to_csv(save_file)
     return reaction_kcat_mw
 
 
@@ -290,3 +325,35 @@ def get_enzyme_constraint_model(json_model_file):
     constraint.set_linear_coefficients(coefficients=coefficients)
     return model
 
+#This file may be used for preprocessing the SVG file of a pathway map, e.g. replace gene/compound name, standardize the CSS styles
+#for interactive visualization, d3 may be used
+def draw_svg(cb_df,col_name,insvg,outsvg,rclass):
+    doc = minidom.parse(insvg)  
+    c=[]
+    svgct=[]
+    modelct=[]
+
+    for path in doc.getElementsByTagName('text'):
+        if path.getAttribute('class') in rclass:
+            for n in path.childNodes:
+                #print(n)
+                if n.nodeName=="#text":
+                    rid=n.data
+                    #print(rid)
+                    path.setAttribute("id",n.data)
+                    if rid in cb_df.index:
+                        #print(rid)
+                        #print(str(cb_df.loc[rid,col_name]))
+                        n.data=str(cb_df.loc[rid,col_name])
+                        c.append(str(rid))
+                    else:
+                        #print(str(str(rid)))#反应
+                        svgct.append(str(str(rid)))
+    l=[]     
+    for line in cb_df.keys():
+        l.append(line)
+    cs=set(c)
+    ls=set(l)
+    modelct=ls-cs
+    with open(outsvg,'w',encoding='UTF-8') as fw:
+        doc.writexml(fw,encoding='UTF-8')    
