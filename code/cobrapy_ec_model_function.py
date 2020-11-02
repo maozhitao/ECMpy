@@ -163,13 +163,13 @@ def calculate_reaction_kcat_mw(reaction_kcat_file, reaction_mw,save_file):
     reaction_kcat = pd.read_csv(reaction_kcat_file, index_col=0)
     reaction_kcat_mw = pd.DataFrame()
     for reaction_id in reaction_kcat.index:
-        mw = reaction_mw.loc[reaction_id, 'MW'].split('or')
-        min_mw = min(map(float, mw))
-        kcat_mw = reaction_kcat.loc[reaction_id, 'kcat'] / min_mw
-        reaction_kcat_mw.loc[reaction_id, 'kcat'] = \
-            reaction_kcat.loc[reaction_id, 'kcat']
-        reaction_kcat_mw.loc[reaction_id, 'MW'] = min_mw
-        reaction_kcat_mw.loc[reaction_id, 'kcat_MW'] = kcat_mw
+        if reaction_id in reaction_mw.index:
+            mw = reaction_mw.loc[reaction_id, 'MW'].split('or')
+            min_mw = min(map(float, mw))
+            kcat_mw = reaction_kcat.loc[reaction_id, 'kcat'] / min_mw
+            reaction_kcat_mw.loc[reaction_id, 'kcat'] = reaction_kcat.loc[reaction_id, 'kcat']
+            reaction_kcat_mw.loc[reaction_id, 'MW'] = min_mw
+            reaction_kcat_mw.loc[reaction_id, 'kcat_MW'] = kcat_mw
     reaction_kcat_mw.to_csv(save_file)
     return reaction_kcat_mw
 
@@ -253,14 +253,14 @@ def json_write(path, dictionary):
     with open(path, "w", encoding="utf-8") as f:
         f.write(json_output)
 
-def trans_model2enz_json_model(model_file, reaction_kcat_file, f, ptot, sigma , lowerbound, upperbound):
+def trans_model2enz_json_model(model_file, reaction_kcat_mw_file, f, ptot, sigma , lowerbound, upperbound):
     """Tansform cobra model to json mode with  
     enzyme concentration constraintat.
 
     Arguments
     ----------
     * model_file: str ~  The path of 
-    * reaction_kcat_file: str ~  The path of 
+    * reaction_kcat_mw_file: str ~  The path of 
     *f:
     * ptot:  ~  
     * sigma:  ~  
@@ -280,7 +280,7 @@ def trans_model2enz_json_model(model_file, reaction_kcat_file, f, ptot, sigma , 
         'average_saturation': sigma, 'lowerbound': lowerbound, 'upperbound': upperbound} 
     # Reaction-kcat_mw file.
     # eg. AADDGT,49389.2889,40.6396,1215.299582180927
-    reaction_kcat_mw=pd.read_csv(reaction_kcat_file, index_col=0)
+    reaction_kcat_mw=pd.read_csv(reaction_kcat_mw_file, index_col=0)
 
     reaction_kcay_mw_dict={}
     for eachreaction in  range(len(dictionary_model['reactions'])): 
