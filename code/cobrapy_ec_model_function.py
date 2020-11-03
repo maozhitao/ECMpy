@@ -253,7 +253,7 @@ def json_write(path, dictionary):
     with open(path, "w", encoding="utf-8") as f:
         f.write(json_output)
 
-def trans_model2enz_json_model(model_file, reaction_kcat_mw_file, f, ptot, sigma , lowerbound, upperbound):
+def trans_model2enz_json_model(model_file, reaction_kcat_mw_file, f, ptot, sigma, lowerbound, upperbound, json_output_file):
     """Tansform cobra model to json mode with  
     enzyme concentration constraintat.
 
@@ -295,8 +295,7 @@ def trans_model2enz_json_model(model_file, reaction_kcat_mw_file, f, ptot, sigma
 
     dictionary_model['enzyme_constraint']['kcat_MW']=reaction_kcay_mw_dict
 
-    json_output_path="./model/%s_irr_enz_constraint.json"%model_name
-    json_write(json_output_path, dictionary_model)
+    json_write(json_output_file, dictionary_model)
 
 def get_enzyme_constraint_model(json_model_file):
     """using enzyme concentration constraint
@@ -357,3 +356,60 @@ def draw_svg(cb_df,col_name,insvg,outsvg,rclass):
     modelct=ls-cs
     with open(outsvg,'w',encoding='UTF-8') as fw:
         doc.writexml(fw,encoding='UTF-8')    
+
+def select_calibration_reaction(reaction_kcat_mw_file, json_model_path, enzyme_amount, percentage, reaction_biomass_outfile, select_value):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    norm_model=cobra.io.json.load_json_model(json_model_path)
+    norm_biomass=norm_model.slim_optimize() 
+    df_biomass = pd.DataFrame()
+    df_biomass_select = pd.DataFrame()
+    for r in norm_model.reactions:
+        with norm_model as model:
+            if r.id in list(reaction_kcat_mw.index):
+                r.bounds = (0, reaction_kcat_mw.loc[r.id,'kcat_MW']*enzyme_amount*percentage)
+                df_biomass.loc[r.id,'biomass'] = model.slim_optimize()
+                biomass_diff = norm_biomass-model.slim_optimize()
+                biomass_diff_ratio = (norm_biomass-model.slim_optimize())/norm_biomass
+                df_biomass.loc[r.id,'biomass_diff'] = biomass_diff
+                df_biomass.loc[r.id,'biomass_diff_ratio'] = biomass_diff_ratio
+                if biomass_diff > select_value: #select difference range
+                    df_biomass_select.loc[r.id,'biomass_diff'] = biomass_diff
+                    df_biomass_select.loc[r.id,'biomass_diff_ratio'] = biomass_diff_ratio
+
+    df_biomass = df_biomass.sort_values(by="biomass_diff",axis = 0,ascending = False)
+    df_biomass.to_csv(reaction_biomass_outfile)
+
+    if df_biomass_select.empty:
+        pass
+    else:
+        df_reaction_select = df_biomass_select.sort_values(by="biomass_diff",axis = 0,ascending = False)
+        return(df_reaction_select)
+
+def calibration_kcat(need_change_reaction, reaction_kcat_mw_file, json_model_path, adj_kcat_title, change_kapp_file, reaction_kapp_change_file):
+    reaction_kappori = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    kcat_data_colect_file="./data/kcat_data_colect.csv"
+    kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
+    norm_model=cobra.io.json.load_json_model(json_model_path)
+    norm_biomass=norm_model.slim_optimize() 
+    round_1_reaction_kapp_change = pd.DataFrame()
+    for eachreaction in need_change_reaction:
+        kcat_ori = reaction_kappori.loc[eachreaction,'kcat']
+        kcat_smoment_adj = kcat_data_colect.loc[eachreaction, adj_kcat_title] *2 * 3600
+        if kcat_ori < kcat_smoment_adj:
+            reaction_kappori.loc[eachreaction,'kcat'] = kcat_smoment_adj
+        reaction_kappori.loc[eachreaction, 'kcat_MW'] = reaction_kappori.loc[eachreaction, 'kcat'] / reaction_kappori.loc[eachreaction,'MW']
+        for r in norm_model.reactions:
+            with norm_model as model:
+                if r.id == eachreaction:
+                    r.bounds = (0, reaction_kappori.loc[eachreaction, 'kcat_MW']*0.0228)
+                    round_1_reaction_kapp_change.loc[eachreaction,'kcat_ori'] = kcat_ori
+                    round_1_reaction_kapp_change.loc[eachreaction,'kcat_change'] = reaction_kappori.loc[eachreaction,'kcat']
+                    round_1_reaction_kapp_change.loc[eachreaction,'MW'] = reaction_kappori.loc[eachreaction,'MW']
+                    round_1_reaction_kapp_change.loc[eachreaction,'kcat_mw_new'] = reaction_kappori.loc[eachreaction, 'kcat_MW']
+                    round_1_reaction_kapp_change.loc[eachreaction,'norm_biomass'] = norm_biomass
+                    round_1_reaction_kapp_change.loc[eachreaction,'new_biomass'] = model.slim_optimize()
+
+
+    round_1_reaction_kapp_change.to_csv(change_kapp_file)
+    reaction_kappori.to_csv(reaction_kapp_change_file)
+    
