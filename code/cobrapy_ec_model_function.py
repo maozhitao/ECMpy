@@ -429,7 +429,7 @@ def get_enzyme_usage(enz_total,reaction_flux_file,reaction_kcat_mw_file,reaction
     reaction_enz_usage_df = reaction_enz_usage_df.sort_values(by="enz ratio",axis = 0,ascending = False)
     reaction_enz_usage_df.to_csv(reaction_enz_usage_file)
     return reaction_enz_usage_df
-def mamual_change_reaction_kcat(select_reaction,reaction_kcat_mw_file,reaction_kapp_change_file):
+def change_reaction_kcat_by_autopacmen(select_reaction,reaction_kcat_mw_file,reaction_kapp_change_file):
     reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
     kcat_data_colect_file="./data/kcat_data_colect.csv"
     kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
@@ -445,7 +445,23 @@ def mamual_change_reaction_kcat(select_reaction,reaction_kcat_mw_file,reaction_k
     reaction_kcat_mw.to_csv(reaction_kapp_change_file)
     return(reaction_change_accord_fold)
 
-def mamual_change_reaction_kcat_part_by_fold(select_reaction,change_fold,reaction_kcat_mw_file,reaction_kapp_change_file):
+def change_reaction_kcat_by_kapp(select_reaction,reaction_kcat_mw_file,reaction_kapp_change_file):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    kcat_data_colect_file="./data/kcat_data_colect.csv"
+    kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
+
+    reaction_change_accord_fold=[]
+    for eachreaction in select_reaction:
+        if reaction_kcat_mw.loc[eachreaction,'kcat'] < kcat_data_colect.loc[eachreaction, 'kapp']  * 3600:
+            reaction_kcat_mw.loc[eachreaction,'kcat'] = kcat_data_colect.loc[eachreaction, 'kapp']  * 3600
+            reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = kcat_data_colect.loc[eachreaction, 'kapp']  * 3600/reaction_kcat_mw.loc[eachreaction,'MW']
+            reaction_change_accord_fold.append(eachreaction)
+        else:
+            pass
+    reaction_kcat_mw.to_csv(reaction_kapp_change_file)
+    return(reaction_change_accord_fold)
+
+def change_reaction_kcat_part_by_fold(select_reaction,change_fold,reaction_kcat_mw_file,reaction_kapp_change_file):
     reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
     kcat_data_colect_file="./data/kcat_data_colect.csv"
     kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
@@ -463,10 +479,8 @@ def mamual_change_reaction_kcat_part_by_fold(select_reaction,change_fold,reactio
     reaction_kcat_mw.to_csv(reaction_kapp_change_file)
     return(reaction_change_accord_fold)
 
-def mamual_change_reaction_kcat_by_fold(select_reaction,change_fold,reaction_kcat_mw_file,reaction_kapp_change_file):
+def change_reaction_kcat_by_fold(select_reaction,change_fold,reaction_kcat_mw_file,reaction_kapp_change_file):
     reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
-    kcat_data_colect_file="./data/kcat_data_colect.csv"
-    kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
     reaction_change_accord_fold=[]
     for eachreaction in select_reaction:
         reaction_kcat_mw.loc[eachreaction,'kcat'] = reaction_kcat_mw.loc[eachreaction,'kcat'] * change_fold
