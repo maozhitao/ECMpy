@@ -7,6 +7,8 @@ import pandas as pd
 import numpy as np
 import json
 import cobra
+import math
+import re
 from cobra.core import Reaction
 from cobra.io.dict import model_to_dict
 from cobra.util.solver import set_objective
@@ -413,3 +415,121 @@ def calibration_kcat(need_change_reaction, reaction_kcat_mw_file, json_model_pat
     round_1_reaction_kapp_change.to_csv(change_kapp_file)
     reaction_kappori.to_csv(reaction_kapp_change_file)
     
+def get_enzyme_usage(enz_total,reaction_flux_file,reaction_kcat_mw_file,reaction_enz_usage_file):
+    reaction_fluxes = pd.read_csv(reaction_flux_file, index_col=0)
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+
+    reaction_enz_usage_df = pd.DataFrame()
+    for index,row in reaction_kcat_mw.iterrows():
+        reaction_enz_usage_df.loc[index,'kcat_mw'] = row['kcat_MW']
+        reaction_enz_usage_df.loc[index,'flux'] = reaction_fluxes.loc[index,'fluxes']
+        reaction_enz_usage_df.loc[index,'enz useage'] = reaction_fluxes.loc[index,'fluxes']/row['kcat_MW']
+        reaction_enz_usage_df.loc[index,'enz ratio'] = reaction_fluxes.loc[index,'fluxes']/row['kcat_MW']/enz_total
+
+    reaction_enz_usage_df = reaction_enz_usage_df.sort_values(by="enz ratio",axis = 0,ascending = False)
+    reaction_enz_usage_df.to_csv(reaction_enz_usage_file)
+    return reaction_enz_usage_df
+def mamual_chage_reaction_kcat(select_reaction,change_fold,reaction_kcat_mw_file,reaction_kapp_change_file):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    kcat_data_colect_file="./data/kcat_data_colect.csv"
+    kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
+
+    reaction_change_accord_fold=[]
+    for eachreaction in select_reaction:
+        if reaction_kcat_mw.loc[eachreaction,'kcat'] < kcat_data_colect.loc[eachreaction, 'smoment_adj_kcat'] *2 * 3600:
+            reaction_kcat_mw.loc[eachreaction,'kcat'] = kcat_data_colect.loc[eachreaction, 'smoment_adj_kcat'] *2 * 3600
+            reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = kcat_data_colect.loc[eachreaction, 'smoment_adj_kcat'] *2 * 3600/reaction_kcat_mw.loc[eachreaction,'MW']
+            reaction_change_accord_fold.append(eachreaction)
+        else:
+            reaction_kcat_mw.loc[eachreaction,'kcat'] = reaction_kcat_mw.loc[eachreaction,'kcat'] * change_fold
+            reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = reaction_kcat_mw.loc[eachreaction,'kcat_MW'] * change_fold
+    reaction_kcat_mw.to_csv(reaction_kapp_change_file)
+
+    return(reaction_change_accord_fold)
+
+def draw_calibration_kcat_figure(Orimodel_solution_frame,ECMpy_solution_frame,ECMpy_adj_solution_frame,insvg,outsvg):
+    model_data=pd.DataFrame()
+    for eachreaction in ECMpy_solution_frame.index:
+        model_data.loc[eachreaction,'model_ori_fluxes']=Orimodel_solution_frame.loc[eachreaction,'fluxes']
+        model_data.loc[eachreaction,'ECMpy_fluxes']=ECMpy_solution_frame.loc[eachreaction,'fluxes']
+        model_data.loc[eachreaction,'ECMpy_adj_fluxes']=ECMpy_adj_solution_frame.loc[eachreaction,'fluxes']  
+
+    cb_df=pd.DataFrame()
+    for index, row in model_data.iterrows():
+        index_reverse=index+'_reverse'
+        if re.search('reverse',index):
+            pass
+        elif index_reverse in model_data.index:
+            model_ori_reverse_fluxes=float(model_data.loc[index_reverse,'model_ori_fluxes'])
+            ECMpy_reverse_fluxes=float(model_data.loc[index_reverse,'ECMpy_fluxes'])
+            ECMpy_adj_reverse_fluxes=float(model_data.loc[index_reverse,'ECMpy_adj_fluxes'])
+
+            if math.isnan(model_ori_reverse_fluxes):
+                model_ori_fluxes=model_data.loc[index,'model_ori_fluxes']
+            else:
+                model_ori_fluxes=np.max([model_data.loc[index,'model_ori_fluxes'],model_data.loc[index_reverse,'model_ori_fluxes']])
+                
+            if math.isnan(ECMpy_reverse_fluxes):
+                ECMpy_fluxes=model_data.loc[index,'ECMpy_fluxes']
+            else:
+                ECMpy_fluxes=np.max([model_data.loc[index,'ECMpy_fluxes'],model_data.loc[index_reverse,'ECMpy_fluxes']])
+                
+            if math.isnan(ECMpy_adj_reverse_fluxes):
+                ECMpy_adj_fluxes=model_data.loc[index,'ECMpy_adj_fluxes']
+            else:
+                ECMpy_adj_fluxes=np.max([model_data.loc[index,'ECMpy_adj_fluxes'],model_data.loc[index_reverse,'ECMpy_adj_fluxes']])
+                            
+            flux_cb=str(round(model_ori_fluxes,2))+' # '+' # '+str(round(ECMpy_fluxes,2))+' # ' \
+        +' # '+str(round(ECMpy_adj_fluxes,2))
+            cb_df.loc[index,'flux_cb']=flux_cb
+        else:
+            flux_cb=str(round(row['model_ori_fluxes'],2))+' # '+' # '+str(round(row['ECMpy_fluxes'],2))+' # ' \
+            +' # '+str(round(row['ECMpy_adj_fluxes'],2))
+            cb_df.loc[index,'flux_cb']=flux_cb
+
+    rclass=['st6','st15','st18','st16']
+    draw_svg(cb_df,'flux_cb',insvg,outsvg,rclass)
+
+def draw_different_model_cb_figure(model_data,insvg,outsvg):
+    cb_df=pd.DataFrame()
+    for index, row in model_data.iterrows():
+        index_reverse=index+'_reverse'
+        if re.search('reverse',index):
+            pass
+        elif index_reverse in model_data.index:
+            model_ori_reverse_fluxes=float(model_data.loc[index_reverse,'model_ori_fluxes'])
+            ECMpy_reverse_fluxes=float(model_data.loc[index_reverse,'ECMpy_fluxes'])
+            model_gecko_adj_subunit_reverse_fluxes=float(model_data.loc[index_reverse,'model_gecko_adj_subunit_fluxes'])
+            model_smoment_adj_subunit_reverse_fluxes=float(model_data.loc[index_reverse,'model_smoment_adj_subunit_fluxes'])
+            
+            if math.isnan(model_ori_reverse_fluxes):
+                model_ori_fluxes=model_data.loc[index,'model_ori_fluxes']
+            else:
+                model_ori_fluxes=np.max([model_data.loc[index,'model_ori_fluxes'],model_data.loc[index_reverse,'model_ori_fluxes']])
+                
+            if math.isnan(ECMpy_reverse_fluxes):
+                ECMpy_fluxes=model_data.loc[index,'ECMpy_fluxes']
+            else:
+                ECMpy_fluxes=np.max([model_data.loc[index,'ECMpy_fluxes'],model_data.loc[index_reverse,'ECMpy_fluxes']])
+                
+            if math.isnan(model_gecko_adj_subunit_reverse_fluxes):
+                model_gecko_adj_subunit_fluxes=model_data.loc[index,'model_gecko_adj_subunit_fluxes']
+            else:
+                model_gecko_adj_subunit_fluxes=np.max([model_data.loc[index,'model_gecko_adj_subunit_fluxes'],\
+                                                    model_data.loc[index_reverse,'model_gecko_adj_subunit_fluxes']])
+                
+            if math.isnan(model_smoment_adj_subunit_reverse_fluxes):
+                model_smoment_adj_subunit_fluxes=model_data.loc[index,'model_smoment_adj_subunit_fluxes']
+            else:
+                model_smoment_adj_subunit_fluxes=np.max([model_data.loc[index,'model_smoment_adj_subunit_fluxes'],\
+                                                        model_data.loc[index_reverse,'model_smoment_adj_subunit_fluxes']])
+            flux_cb=str(round(model_ori_fluxes,2))+' # '+' # '+str(round(ECMpy_fluxes,2))+' # ' \
+        +' # '+str(round(model_gecko_adj_subunit_fluxes,2))+' # '+str(round(model_smoment_adj_subunit_fluxes,2))
+            cb_df.loc[index,'flux_cb2']=flux_cb
+        else:
+            flux_cb=str(round(row['model_ori_fluxes'],2))+' # '+' # '+str(round(row['ECMpy_fluxes'],2))+' # ' \
+            +' # '+str(round(row['model_gecko_adj_subunit_fluxes'],2))+' # '+str(round(row['model_smoment_adj_subunit_fluxes'],2))
+            cb_df.loc[index,'flux_cb2']=flux_cb
+
+    rclass=['st6','st15','st18','st16']
+    draw_svg(cb_df,'flux_cb2',insvg,outsvg,rclass)
