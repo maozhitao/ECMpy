@@ -410,8 +410,6 @@ def calibration_kcat(need_change_reaction, reaction_kcat_mw_file, json_model_pat
                     round_1_reaction_kapp_change.loc[eachreaction,'kcat_mw_new'] = reaction_kappori.loc[eachreaction, 'kcat_MW']
                     round_1_reaction_kapp_change.loc[eachreaction,'norm_biomass'] = norm_biomass
                     round_1_reaction_kapp_change.loc[eachreaction,'new_biomass'] = model.slim_optimize()
-
-
     round_1_reaction_kapp_change.to_csv(change_kapp_file)
     reaction_kappori.to_csv(reaction_kapp_change_file)
     
@@ -445,22 +443,6 @@ def change_reaction_kcat_by_autopacmen(select_reaction,reaction_kcat_mw_file,rea
     reaction_kcat_mw.to_csv(reaction_kapp_change_file)
     return(reaction_change_accord_fold)
 
-def change_reaction_kcat_by_kapp(select_reaction,reaction_kcat_mw_file,reaction_kapp_change_file):
-    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
-    kcat_data_colect_file="./data/kcat_data_colect.csv"
-    kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
-
-    reaction_change_accord_fold=[]
-    for eachreaction in select_reaction:
-        if reaction_kcat_mw.loc[eachreaction,'kcat'] < kcat_data_colect.loc[eachreaction, 'kapp']  * 3600:
-            reaction_kcat_mw.loc[eachreaction,'kcat'] = kcat_data_colect.loc[eachreaction, 'kapp']  * 3600
-            reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = kcat_data_colect.loc[eachreaction, 'kapp']  * 3600/reaction_kcat_mw.loc[eachreaction,'MW']
-            reaction_change_accord_fold.append(eachreaction)
-        else:
-            pass
-    reaction_kcat_mw.to_csv(reaction_kapp_change_file)
-    return(reaction_change_accord_fold)
-
 def change_reaction_kcat_part_by_fold(select_reaction,change_fold,reaction_kcat_mw_file,reaction_kapp_change_file):
     reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
     kcat_data_colect_file="./data/kcat_data_colect.csv"
@@ -473,9 +455,8 @@ def change_reaction_kcat_part_by_fold(select_reaction,change_fold,reaction_kcat_
             reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = kcat_data_colect.loc[eachreaction, 'smoment_adj_kcat'] *2 * 3600/reaction_kcat_mw.loc[eachreaction,'MW']
             reaction_change_accord_fold.append(eachreaction)
         else:
-            pass
-            #reaction_kcat_mw.loc[eachreaction,'kcat'] = reaction_kcat_mw.loc[eachreaction,'kcat'] * change_fold
-            #reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = reaction_kcat_mw.loc[eachreaction,'kcat_MW'] * change_fold
+            reaction_kcat_mw.loc[eachreaction,'kcat'] = reaction_kcat_mw.loc[eachreaction,'kcat'] * change_fold
+            reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = reaction_kcat_mw.loc[eachreaction,'kcat_MW'] * change_fold
     reaction_kcat_mw.to_csv(reaction_kapp_change_file)
     return(reaction_change_accord_fold)
 
