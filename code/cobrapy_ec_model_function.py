@@ -374,17 +374,17 @@ def select_calibration_reaction(reaction_kcat_mw_file, json_model_path, enzyme_a
                 biomass_diff_ratio = (norm_biomass-model.slim_optimize())/norm_biomass
                 df_biomass.loc[r.id,'biomass_diff'] = biomass_diff
                 df_biomass.loc[r.id,'biomass_diff_ratio'] = biomass_diff_ratio
-                if biomass_diff > select_value: #select difference range
+                if biomass_diff_ratio > select_value: #select difference range
                     df_biomass_select.loc[r.id,'biomass_diff'] = biomass_diff
                     df_biomass_select.loc[r.id,'biomass_diff_ratio'] = biomass_diff_ratio
 
-    df_biomass = df_biomass.sort_values(by="biomass_diff",axis = 0,ascending = False)
+    df_biomass = df_biomass.sort_values(by="biomass_diff_ratio",axis = 0,ascending = False)
     df_biomass.to_csv(reaction_biomass_outfile)
 
     if df_biomass_select.empty:
         pass
     else:
-        df_reaction_select = df_biomass_select.sort_values(by="biomass_diff",axis = 0,ascending = False)
+        df_reaction_select = df_biomass_select.sort_values(by="biomass_diff_ratio",axis = 0,ascending = False)
         return(df_reaction_select)
 
 def calibration_kcat(need_change_reaction, reaction_kcat_mw_file, json_model_path, adj_kcat_title, change_kapp_file, reaction_kapp_change_file):
@@ -466,6 +466,7 @@ def change_reaction_kcat_by_fold(select_reaction,change_fold,reaction_kcat_mw_fi
     for eachreaction in select_reaction:
         reaction_kcat_mw.loc[eachreaction,'kcat'] = reaction_kcat_mw.loc[eachreaction,'kcat'] * change_fold
         reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = reaction_kcat_mw.loc[eachreaction,'kcat_MW'] * change_fold
+        reaction_change_accord_fold.append(eachreaction)
     reaction_kcat_mw.to_csv(reaction_kapp_change_file)
     return(reaction_change_accord_fold)
 
@@ -555,3 +556,12 @@ def draw_different_model_cb_figure(model_data,insvg,outsvg):
 
     rclass=['st6','st15','st18','st16']
     draw_svg(cb_df,'flux_cb2',insvg,outsvg,rclass)
+
+def get_fluxes_detail_in_model(model,fluxes_outfile):
+    model_pfba_solution = cobra.flux_analysis.pfba(model)
+    model_pfba_solution = model_pfba_solution.to_frame()
+    for index, row in model_pfba_solution.iterrows():
+        reaction_detail = model.reactions.get_by_id(index)
+        model_pfba_solution.loc[index,'equ'] = reaction_detail.reaction
+    model_pfba_solution.to_csv(fluxes_outfile) 
+    return model_pfba_solution
