@@ -513,6 +513,20 @@ def draw_calibration_kcat_figure(Orimodel_solution_frame,ECMpy_solution_frame,EC
     rclass=['st6','st15','st18','st16']
     draw_svg(cb_df,'flux_cb',insvg,outsvg,rclass)
 
+def draw_calibration_kcat_figure_g(Orimodel_solution_frame,ECMpy_solution_frame,ECMpy_adj_solution_frame,insvg,outsvg):
+    model_data=pd.DataFrame()
+    for eachreaction in ECMpy_solution_frame.index:
+        if eachreaction in Orimodel_solution_frame.index:
+            model_data.loc[eachreaction,'flux_cb']=str(round(Orimodel_solution_frame.loc[eachreaction,'Flux norm'],2))+\
+                ' # '+' # '+str(round(ECMpy_solution_frame.loc[eachreaction,'fluxes'],2))+' # ' \
+                +' # '+str(round(ECMpy_adj_solution_frame.loc[eachreaction,'fluxes'],2))
+        else:
+             model_data.loc[eachreaction,'flux_cb']='Not give'+\
+                ' # '+' # '+str(round(ECMpy_solution_frame.loc[eachreaction,'fluxes'],2))+' # ' \
+                +' # '+str(round(ECMpy_adj_solution_frame.loc[eachreaction,'fluxes'],2))           
+    rclass=['st6','st15','st18','st16']
+    draw_svg(model_data,'flux_cb',insvg,outsvg,rclass)
+
 def draw_different_model_cb_figure(model_data,insvg,outsvg):
     cb_df=pd.DataFrame()
     for index, row in model_data.iterrows():
@@ -557,11 +571,77 @@ def draw_different_model_cb_figure(model_data,insvg,outsvg):
     rclass=['st6','st15','st18','st16']
     draw_svg(cb_df,'flux_cb2',insvg,outsvg,rclass)
 
-def get_fluxes_detail_in_model(model,fluxes_outfile):
+def get_fluxes_detail_in_model(model,fluxes_outfile,reaction_kcat_mw_file):
     model_pfba_solution = cobra.flux_analysis.pfba(model)
     model_pfba_solution = model_pfba_solution.to_frame()
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    model_pfba_solution_detail = pd.DataFrame()
     for index, row in model_pfba_solution.iterrows():
         reaction_detail = model.reactions.get_by_id(index)
-        model_pfba_solution.loc[index,'equ'] = reaction_detail.reaction
-    model_pfba_solution.to_csv(fluxes_outfile) 
+        model_pfba_solution_detail.loc[index,'fluxes'] = row['fluxes']
+        if index in reaction_kcat_mw.index:
+            model_pfba_solution_detail.loc[index,'kcat'] = reaction_kcat_mw.loc[index,'kcat']
+            model_pfba_solution_detail.loc[index,'MW'] = reaction_kcat_mw.loc[index,'MW']
+            model_pfba_solution_detail.loc[index,'kcat_MW'] = reaction_kcat_mw.loc[index,'kcat_MW']
+            if 'source' in reaction_kcat_mw.columns:
+                model_pfba_solution_detail.loc[index,'source'] = reaction_kcat_mw.loc[index,'source']
+        model_pfba_solution_detail.loc[index,'equ'] = reaction_detail.reaction
+    model_pfba_solution_detail.to_csv(fluxes_outfile) 
     return model_pfba_solution
+
+def change_reaction_kcat_by_database(select_reaction,kcat_data_colect_file,reaction_kcat_mw_file,reaction_kapp_change_file):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
+
+    reaction_change_accord_fold=[]
+    for eachreaction in select_reaction:
+        if eachreaction in kcat_data_colect.index:
+            if reaction_kcat_mw.loc[eachreaction,'kcat'] < kcat_data_colect.loc[eachreaction, 'kcat'] * 3600:
+                reaction_kcat_mw.loc[eachreaction,'kcat'] = kcat_data_colect.loc[eachreaction, 'kcat']  * 3600
+                reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = kcat_data_colect.loc[eachreaction, 'kcat'] * 3600/reaction_kcat_mw.loc[eachreaction,'MW']
+                reaction_kcat_mw.loc[eachreaction,'source'] = kcat_data_colect.loc[eachreaction, 'SOURCE']
+                reaction_change_accord_fold.append(eachreaction)
+
+    reaction_kcat_mw.to_csv(reaction_kapp_change_file)
+    return(reaction_change_accord_fold)
+
+def select_calibration_reaction_by_biomass(reaction_kcat_mw_file, json_model_path, enzyme_amount, percentage, reaction_biomass_outfile, select_value):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    norm_model=cobra.io.json.load_json_model(json_model_path)
+    norm_biomass=norm_model.slim_optimize() 
+    df_biomass = pd.DataFrame()
+    df_biomass_select = pd.DataFrame()
+    for r in norm_model.reactions:
+        with norm_model as model:
+            if r.id in list(reaction_kcat_mw.index):
+                r.bounds = (0, reaction_kcat_mw.loc[r.id,'kcat_MW']*enzyme_amount*percentage)
+                df_biomass.loc[r.id,'biomass'] = model.slim_optimize()
+                biomass_diff = norm_biomass-model.slim_optimize()
+                biomass_diff_ratio = (norm_biomass-model.slim_optimize())/norm_biomass
+                df_biomass.loc[r.id,'biomass_diff'] = biomass_diff
+                df_biomass.loc[r.id,'biomass_diff_ratio'] = biomass_diff_ratio
+                if model.slim_optimize() < select_value*norm_biomass: #select difference range
+                    df_biomass_select.loc[r.id,'biomass_enz'] = model.slim_optimize()
+                    df_biomass_select.loc[r.id,'biomass_orimodel'] = norm_biomass
+                    df_biomass_select.loc[r.id,'biomass_diff'] = biomass_diff
+                    df_biomass_select.loc[r.id,'biomass_diff_ratio'] = biomass_diff_ratio
+
+    df_biomass = df_biomass.sort_values(by="biomass_diff_ratio",axis = 0,ascending = False)
+    df_biomass.to_csv(reaction_biomass_outfile)
+
+    if df_biomass_select.empty:
+        pass
+    else:
+        df_reaction_select = df_biomass_select.sort_values(by="biomass_diff_ratio",axis = 0,ascending = False)
+        return(df_reaction_select)
+
+def select_calibration_reaction_by_c13(reaction_kcat_mw_file, c13reaction_file, enzyme_amount, percentage, sigma):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    c13reaction = pd.read_csv(c13reaction_file, index_col=0)
+    c13reaction_selecet =[]      
+    for index,row in c13reaction.iterrows():
+        if  index in reaction_kcat_mw.index:
+            ECMpy_c13_reaction_flux = reaction_kcat_mw.loc[index,'kcat_MW']*enzyme_amount*percentage*sigma
+            if ECMpy_c13_reaction_flux < row['Flux norm']:
+                c13reaction_selecet.append(index)   
+    return(c13reaction_selecet)
