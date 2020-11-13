@@ -470,6 +470,18 @@ def change_reaction_kcat_by_fold(select_reaction,change_fold,reaction_kcat_mw_fi
     reaction_kcat_mw.to_csv(reaction_kapp_change_file)
     return(reaction_change_accord_fold)
 
+def change_reaction_kcat_by_foldlist(select_reaction,change_fold,reaction_kcat_mw_file,reaction_kapp_change_file):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    reaction_change_accord_fold=[]
+    i=0
+    for eachreaction in select_reaction:
+        reaction_kcat_mw.loc[eachreaction,'kcat'] = reaction_kcat_mw.loc[eachreaction,'kcat'] * change_fold[i]
+        reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = reaction_kcat_mw.loc[eachreaction,'kcat_MW'] * change_fold[i]
+        reaction_change_accord_fold.append(eachreaction)
+        i=i+1
+    reaction_kcat_mw.to_csv(reaction_kapp_change_file)
+    return(reaction_change_accord_fold)
+    
 def draw_calibration_kcat_figure(Orimodel_solution_frame,ECMpy_solution_frame,ECMpy_adj_solution_frame,insvg,outsvg):
     model_data=pd.DataFrame()
     for eachreaction in ECMpy_solution_frame.index:
