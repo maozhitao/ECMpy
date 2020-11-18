@@ -146,7 +146,7 @@ def calculate_reaction_mw_not_consider_subunit(reaction_gene_subunit_MW,save_fil
     reaction_mw.to_csv(save_file)
     return reaction_mw
 
-def calculate_reaction_kcat_mw(reaction_kcat_file, reaction_mw,save_file):
+def calculate_reaction_kcat_mw_old(reaction_kcat_file, reaction_mw,save_file):
     """Calculating kcat/MW
 
     When the reaction is catalyzed by several isozymes,
@@ -175,6 +175,35 @@ def calculate_reaction_kcat_mw(reaction_kcat_file, reaction_mw,save_file):
     reaction_kcat_mw.to_csv(save_file)
     return reaction_kcat_mw
 
+def calculate_reaction_kcat_mw(reaction_kcat_file, reaction_mw,save_file):
+    """Calculating kcat/MW
+
+    When the reaction is catalyzed by several isozymes,
+    the maximum was retained.
+
+    Arguments
+    ----------
+    *reaction_kcat_file: A CSV file contains the kcat values for each
+    reaction in the model.
+    *reaction_mw: The molecular weight of the enzyme that catalyzes
+     each reaction in the GEM model.
+
+    :return: The kcat/MW value of the enzyme catalyzing each reaction
+     in the GEM model.
+    """
+    reaction_kcat = pd.read_csv(reaction_kcat_file, index_col=0)
+    reaction_kcat_mw = pd.DataFrame()
+    for reaction_idmw in reaction_mw.index:
+        reaction_id = reaction_idmw.split('_num')[0]
+        if reaction_id in reaction_kcat.index:
+            mw = reaction_mw.loc[reaction_idmw, 'MW'].split('or')
+            min_mw = min(map(float, mw))
+            kcat_mw = reaction_kcat.loc[reaction_id, 'kcat'] / min_mw
+            reaction_kcat_mw.loc[reaction_idmw, 'kcat'] = reaction_kcat.loc[reaction_id, 'kcat']
+            reaction_kcat_mw.loc[reaction_idmw, 'MW'] = min_mw
+            reaction_kcat_mw.loc[reaction_idmw, 'kcat_MW'] = kcat_mw
+    reaction_kcat_mw.to_csv(save_file)
+    return reaction_kcat_mw
 
 def calculate_f(genes, gene_abundance_file, subunit_molecular_weight_file):
     """Calculating f (the mass fraction of enzymes that are accounted
@@ -255,6 +284,53 @@ def json_write(path, dictionary):
     with open(path, "w", encoding="utf-8") as f:
         f.write(json_output)
 
+def trans_model2enz_json_model_split_isoenzyme(model_file, reaction_kcat_mw_file, f, ptot, sigma, lowerbound, upperbound, json_output_file):
+    """Tansform cobra model to json mode with  
+    enzyme concentration constraintat.
+
+    Arguments
+    ----------
+    * model_file: str ~  The path of 
+    * reaction_kcat_mw_file: str ~  The path of 
+    *f:
+    * ptot:  ~  
+    * sigma:  ~  
+    *lowerbound:   
+    *upperbound:  
+
+    """
+
+    model = cobra.io.read_sbml_model(model_file)
+    #model = isoenzyme_split(model)
+    convert_to_irreversible(model)
+    model = isoenzyme_split(model)
+    #model = isoenzyme_split2(model)
+    model_name=model_file.split('/')[-1].split('.')[0]
+    json_path="./model/%s_irreversible.json"%model_name
+    cobra.io.save_json_model(model, json_path)
+
+    dictionary_model = json_load(json_path)
+    dictionary_model['enzyme_constraint']={'enzyme_mass_fraction': f, 'total_protein_fraction': ptot,\
+        'average_saturation': sigma, 'lowerbound': lowerbound, 'upperbound': upperbound} 
+    # Reaction-kcat_mw file.
+    # eg. AADDGT,49389.2889,40.6396,1215.299582180927
+    reaction_kcat_mw=pd.read_csv(reaction_kcat_mw_file, index_col=0)
+
+    reaction_kcay_mw_dict={}
+    for eachreaction in  range(len(dictionary_model['reactions'])): 
+        reaction_id=dictionary_model['reactions'][eachreaction]['id']
+        if reaction_id in reaction_kcat_mw.index:
+            dictionary_model['reactions'][eachreaction]['kcat']=reaction_kcat_mw.loc[reaction_id,'kcat']
+            dictionary_model['reactions'][eachreaction]['kcat_MW']=reaction_kcat_mw.loc[reaction_id,'kcat_MW']
+            reaction_kcay_mw_dict[reaction_id]=reaction_kcat_mw.loc[reaction_id,'kcat_MW']
+        else:
+            dictionary_model['reactions'][eachreaction]['kcat']=''
+            dictionary_model['reactions'][eachreaction]['kcat_MW']=''  
+
+    dictionary_model['enzyme_constraint']['kcat_MW']=reaction_kcay_mw_dict
+
+    json_write(json_output_file, dictionary_model)
+
 def trans_model2enz_json_model(model_file, reaction_kcat_mw_file, f, ptot, sigma, lowerbound, upperbound, json_output_file):
     """Tansform cobra model to json mode with  
     enzyme concentration constraintat.
@@ -273,6 +349,51 @@ def trans_model2enz_json_model(model_file, reaction_kcat_mw_file, f, ptot, sigma
 
     model = cobra.io.read_sbml_model(model_file)
     convert_to_irreversible(model)
+    model_name=model_file.split('/')[-1].split('.')[0]
+    json_path="./model/%s_irreversible.json"%model_name
+    cobra.io.save_json_model(model, json_path)
+
+    dictionary_model = json_load(json_path)
+    dictionary_model['enzyme_constraint']={'enzyme_mass_fraction': f, 'total_protein_fraction': ptot,\
+        'average_saturation': sigma, 'lowerbound': lowerbound, 'upperbound': upperbound} 
+    # Reaction-kcat_mw file.
+    # eg. AADDGT,49389.2889,40.6396,1215.299582180927
+    reaction_kcat_mw=pd.read_csv(reaction_kcat_mw_file, index_col=0)
+
+    reaction_kcay_mw_dict={}
+    for eachreaction in  range(len(dictionary_model['reactions'])): 
+        reaction_id=dictionary_model['reactions'][eachreaction]['id']
+        if reaction_id in reaction_kcat_mw.index:
+            dictionary_model['reactions'][eachreaction]['kcat']=reaction_kcat_mw.loc[reaction_id,'kcat']
+            dictionary_model['reactions'][eachreaction]['kcat_MW']=reaction_kcat_mw.loc[reaction_id,'kcat_MW']
+            reaction_kcay_mw_dict[reaction_id]=reaction_kcat_mw.loc[reaction_id,'kcat_MW']
+        else:
+            dictionary_model['reactions'][eachreaction]['kcat']=''
+            dictionary_model['reactions'][eachreaction]['kcat_MW']=''  
+
+    dictionary_model['enzyme_constraint']['kcat_MW']=reaction_kcay_mw_dict
+
+    json_write(json_output_file, dictionary_model)
+
+def trans_model2enz_json_model_PDH(model_file, reaction_kcat_mw_file, f, ptot, sigma, lowerbound, upperbound, json_output_file):
+    """Tansform cobra model to json mode with  
+    enzyme concentration constraintat.
+
+    Arguments
+    ----------
+    * model_file: str ~  The path of 
+    * reaction_kcat_mw_file: str ~  The path of 
+    *f:
+    * ptot:  ~  
+    * sigma:  ~  
+    *lowerbound:   
+    *upperbound:  
+
+    """
+
+    model = cobra.io.read_sbml_model(model_file)
+    convert_to_irreversible(model)
+    model = isoenzyme_split_PDH(model)
     model_name=model_file.split('/')[-1].split('.')[0]
     json_path="./model/%s_irreversible.json"%model_name
     cobra.io.save_json_model(model, json_path)
@@ -419,10 +540,11 @@ def get_enzyme_usage(enz_total,reaction_flux_file,reaction_kcat_mw_file,reaction
 
     reaction_enz_usage_df = pd.DataFrame()
     for index,row in reaction_kcat_mw.iterrows():
-        reaction_enz_usage_df.loc[index,'kcat_mw'] = row['kcat_MW']
-        reaction_enz_usage_df.loc[index,'flux'] = reaction_fluxes.loc[index,'fluxes']
-        reaction_enz_usage_df.loc[index,'enz useage'] = reaction_fluxes.loc[index,'fluxes']/row['kcat_MW']
-        reaction_enz_usage_df.loc[index,'enz ratio'] = reaction_fluxes.loc[index,'fluxes']/row['kcat_MW']/enz_total
+        if index in reaction_fluxes.index:
+            reaction_enz_usage_df.loc[index,'kcat_mw'] = row['kcat_MW']
+            reaction_enz_usage_df.loc[index,'flux'] = reaction_fluxes.loc[index,'fluxes']
+            reaction_enz_usage_df.loc[index,'enz useage'] = reaction_fluxes.loc[index,'fluxes']/row['kcat_MW']
+            reaction_enz_usage_df.loc[index,'enz ratio'] = reaction_fluxes.loc[index,'fluxes']/row['kcat_MW']/enz_total
 
     reaction_enz_usage_df = reaction_enz_usage_df.sort_values(by="enz ratio",axis = 0,ascending = False)
     reaction_enz_usage_df.to_csv(reaction_enz_usage_file)
@@ -539,6 +661,70 @@ def draw_calibration_kcat_figure_g(Orimodel_solution_frame,ECMpy_solution_frame,
     rclass=['st6','st15','st18','st16']
     draw_svg(model_data,'flux_cb',insvg,outsvg,rclass)
 
+def draw_calibration_kcat_figure_g2(Orimodel_solution_frame,ECMpy_solution_frame,ECMpy_adj_solution_frame,insvg,outsvg):
+    model_data=pd.DataFrame()
+    flux2_list=pd.DataFrame()
+    flux3_list=pd.DataFrame()
+    for reaction in ECMpy_solution_frame.index:
+        if re.search('_num',reaction):
+            eachreaction = reaction.split('_num')[0]
+            if eachreaction in flux2_list.index:
+                flux2_list.loc[eachreaction,'fluxes'] = np.max([flux2_list.loc[eachreaction,'fluxes'],ECMpy_solution_frame.loc[reaction,'fluxes']])
+            else:
+                flux2_list.loc[eachreaction,'fluxes'] = ECMpy_solution_frame.loc[reaction,'fluxes']
+            if eachreaction in flux3_list.index:
+                flux3_list.loc[eachreaction,'fluxes'] = np.max([flux3_list.loc[eachreaction,'fluxes'],ECMpy_adj_solution_frame.loc[reaction,'fluxes']])
+            else:
+                flux3_list.loc[eachreaction,'fluxes'] = ECMpy_adj_solution_frame.loc[reaction,'fluxes']
+        else:
+            flux2_list.loc[reaction,'fluxes'] = ECMpy_solution_frame.loc[reaction,'fluxes']
+            flux3_list.loc[reaction,'fluxes'] = ECMpy_adj_solution_frame.loc[reaction,'fluxes']
+
+    for eachreaction in flux2_list.index:            
+        if eachreaction in Orimodel_solution_frame.index:
+            model_data.loc[eachreaction,'flux_cb']=str(round(Orimodel_solution_frame.loc[eachreaction,'Flux norm'],2))+\
+                    ' # '+' # '+str(round(flux2_list.loc[eachreaction,'fluxes'],2))+' # ' \
+                    +' # '+str(round(flux3_list.loc[eachreaction,'fluxes'],2))
+        else:
+            model_data.loc[eachreaction,'flux_cb']='Not give'+\
+                    ' # '+' # '+str(round(flux2_list.loc[eachreaction,'fluxes'],2))+' # ' \
+                    +' # '+str(round(flux3_list.loc[eachreaction,'fluxes'],2))    
+                        
+    rclass=['st6','st15','st18','st16']
+    draw_svg(model_data,'flux_cb',insvg,outsvg,rclass)
+
+def draw_calibration_kcat_figure_g3(Orimodel_solution_frame,ECMpy_solution_frame,ECMpy_adj_solution_frame,insvg,outsvg):
+    model_data=pd.DataFrame()
+    flux2_list=pd.DataFrame()
+    flux3_list=pd.DataFrame()
+    for reaction in ECMpy_adj_solution_frame.index:
+        if re.search('_num',reaction):
+            eachreaction = reaction.split('_num')[0]
+            if eachreaction in flux2_list.index:
+                flux2_list.loc[eachreaction,'fluxes'] = np.max([flux2_list.loc[eachreaction,'fluxes'],ECMpy_solution_frame.loc[eachreaction,'fluxes']])
+            else:
+                flux2_list.loc[eachreaction,'fluxes'] = ECMpy_solution_frame.loc[eachreaction,'fluxes']
+            if eachreaction in flux3_list.index:
+                flux3_list.loc[eachreaction,'fluxes'] = np.max([flux3_list.loc[eachreaction,'fluxes'],ECMpy_adj_solution_frame.loc[reaction,'fluxes']])
+            else:
+                flux3_list.loc[eachreaction,'fluxes'] = ECMpy_adj_solution_frame.loc[reaction,'fluxes']
+        else:
+            flux2_list.loc[reaction,'fluxes'] = ECMpy_solution_frame.loc[reaction,'fluxes']
+            flux3_list.loc[reaction,'fluxes'] = ECMpy_adj_solution_frame.loc[reaction,'fluxes']
+
+    for eachreaction in flux2_list.index:            
+        if eachreaction in Orimodel_solution_frame.index:
+            model_data.loc[eachreaction,'flux_cb']=str(round(Orimodel_solution_frame.loc[eachreaction,'Flux norm'],2))+\
+                    ' # '+' # '+str(round(flux2_list.loc[eachreaction,'fluxes'],2))+' # ' \
+                    +' # '+str(round(flux3_list.loc[eachreaction,'fluxes'],2))
+        else:
+            model_data.loc[eachreaction,'flux_cb']='Not give'+\
+                    ' # '+' # '+str(round(flux2_list.loc[eachreaction,'fluxes'],2))+' # ' \
+                    +' # '+str(round(flux3_list.loc[eachreaction,'fluxes'],2))    
+                        
+    rclass=['st6','st15','st18','st16']
+    draw_svg(model_data,'flux_cb',insvg,outsvg,rclass)
+
 def draw_different_model_cb_figure(model_data,insvg,outsvg):
     cb_df=pd.DataFrame()
     for index, row in model_data.iterrows():
@@ -617,6 +803,26 @@ def change_reaction_kcat_by_database(select_reaction,kcat_data_colect_file,react
     reaction_kcat_mw.to_csv(reaction_kapp_change_file)
     return(reaction_change_accord_fold)
 
+def change_reaction_kcat_by_database_g(select_reaction,kcat_data_colect_file,reaction_kcat_mw_file,reaction_kapp_change_file):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
+
+    reaction_change_accord_fold=[]
+    for reaction in select_reaction:
+        if re.search('_num',reaction):
+            eachreaction = reaction.split('_num')[0]
+        else:
+            eachreaction = reaction
+        if eachreaction in kcat_data_colect.index:
+            if reaction_kcat_mw.loc[reaction,'kcat'] < kcat_data_colect.loc[eachreaction, 'kcat'] * 3600:
+                reaction_kcat_mw.loc[reaction,'kcat'] = kcat_data_colect.loc[eachreaction, 'kcat']  * 3600
+                reaction_kcat_mw.loc[reaction,'kcat_MW'] = kcat_data_colect.loc[eachreaction, 'kcat'] * 3600/reaction_kcat_mw.loc[reaction,'MW']
+                reaction_kcat_mw.loc[reaction,'source'] = kcat_data_colect.loc[eachreaction, 'SOURCE']
+                reaction_change_accord_fold.append(reaction)
+
+    reaction_kcat_mw.to_csv(reaction_kapp_change_file)
+    return(reaction_change_accord_fold)
+
 def select_calibration_reaction_by_biomass(reaction_kcat_mw_file, json_model_path, enzyme_amount, percentage, reaction_biomass_outfile, select_value):
     reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
     norm_model=cobra.io.json.load_json_model(json_model_path)
@@ -657,3 +863,126 @@ def select_calibration_reaction_by_c13(reaction_kcat_mw_file, c13reaction_file, 
             if ECMpy_c13_reaction_flux < row['Flux norm']:
                 c13reaction_selecet.append(index)   
     return(c13reaction_selecet)
+
+# 将所有的gpr关系为or的反应拆开
+def reaction_gene_subunit_MW_split(reaction_gene_subunit_MW):
+    reaction_gene_subunit_MW_new = pd.DataFrame()
+    for reaction, data in reaction_gene_subunit_MW.iterrows():
+        #PDH酶是复合体，分子量太大，进行拆分
+        if reaction =='PDH':
+            gene = enumerate(data['gene_reaction_rule'].split(" and "))
+            subunit_mw= data['subunit_mw'].split(" and ")
+            subunit_num = data['subunit_num'].split(" and ")
+            for index, value in gene:
+                if index == 0:
+                    reaction_new = reaction + "_num1"
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'name'] = data['name']
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'gene_reaction_rule'] = value
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = subunit_mw[index]
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index]
+                else:
+                    reaction_new = reaction + "_num" + str(index+1)
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'name'] = data['name']
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'gene_reaction_rule'] = value
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = subunit_mw[index]
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index] 
+        elif re.search(" or ", data['gene_reaction_rule']):
+            gene = enumerate(data['gene_reaction_rule'].split(" or "))
+            subunit_mw= data['subunit_mw'].split(" or ")
+            subunit_num = data['subunit_num'].split(" or ")
+            for index, value in gene:
+                if index == 0:
+                    reaction_new = reaction + "_num1"
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'name'] = data['name']
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'gene_reaction_rule'] = value
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = subunit_mw[index]
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index]
+                else:
+                    reaction_new = reaction + "_num" + str(index+1)
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'name'] = data['name']
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'gene_reaction_rule'] = value
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = subunit_mw[index]
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index] 
+        else:
+            reaction_gene_subunit_MW_new.loc[reaction,'name'] = data['name']
+            reaction_gene_subunit_MW_new.loc[reaction,'gene_reaction_rule'] = data['gene_reaction_rule']
+            reaction_gene_subunit_MW_new.loc[reaction,'subunit_mw'] = data['subunit_mw']
+            reaction_gene_subunit_MW_new.loc[reaction,'subunit_num'] = data['subunit_num']
+    reaction_gene_subunit_MW_new.to_csv("./data/reaction_gene_subunit_MW.csv") 
+
+def reaction_gene_subunit_MW_split_PDH(reaction_gene_subunit_MW):
+    reaction_gene_subunit_MW_new = pd.DataFrame()
+    for reaction, data in reaction_gene_subunit_MW.iterrows():
+        #PDH酶是复合体，分子量太大，进行拆分
+        if reaction =='PDH':
+            gene = enumerate(data['gene_reaction_rule'].split(" and "))
+            subunit_mw= data['subunit_mw'].split(" and ")
+            subunit_num = data['subunit_num'].split(" and ")
+            for index, value in gene:
+                if index == 0:
+                    reaction_new = reaction + "_num1"
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'name'] = data['name']
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'gene_reaction_rule'] = value
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = subunit_mw[index]
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index]
+                else:
+                    reaction_new = reaction + "_num" + str(index+1)
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'name'] = data['name']
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'gene_reaction_rule'] = value
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = subunit_mw[index]
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index] 
+        else:
+            reaction_gene_subunit_MW_new.loc[reaction,'name'] = data['name']
+            reaction_gene_subunit_MW_new.loc[reaction,'gene_reaction_rule'] = data['gene_reaction_rule']
+            reaction_gene_subunit_MW_new.loc[reaction,'subunit_mw'] = data['subunit_mw']
+            reaction_gene_subunit_MW_new.loc[reaction,'subunit_num'] = data['subunit_num']
+    reaction_gene_subunit_MW_new.to_csv("./data/reaction_gene_subunit_MW.csv") 
+
+# 将所有的gpr关系为or的反应拆开
+def isoenzyme_split(model):
+    for r in model.reactions:
+        if re.search(" or ", r.gene_reaction_rule):
+            rea = r.copy()
+            gene = r.gene_reaction_rule.split(" or ")
+            for index, value in enumerate(gene):
+                if index == 0:
+                    r.id = r.id + "_num1"
+                    r.gene_reaction_rule = value
+                else:
+                    r_add = rea.copy()
+                    r_add.id = rea.id + "_num" + str(index+1)
+                    r_add.gene_reaction_rule = value
+                    model.add_reaction(r_add)     
+        #PDH酶是复合体，分子量太大，进行拆分
+        if r.id =='PDH':
+            rea = r.copy()
+            gene = r.gene_reaction_rule.split(" and ")
+            for index, value in enumerate(gene):
+                if index == 0:
+                    r.id = r.id + "_num1"
+                    r.gene_reaction_rule = value
+                else:
+                    r_add = rea.copy()
+                    r_add.id = rea.id + "_num" + str(index+1)
+                    r_add.gene_reaction_rule = value
+                    model.add_reaction(r_add)        
+    for r in model.reactions:
+        r.gene_reaction_rule = r.gene_reaction_rule.strip("( )")
+    return model
+
+def isoenzyme_split_PDH(model):
+    for r in model.reactions:
+        #PDH酶是复合体，分子量太大，进行拆分
+        if r.id =='PDH':
+            rea = r.copy()
+            gene = r.gene_reaction_rule.split(" and ")
+            for index, value in enumerate(gene):
+                if index == 0:
+                    r.id = r.id + "_num1"
+                    r.gene_reaction_rule = value
+                else:
+                    r_add = rea.copy()
+                    r_add.id = rea.id + "_num" + str(index+1)
+                    r_add.gene_reaction_rule = value
+                    model.add_reaction(r_add)        
+    return model
