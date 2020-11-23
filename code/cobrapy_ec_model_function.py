@@ -32,7 +32,7 @@ def convert_to_irreversible(model):
     for reaction in model.reactions:
         # If a reaction is reverse only, the forward reaction (which
         # will be constrained to 0) will be left in the model.
-        if reaction.lower_bound < 0:
+        if reaction.lower_bound < 0 and reaction.upper_bound >0:
             reverse_reaction = Reaction(reaction.id + "_reverse")
             reverse_reaction.lower_bound = max(0, -reaction.upper_bound)
             reverse_reaction.upper_bound = -reaction.lower_bound
@@ -331,6 +331,52 @@ def trans_model2enz_json_model_split_isoenzyme(model_file, reaction_kcat_mw_file
 
     json_write(json_output_file, dictionary_model)
 
+def trans_model2enz_json_model_split_isoenzyme_only(model_file, reaction_kcat_mw_file, f, ptot, sigma, lowerbound, upperbound, json_output_file):
+    """Tansform cobra model to json mode with  
+    enzyme concentration constraintat.
+
+    Arguments
+    ----------
+    * model_file: str ~  The path of 
+    * reaction_kcat_mw_file: str ~  The path of 
+    *f:
+    * ptot:  ~  
+    * sigma:  ~  
+    *lowerbound:   
+    *upperbound:  
+
+    """
+
+    model = cobra.io.read_sbml_model(model_file)
+    #model = isoenzyme_split(model)
+    convert_to_irreversible(model)
+    model = isoenzyme_split_only(model)
+    #model = isoenzyme_split2(model)
+    model_name=model_file.split('/')[-1].split('.')[0]
+    json_path="./model/%s_irreversible.json"%model_name
+    cobra.io.save_json_model(model, json_path)
+
+    dictionary_model = json_load(json_path)
+    dictionary_model['enzyme_constraint']={'enzyme_mass_fraction': f, 'total_protein_fraction': ptot,\
+        'average_saturation': sigma, 'lowerbound': lowerbound, 'upperbound': upperbound} 
+    # Reaction-kcat_mw file.
+    # eg. AADDGT,49389.2889,40.6396,1215.299582180927
+    reaction_kcat_mw=pd.read_csv(reaction_kcat_mw_file, index_col=0)
+
+    reaction_kcay_mw_dict={}
+    for eachreaction in  range(len(dictionary_model['reactions'])): 
+        reaction_id=dictionary_model['reactions'][eachreaction]['id']
+        if reaction_id in reaction_kcat_mw.index:
+            dictionary_model['reactions'][eachreaction]['kcat']=reaction_kcat_mw.loc[reaction_id,'kcat']
+            dictionary_model['reactions'][eachreaction]['kcat_MW']=reaction_kcat_mw.loc[reaction_id,'kcat_MW']
+            reaction_kcay_mw_dict[reaction_id]=reaction_kcat_mw.loc[reaction_id,'kcat_MW']
+        else:
+            dictionary_model['reactions'][eachreaction]['kcat']=''
+            dictionary_model['reactions'][eachreaction]['kcat_MW']=''  
+
+    dictionary_model['enzyme_constraint']['kcat_MW']=reaction_kcay_mw_dict
+
+    json_write(json_output_file, dictionary_model)
 def trans_model2enz_json_model(model_file, reaction_kcat_mw_file, f, ptot, sigma, lowerbound, upperbound, json_output_file):
     """Tansform cobra model to json mode with  
     enzyme concentration constraintat.
@@ -769,6 +815,16 @@ def draw_different_model_cb_figure(model_data,insvg,outsvg):
     rclass=['st6','st15','st18','st16']
     draw_svg(cb_df,'flux_cb2',insvg,outsvg,rclass)
 
+def draw_different_model_cb_figure_g(model_data,insvg,outsvg):
+    cb_df=pd.DataFrame()
+    for index, row in model_data.iterrows():
+        flux_cb=str(round(row['model_ori_fluxes'],2))+' # '+' # '+str(round(row['ECMpy_fluxes'],2))+' # ' \
+            +' # '+str(round(row['model_gecko_adj_subunit_fluxes'],2))+' # '+str(round(row['model_smoment_adj_subunit_fluxes'],2))
+        cb_df.loc[index,'flux_cb2']=flux_cb
+
+    rclass=['st6','st15','st18','st16']
+    draw_svg(cb_df,'flux_cb2',insvg,outsvg,rclass)
+
 def get_fluxes_detail_in_model(model,fluxes_outfile,reaction_kcat_mw_file):
     model_pfba_solution = cobra.flux_analysis.pfba(model)
     model_pfba_solution = model_pfba_solution.to_frame()
@@ -803,6 +859,41 @@ def change_reaction_kcat_by_database(select_reaction,kcat_data_colect_file,react
     reaction_kcat_mw.to_csv(reaction_kapp_change_file)
     return(reaction_change_accord_fold)
 
+def change_reaction_kcat_by_database_kapp(select_reaction,kcat_data_colect_file,reaction_kcat_mw_file,reaction_kapp_change_file):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
+
+    reaction_change_accord_fold=[]
+    for eachreaction in select_reaction:
+        if eachreaction in kcat_data_colect.index:
+            if reaction_kcat_mw.loc[eachreaction,'kcat'] < kcat_data_colect.loc[eachreaction, 'kcat'] *2 * 3600:
+                reaction_kcat_mw.loc[eachreaction,'kcat'] = kcat_data_colect.loc[eachreaction, 'kcat']  *2 * 3600
+                reaction_kcat_mw.loc[eachreaction,'kcat_MW'] = kcat_data_colect.loc[eachreaction, 'kcat']  *2* 3600/reaction_kcat_mw.loc[eachreaction,'MW']
+                reaction_kcat_mw.loc[eachreaction,'source'] = kcat_data_colect.loc[eachreaction, 'SOURCE']
+                reaction_change_accord_fold.append(eachreaction)
+
+    reaction_kcat_mw.to_csv(reaction_kapp_change_file)
+    return(reaction_change_accord_fold)
+
+def change_reaction_kcat_by_database_kapp_g(select_reaction,kcat_data_colect_file,reaction_kcat_mw_file,reaction_kapp_change_file):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
+    kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
+
+    reaction_change_accord_fold=[]
+    for reaction in select_reaction:
+        if re.search('_num',reaction):
+            eachreaction = reaction.split('_num')[0]
+        else:
+            eachreaction = reaction
+        if eachreaction in kcat_data_colect.index:
+            if reaction_kcat_mw.loc[reaction,'kcat'] < kcat_data_colect.loc[eachreaction, 'kcat'] *2 * 3600:
+                reaction_kcat_mw.loc[reaction,'kcat'] = kcat_data_colect.loc[eachreaction, 'kcat']  *2 * 3600
+                reaction_kcat_mw.loc[reaction,'kcat_MW'] = kcat_data_colect.loc[eachreaction, 'kcat']  *2* 3600/reaction_kcat_mw.loc[reaction,'MW']
+                reaction_kcat_mw.loc[reaction,'source'] = kcat_data_colect.loc[eachreaction, 'SOURCE']
+                reaction_change_accord_fold.append(reaction)
+
+    reaction_kcat_mw.to_csv(reaction_kapp_change_file)
+    return(reaction_change_accord_fold)
 def change_reaction_kcat_by_database_g(select_reaction,kcat_data_colect_file,reaction_kcat_mw_file,reaction_kapp_change_file):
     reaction_kcat_mw = pd.read_csv(reaction_kcat_mw_file, index_col=0)
     kcat_data_colect = pd.read_csv(kcat_data_colect_file, index_col=0)
@@ -848,7 +939,7 @@ def select_calibration_reaction_by_biomass(reaction_kcat_mw_file, json_model_pat
     df_biomass.to_csv(reaction_biomass_outfile)
 
     if df_biomass_select.empty:
-        pass
+        return('no change')
     else:
         df_reaction_select = df_biomass_select.sort_values(by="biomass_diff_ratio",axis = 0,ascending = False)
         return(df_reaction_select)
@@ -887,6 +978,33 @@ def reaction_gene_subunit_MW_split(reaction_gene_subunit_MW):
                     reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = subunit_mw[index]
                     reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index] 
         elif re.search(" or ", data['gene_reaction_rule']):
+            gene = enumerate(data['gene_reaction_rule'].split(" or "))
+            subunit_mw= data['subunit_mw'].split(" or ")
+            subunit_num = data['subunit_num'].split(" or ")
+            for index, value in gene:
+                if index == 0:
+                    reaction_new = reaction + "_num1"
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'name'] = data['name']
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'gene_reaction_rule'] = value
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = subunit_mw[index]
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index]
+                else:
+                    reaction_new = reaction + "_num" + str(index+1)
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'name'] = data['name']
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'gene_reaction_rule'] = value
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = subunit_mw[index]
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index] 
+        else:
+            reaction_gene_subunit_MW_new.loc[reaction,'name'] = data['name']
+            reaction_gene_subunit_MW_new.loc[reaction,'gene_reaction_rule'] = data['gene_reaction_rule']
+            reaction_gene_subunit_MW_new.loc[reaction,'subunit_mw'] = data['subunit_mw']
+            reaction_gene_subunit_MW_new.loc[reaction,'subunit_num'] = data['subunit_num']
+    reaction_gene_subunit_MW_new.to_csv("./data/reaction_gene_subunit_MW.csv") 
+
+def reaction_gene_subunit_MW_split_only(reaction_gene_subunit_MW):
+    reaction_gene_subunit_MW_new = pd.DataFrame()
+    for reaction, data in reaction_gene_subunit_MW.iterrows():
+        if re.search(" or ", data['gene_reaction_rule']):
             gene = enumerate(data['gene_reaction_rule'].split(" or "))
             subunit_mw= data['subunit_mw'].split(" or ")
             subunit_num = data['subunit_num'].split(" or ")
@@ -966,6 +1084,24 @@ def isoenzyme_split(model):
                     r_add.id = rea.id + "_num" + str(index+1)
                     r_add.gene_reaction_rule = value
                     model.add_reaction(r_add)        
+    for r in model.reactions:
+        r.gene_reaction_rule = r.gene_reaction_rule.strip("( )")
+    return model
+
+def isoenzyme_split_only(model):
+    for r in model.reactions:
+        if re.search(" or ", r.gene_reaction_rule):
+            rea = r.copy()
+            gene = r.gene_reaction_rule.split(" or ")
+            for index, value in enumerate(gene):
+                if index == 0:
+                    r.id = r.id + "_num1"
+                    r.gene_reaction_rule = value
+                else:
+                    r_add = rea.copy()
+                    r_add.id = rea.id + "_num" + str(index+1)
+                    r_add.gene_reaction_rule = value
+                    model.add_reaction(r_add)           
     for r in model.reactions:
         r.gene_reaction_rule = r.gene_reaction_rule.strip("( )")
     return model

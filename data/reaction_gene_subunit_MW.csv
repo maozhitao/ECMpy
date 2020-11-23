@@ -14,8 +14,8 @@ G3PD5_num1,Glycerol-3-phosphate dehydrogenase (ubiquinone-8),( b2242 and b2243 a
 G3PD5_num2,Glycerol-3-phosphate dehydrogenase (ubiquinone-8),b3426,56.75054 ,2 
 LEUTAi_num1,Leucine transaminase (irreversible),b3770,34.09365,6
 LEUTAi_num2,Leucine transaminase (irreversible),b4054,43.53781 ,2 
-SHK3Dr_num1,Shikimate dehydrogenase,b3281,29.41364,1
-SHK3Dr_num2,Shikimate dehydrogenase,b1692,31.2278 ,2 
+SHK3Dr_forward,Shikimate dehydrogenase,b3281,29.41364 ,1
+SHK3Dr_reverse,Shikimate dehydrogenase,b1692,31.2278,2
 G5SD,Glutamate-5-semialdehyde dehydrogenase,b0243,44.63005,4
 ALATA_L2_num1,Alanine transaminase,b0870,36.49471,4
 ALATA_L2_num2,Alanine transaminase,b2551,45.31659 ,2 
@@ -2065,8 +2065,7 @@ RMK,Rhamnulokinase,b3904,54.06904,1
 FHL_num1,Formate-hydrogen lyase,( b4079 and b2481 and b2488 and b2486 and b2482 and b2487 and b2489 and b2485 and b2483 and b2490 and b2484 ),( 79.22381 and 22.15435 and 20.15937 and 56.76715 and 72.58299 and 63.38349 and 28.1013 and 23.36149 and 34.35926 and 15.57698 and 51.7546 ),( 1 and 1 and 1 and 1 and 1 and 1 and 1 and 1 and 1 and 1 and 1 )
 FHL_num2,Formate-hydrogen lyase,( b4079 and b2719 and b2720 and b2723 and b2722 and b2724 and b2721 ),( 79.22381 and 27.99916 and 20.30935 and 64.07712 and 33.02936 and 21.87324 and 64.98036 ) ,( 1 and 1 and 1 and 1 and 1 and 1 and 1 ) 
 MEPCT,2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase,b2747,25.73726,2
-GLUDy_num1,Glutamate dehydrogenase (NADP),b1761,48.58137,6
-GLUDy_num2,Glutamate dehydrogenase (NADP),( b3213 and b3212 ),( 52.01527 and 163.29699 ) ,( 4 and 4 ) 
+GLUDy,Glutamate dehydrogenase (NADP),b1761,48.58137,6
 ZN2abcpp,"Zinc (Zn+2) ABC transporter, efflux (periplasm)",b3469,76.83988,1
 GLYCLTDy_num1,Glycolate dehydrogenase (NADP),b1033,35.34342,1
 GLYCLTDy_num2,Glycolate dehydrogenase (NADP),b3553,35.3955 ,2 
@@ -2167,9 +2166,7 @@ SADH,Succinylarginine dihydrolase,b1745,49.29856,2
 GLUSy,Glutamate synthase (NADPH),b3213 and b3212,52.01527 and 163.29699 ,4 and 4 
 GUAPRT_num1,Guanine phosphoribosyltransferase,b0125,20.11524,4
 GUAPRT_num2,Guanine phosphoribosyltransferase,b0238,16.97059 ,4 
-PDH_num1,Pyruvate dehydrogenase,b0116,50.68849,12
-PDH_num2,Pyruvate dehydrogenase,b0115,66.09607,24
-PDH_num3,Pyruvate dehydrogenase,b0114,99.66849 ,24 
+PDH,Pyruvate dehydrogenase,b0116 and b0115 and b0114,50.68849 and 66.09607 and 99.66849 ,12 and 24 and 24 
 DMSOR2pp,Dimethyl sulfoxide reductase (Demethylmenaquinol 8) (periplasm),b1872 and b1873,88.964 and 40.28642 ,1 and 1 
 HYD3pp_num1,Hydrogenase (Demethylmenaquinone-8: 2 protons) (periplasm),( b0974 and b0973 and b0972 ),( 27.59731 and 66.25337 and 40.68136 ),( 2 and 4 and 4 )
 HYD3pp_num2,Hydrogenase (Demethylmenaquinone-8: 2 protons) (periplasm),( b2996 and b2994 and b2997 and b2995 ),( 36.003 and 62.49116 and 39.65201 and 43.60204 ) ,( 1 and 1 and 1 and 1 ) 
