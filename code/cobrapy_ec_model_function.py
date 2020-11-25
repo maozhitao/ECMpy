@@ -1122,3 +1122,65 @@ def isoenzyme_split_PDH(model):
                     r_add.gene_reaction_rule = value
                     model.add_reaction(r_add)        
     return model
+
+def get_diff_reaction_use_c13(c13reaction_file,model_fluxes):
+    c13reaction = pd.read_csv(c13reaction_file, index_col=0)
+    c13reaction = list(c13reaction.index)
+    enz_model_pfba_solution_select = model_fluxes[model_fluxes['fluxes']>0]
+    enz_model_pfba_solution_select_id = []
+    for eachreaction in enz_model_pfba_solution_select.index:
+        if re.search('_num',eachreaction):
+            enz_model_pfba_solution_select_id.append(eachreaction.split('_num')[0])
+        else:
+            enz_model_pfba_solution_select_id.append(eachreaction)
+    c13reaction_2_enz_model_diff=list(set(c13reaction).difference(set(enz_model_pfba_solution_select_id)))   
+    return(c13reaction_2_enz_model_diff)
+
+def get_enz_model_use_biomass_diff(reaction_kcat_mw_file, json_model_path, percentage, reaction_biomass_outfile, select_percentage,kcat_data_colect_file, model_file, f, ptot, sigma, lowerbound, upperbound, json_output_file):
+
+    df_reaction_select = select_calibration_reaction_by_biomass(reaction_kcat_mw_file, json_model_path, upperbound, percentage, reaction_biomass_outfile, select_percentage)
+
+    if isinstance(df_reaction_select, pd.DataFrame):
+        need_change_reaction=list(df_reaction_select.index)
+        reaction_kapp_change_file = "./analysis/reaction_change_by_biomass.csv"
+        change_reaction_list_round1=change_reaction_kcat_by_database_kapp_g(need_change_reaction,kcat_data_colect_file,reaction_kcat_mw_file,reaction_kapp_change_file)
+        print(change_reaction_list_round1)
+        reaction_kcat_mw_file="./analysis/reaction_change_by_biomass.csv"
+
+    trans_model2enz_json_model_split_isoenzyme_only(model_file, reaction_kcat_mw_file, f, ptot, sigma, lowerbound, upperbound, json_output_file)
+    enz_model=get_enzyme_constraint_model(json_output_file)
+    return [df_reaction_select,enz_model]
+
+def get_enz_model_use_c13(reaction_kcat_mw_file, c13reaction_file, percentage, df_reaction_select,kcat_data_colect_file,model_file, f, ptot, sigma, lowerbound, upperbound, json_output_file):
+
+    c13reaction_selecet=select_calibration_reaction_by_c13(reaction_kcat_mw_file, c13reaction_file, upperbound, percentage, sigma)
+    print(c13reaction_selecet)
+
+    if isinstance(df_reaction_select, pd.DataFrame):    
+        reaction_kcat_mw_file="./analysis/reaction_change_by_biomass.csv"
+
+    reaction_kapp_change_file = "./analysis/reaction_change_by_c13.csv"
+    #c13reaction_selecet=['CS','ACONTa','ACONTb','ICDHyr','MALS', 'MDH', 'ICL', 'SUCOAS_reverse', 'SUCDi', 'AKGDH']
+    change_reaction_list_round1=change_reaction_kcat_by_database_kapp_g(c13reaction_selecet,kcat_data_colect_file,reaction_kcat_mw_file,reaction_kapp_change_file)
+    print(change_reaction_list_round1)
+
+    reaction_kcat_mw_file = "./analysis/reaction_change_by_c13.csv"
+    trans_model2enz_json_model_split_isoenzyme_only(model_file, reaction_kcat_mw_file, f, ptot, sigma, lowerbound, upperbound, json_output_file)
+    enz_model=get_enzyme_constraint_model(json_output_file)
+    return enz_model
+
+def get_enz_model_use_enz_usage(enz_ratio,reaction_flux_file,reaction_kcat_mw_file,reaction_enz_usage_file,kcat_data_colect_file,model_file, f, ptot, sigma, lowerbound, upperbound, json_output_file):
+
+    reaction_enz_usage_df = get_enzyme_usage(upperbound,reaction_flux_file,reaction_kcat_mw_file,reaction_enz_usage_file)
+
+    select_reaction = list(reaction_enz_usage_df[reaction_enz_usage_df['enz ratio']>enz_ratio].index)#more than 1%
+    print(select_reaction)
+    reaction_kapp_change_file = "./analysis/reaction_change_by_enzuse.csv"
+    change_reaction_list_round1=change_reaction_kcat_by_database_kapp_g(select_reaction,kcat_data_colect_file,reaction_kcat_mw_file,reaction_kapp_change_file)
+    print(change_reaction_list_round1)
+
+    reaction_kcat_mw_file="./analysis/reaction_change_by_enzuse.csv"
+    trans_model2enz_json_model_split_isoenzyme_only(model_file, reaction_kcat_mw_file, f, ptot, sigma, lowerbound, upperbound, json_output_file)
+
+    enz_model=get_enzyme_constraint_model(json_output_file)
+    return enz_model
