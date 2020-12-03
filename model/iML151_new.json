@@ -42352,7 +42352,7 @@
 }
 },
 {
-"id":"SHK3Dr_forward",
+"id":"SHK3Dr",
 "name":"Shikimate dehydrogenase",
 "metabolites":{
 "3dhsk_c":-1.0,
@@ -76553,7 +76553,13 @@
 "annotation":{
 "bigg.reaction":"PDH",
 "biocyc":"META:PYRUVDEH-RXN",
-"ec-code":"1.2.1.51",
+"ec-code":[
+"1.2.1.-",
+"1.2.1.51",
+"1.2.4.1",
+"1.8.1.4",
+"2.3.1.12"
+],
 "kegg.reaction":"R00209",
 "metanetx.reaction":"MNXR102425",
 "rhea":[

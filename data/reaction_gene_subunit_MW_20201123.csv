@@ -11,7 +11,7 @@ PFK_3,Phosphofructokinase (s7p),b3916,34.84204,4
 TRPS2,Tryptophan synthase (indole),b1260 and b1261,28.72416 and 42.98301 ,2 and 2 
 G3PD5,Glycerol-3-phosphate dehydrogenase (ubiquinone-8),( b2242 and b2243 and b2241 ) or b3426,( 45.35724 and 44.10804 and 58.95825 ) or 56.75054 ,( 1 and 1 and 1 ) or 2 
 LEUTAi,Leucine transaminase (irreversible),b3770 or b4054,34.09365 or 43.53781 ,6 or 2 
-SHK3Dr_forward,Shikimate dehydrogenase,b3281,29.41364 ,1
+SHK3Dr,Shikimate dehydrogenase,b3281,29.41364 ,1
 SHK3Dr_reverse,Shikimate dehydrogenase,b1692,31.2278,2
 G5SD,Glutamate-5-semialdehyde dehydrogenase,b0243,44.63005,4
 ALATA_L2,Alanine transaminase,b0870 or b2551,36.49471 or 45.31659 ,4 or 2 
@@ -2230,7 +2230,6 @@ SUCCt1pp,Succinate transport via diffusion in (periplasm),b1206,59.42905,1
 QUINDH,Quinate dehydrogenase,b1692,31.2278,2
 LCARSyi,"Lacaldehyde reductase (S-propane-1,2-diol forming)",b0325,37.978,1
 GTHOr_reverse,Glutathione oxidoreductase,b3500,48.77251,2
-SHK3Dr_reverse,Shikimate dehydrogenase,b3281 or b1692,29.41364 or 31.2278 ,1 or 2 
 MAN6PI_reverse,Mannose-6-phosphate isomerase,b1613,42.84995,1
 TMDPP_reverse,Thymidine phosphorylase,b4382,47.20712,2
 HCO3E_reverse,HCO3 equilibration reaction,b0126 or b0339,25.09677 or 23.76426 ,4 or 2 

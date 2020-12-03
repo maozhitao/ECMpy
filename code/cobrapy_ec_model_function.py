@@ -76,6 +76,81 @@ def get_genes_and_gpr(model,gene_outfile,gpr_outfile):
     all_gpr.to_csv(gpr_outfile)
     return [genes, all_gpr]
 
+def get_reaction_gene_subunit_MW(reaction_gene_subunit_file,gene_molecular_weight_file,save_file):
+    """Retrieving genes,subunits and MW, and split 'or' type of reaction
+
+    Arguments
+    ----------
+    *reaction_gene_subunit_file: gene-molecular_weight file eg. b3500,48771.94
+    *gene_molecular_weight_file: manually get the subunit of each protein from EcoCy  
+
+    :return: all reaction with gene, subunit, and MW.
+    """
+    reaction_gene_subunit_MW_new = pd.DataFrame()
+    reaction_gene_subunit = pd.read_csv(reaction_gene_subunit_file, index_col=0)
+    protein_mw=json_load(gene_molecular_weight_file)
+    for reaction, data in reaction_gene_subunit.iterrows():
+        if re.search(" or ", data['gene_reaction_rule']):
+            gene = enumerate(data['gene_reaction_rule'].split(" or "))
+            subunit_num = data['subunit_num'].split(" or ")
+            for index, value in gene:
+                if index == 0:
+                    reaction_new = reaction + "_num1"
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'name'] = data['name']
+                    reaction_gene_subunit_MW_new.loc[reaction_new, 'gene_reaction_rule'] = value
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index]
+                    if re.search(" and ", value):
+                        reaction_gene_subunit_MW = []
+                        gene2 = enumerate(value.replace('(', '').replace(")", '').replace(" ", '').split('and'))
+                        for index2, value2 in gene2:
+                            reaction_gene_subunit_MW.append(str(protein_mw[value2]/1000))
+                        reaction_gene_subunit_MW=' and '.join(reaction_gene_subunit_MW)
+                        if re.search('\(',value):
+                            reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = '( '+reaction_gene_subunit_MW+ ' )'
+                        else:
+                            reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = reaction_gene_subunit_MW
+                    else:
+                        reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = protein_mw[value]/1000#kDa
+                else:
+                    reaction_new = reaction + "_num" + str(index+1)
+                    reaction_gene_subunit_MW_new.loc[reaction_new, 'name'] = data['name']
+                    reaction_gene_subunit_MW_new.loc[reaction_new, 'gene_reaction_rule'] = value
+                    reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_num'] = subunit_num[index]
+                    if re.search(" and ", value):
+                        reaction_gene_subunit_MW = []
+                        gene3 = enumerate(value.replace('(', '').replace(")", '').replace(" ", '').split('and'))
+                        for index3, value3 in gene3:
+                            reaction_gene_subunit_MW.append(str(protein_mw[value3]/1000))
+                        reaction_gene_subunit_MW=' and '.join(reaction_gene_subunit_MW)
+                        if re.search('\(',value3):
+                            reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = '( '+reaction_gene_subunit_MW+ ' )'
+                        else:
+                            reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = reaction_gene_subunit_MW
+                    else:
+                        reaction_gene_subunit_MW_new.loc[reaction_new,'subunit_mw'] = protein_mw[value]/1000#kDa                                     
+        elif re.search(" and ", data['gene_reaction_rule']):
+            reaction_gene_subunit_MW = []
+            gene4 = enumerate(data['gene_reaction_rule'].replace('(', '').replace(")", '').replace(" ", '').split('and'))
+            reaction_gene_subunit_MW_new.loc[reaction, 'name'] = data['name']
+            reaction_gene_subunit_MW_new.loc[reaction, 'gene_reaction_rule'] = data['gene_reaction_rule']
+            reaction_gene_subunit_MW_new.loc[reaction,'subunit_num'] = data['subunit_num']
+            for index4, value4 in gene4:
+                reaction_gene_subunit_MW.append(str(protein_mw[value4]/1000))
+            reaction_gene_subunit_MW=' and '.join(reaction_gene_subunit_MW)
+            if re.search('\(',value4):
+                reaction_gene_subunit_MW_new.loc[reaction,'subunit_mw'] = '( '+reaction_gene_subunit_MW+ ' )'
+            else:
+                reaction_gene_subunit_MW_new.loc[reaction,'subunit_mw'] = reaction_gene_subunit_MW
+        else:
+            reaction_gene_subunit_MW_new.loc[reaction, 'name'] = data['name']
+            reaction_gene_subunit_MW_new.loc[reaction,
+                                             'gene_reaction_rule'] = data['gene_reaction_rule']
+            reaction_gene_subunit_MW_new.loc[reaction,
+                                             'subunit_mw'] = protein_mw[data['gene_reaction_rule']]/1000#kDa
+            reaction_gene_subunit_MW_new.loc[reaction,
+                                             'subunit_num'] = data['subunit_num']
+    reaction_gene_subunit_MW_new.to_csv(save_file)
+    return reaction_gene_subunit_MW_new
 
 def calculate_reaction_mw(reaction_gene_subunit_MW,reaction_mw_outfile):
     """Calculate the molecular weight of the enzyme that catalyzes each
@@ -110,8 +185,7 @@ def calculate_reaction_mw(reaction_gene_subunit_MW,reaction_mw_outfile):
             mw_s = mw_s + \
                 str(round(np.sum(np.multiply(mw_list, num_list)), 4)) + ' or '
 
-        mw_s = mw_s.rstrip(' or ')
-        reaction_mw.loc[reaction_id, 'MW'] = mw_s
+        reaction_mw.loc[reaction_id, 'MW'] = mw_s.rstrip(' or ')
     reaction_mw.to_csv(reaction_mw_outfile)
     return reaction_mw
 
@@ -154,7 +228,7 @@ def calculate_reaction_mw_not_consider_subunit(reaction_gene_subunit_MW, save_fi
     return reaction_mw
 
 
-def calculate_reaction_kcat_mw(reaction_kcat_file, reaction_mw, save_file):
+def calculate_reaction_kcat_mwold(reaction_kcat_file, reaction_mw, save_file):
     """Calculating kcat/MW
 
     Arguments
@@ -185,6 +259,41 @@ def calculate_reaction_kcat_mw(reaction_kcat_file, reaction_mw, save_file):
     reaction_kcat_mw.to_csv(save_file)
     return reaction_kcat_mw
 
+def calculate_reaction_kcat_mw(reaction_kcat_file, reaction_MW_file, save_file):
+    """Calculating kcat/MW
+
+    Arguments
+    ----------
+    *reaction_kcat_file: A CSV file contains the kcat values for each
+    reaction in the model.
+    *reaction_mw: The molecular weight of the enzyme that catalyzes
+     each reaction in the GEM model.
+
+    :return: The kcat/MW value of the enzyme catalyzing each reaction
+     in the GEM model.
+    """
+    reaction_kcat = json_load(reaction_kcat_file)
+    reaction_kcat_mw = pd.DataFrame()
+    reaction_MW = pd.read_csv(reaction_MW_file, index_col=0)
+    for reaction_idmw in reaction_MW.index:
+        if re.search('_num', reaction_idmw):
+            reaction_id = reaction_idmw.split('_num')[0]
+        else:
+            reaction_id = reaction_idmw
+        for key,value in reaction_kcat.items():
+            reaction_kcat_id = key+'_reverse'
+            if reaction_id == reaction_kcat_id and str(value['reverse']) != 'nan':
+                reaction_kcat_mw.loc[reaction_idmw, 'MW'] = reaction_MW.loc[reaction_idmw, 'MW']
+                reaction_kcat_mw.loc[reaction_idmw,'kcat'] = value['reverse']*3600
+                kcat_MW = value['reverse']*3600/reaction_MW.loc[reaction_idmw, 'MW']
+                reaction_kcat_mw.loc[reaction_idmw, 'kcat_MW'] = kcat_MW
+            elif reaction_id == key and str(value['forward']) != 'nan':
+                reaction_kcat_mw.loc[reaction_idmw, 'MW'] = reaction_MW.loc[reaction_idmw, 'MW']
+                reaction_kcat_mw.loc[reaction_idmw,'kcat'] = value['forward']*3600
+                kcat_MW = value['forward']*3600/reaction_MW.loc[reaction_idmw, 'MW']
+                reaction_kcat_mw.loc[reaction_idmw, 'kcat_MW'] = kcat_MW                
+    reaction_kcat_mw.to_csv(save_file)
+    return reaction_kcat_mw
 
 def calculate_f(genes, gene_abundance_file, subunit_molecular_weight_file):
     """Calculating f (the mass fraction of enzymes that are accounted
@@ -215,6 +324,34 @@ def calculate_f(genes, gene_abundance_file, subunit_molecular_weight_file):
     f = enzy_abundance/pro_abundance
     return f
 
+def calculate_f_p(genes, gene_abundance_file, gene_molecular_weight_file):
+    """Calculating f (the mass fraction of enzymes that are accounted
+    in the model out of all proteins) based on the protein abundance
+    which can be obtained from PAXdb database.
+
+    Arguments
+    ----------
+    *genes: All the genes in the model.
+    *gene_abundance_file: The protein abundance of each gene
+     in the E. coli genome.
+    *subunit_molecular_weight_file: The molecular weight of the
+     protein subunit expressed by each gene.
+
+    :return: The enzyme mass fraction f.
+    """
+    gene_abundance = pd.read_csv(gene_abundance_file, index_col=0)
+    gene_molecular_weight = json_load(gene_molecular_weight_file)
+    enzy_abundance = 0
+    pro_abundance = 0
+    for gene_i in gene_abundance.index:
+        if gene_i in gene_molecular_weight.keys():
+            abundance = gene_abundance.loc[gene_i, 'abundance'] * \
+                gene_molecular_weight[gene_i]/1000
+            pro_abundance += abundance
+        if gene_i in genes.index:
+            enzy_abundance += abundance
+    f = enzy_abundance/pro_abundance
+    return f
 
 def set_enzyme_constraint(model, reaction_kcat_mw, lowerbound, upperbound):
     """Introducing enzyme concentration constraint

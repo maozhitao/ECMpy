@@ -1,0 +1,9850 @@
+{
+    "ALATA_D2": {
+        "forward": 1.30037482842091,
+        "reverse": 1.30037482842091
+    },
+    "CPPPGO": {
+        "forward": 0.01658,
+        "reverse": 0.01658
+    },
+    "GTHOr": {
+        "forward": 246.666667,
+        "reverse": 80.85
+    },
+    "DHORD5": {
+        "forward": 44.407050177526,
+        "reverse": 44.407050177526
+    },
+    "GLYCTO2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYCTO3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYCTO4": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PFK_3": {
+        "forward": 61.0,
+        "reverse": 61.0
+    },
+    "TRPS2": {
+        "forward": 3.41,
+        "reverse": 2.64
+    },
+    "G3PD5": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_acgam_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cellb_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_chol_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LEUTAi": {
+        "forward": 13.75,
+        "reverse": 80.2
+    },
+    "SHK3Dr": {
+        "forward": 50.0,
+        "reverse": 3.9
+    },
+    "ALATA_L2": {
+        "forward": 1.30037482842091,
+        "reverse": 1.30037482842091
+    },
+    "MAN6PI": {
+        "forward": 1145.5,
+        "reverse": 1145.5
+    },
+    "RBFK": {
+        "forward": 0.47150000000000003,
+        "reverse": 0.47150000000000003
+    },
+    "ACP1_FMN": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "RBFSb": {
+        "forward": 0.14700000000000002,
+        "reverse": 0.14700000000000002
+    },
+    "EX_pi_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_h_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DMATT": {
+        "forward": 0.4,
+        "reverse": 0.4
+    },
+    "GRTT": {
+        "forward": 2.9749999999999996,
+        "reverse": 2.9749999999999996
+    },
+    "UPP3S": {
+        "forward": 30.0,
+        "reverse": 30.0
+    },
+    "UPPDC1": {
+        "forward": 0.317,
+        "reverse": 0.317
+    },
+    "TMDPP": {
+        "forward": 10.85,
+        "reverse": 10.85
+    },
+    "EX_ade_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_4abut_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ac_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_akg_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ala__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_arg__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_asp__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cytd_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dcyt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fum_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_glu__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gua_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HCO3E": {
+        "forward": 410000.0,
+        "reverse": 410000.0
+    },
+    "IMPC": {
+        "forward": 6.838281569418885,
+        "reverse": 6.838281569418885
+    },
+    "IMPD": {
+        "forward": 5.1,
+        "reverse": 3.0
+    },
+    "ECOAH4": {
+        "forward": 191.5,
+        "reverse": 191.5
+    },
+    "GLUTRS": {
+        "forward": 0.8,
+        "reverse": 0.8
+    },
+    "TMPPP": {
+        "forward": 999.0,
+        "reverse": 999.0
+    },
+    "URIK1": {
+        "forward": 222.0,
+        "reverse": 222.0
+    },
+    "URIK2": {
+        "forward": 1.6020500000000002,
+        "reverse": 1.6020500000000002
+    },
+    "CYTDK1": {
+        "forward": 222.0,
+        "reverse": 222.0
+    },
+    "CYTDK2": {
+        "forward": 222.0,
+        "reverse": 222.0
+    },
+    "XPPT": {
+        "forward": 1.3,
+        "reverse": 4.12
+    },
+    "HXPRT": {
+        "forward": 2.5,
+        "reverse": 0.469
+    },
+    "NDPK5": {
+        "forward": 55.0,
+        "reverse": 55.0
+    },
+    "DHORTS": {
+        "forward": 14.70347685012015,
+        "reverse": 14.70347685012015
+    },
+    "OMPDC": {
+        "forward": 17.3,
+        "reverse": 17.3
+    },
+    "CS": {
+        "forward": 44.0,
+        "reverse": 39.34493636002465
+    },
+    "ICDHyr": {
+        "forward": 80.5,
+        "reverse": 14.9
+    },
+    "ACALD": {
+        "forward": 13.55,
+        "reverse": 8.45
+    },
+    "ACS": {
+        "forward": 66.0,
+        "reverse": 59.050000000000004
+    },
+    "PPA": {
+        "forward": 86.0,
+        "reverse": 81.0
+    },
+    "PPCK": {
+        "forward": 17.0,
+        "reverse": 44.5
+    },
+    "ME1": {
+        "forward": 130.5,
+        "reverse": 115.5
+    },
+    "ALAR": {
+        "forward": 46.795,
+        "reverse": 5.525
+    },
+    "ALATA_L": {
+        "forward": 6.09,
+        "reverse": 6.86
+    },
+    "XYLK": {
+        "forward": 35.0,
+        "reverse": 94.0
+    },
+    "RBK": {
+        "forward": 10.4,
+        "reverse": 10.4
+    },
+    "GLYK": {
+        "forward": 3285.0,
+        "reverse": 3285.0
+    },
+    "PPM": {
+        "forward": 64.655,
+        "reverse": 64.655
+    },
+    "ASPTA": {
+        "forward": 120.0,
+        "reverse": 279.0
+    },
+    "FBP": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "GLGC": {
+        "forward": 43.32,
+        "reverse": 43.32
+    },
+    "PYK": {
+        "forward": 0.0006745,
+        "reverse": 0.16
+    },
+    "A5PISO": {
+        "forward": 102.0,
+        "reverse": 102.0
+    },
+    "EX_met__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_metsox_S__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "IPPMIb": {
+        "forward": 1.9,
+        "reverse": 1.9
+    },
+    "ACHBS": {
+        "forward": 21.55,
+        "reverse": 19.8
+    },
+    "ACLS": {
+        "forward": 23.3,
+        "reverse": 19.8
+    },
+    "PSCVT": {
+        "forward": 13.4,
+        "reverse": 15.0858394771992
+    },
+    "ANS": {
+        "forward": 0.27,
+        "reverse": 0.265
+    },
+    "ANPRT": {
+        "forward": 0.4,
+        "reverse": 0.4
+    },
+    "CHORM": {
+        "forward": 144950.0,
+        "reverse": 140750.0
+    },
+    "CHORS": {
+        "forward": 0.87,
+        "reverse": 0.87
+    },
+    "IGPS": {
+        "forward": 1.953963312766735,
+        "reverse": 3.24
+    },
+    "EX_crn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fe3_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_glcn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gln__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_glyc_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_man_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_mn2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_rib__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_sbt__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ECOAH6": {
+        "forward": 191.5,
+        "reverse": 191.5
+    },
+    "ENO": {
+        "forward": 37.0,
+        "reverse": 37.0
+    },
+    "FBA": {
+        "forward": 9.35,
+        "reverse": 2.83333333
+    },
+    "MGSA": {
+        "forward": 220.0,
+        "reverse": 220.0
+    },
+    "PPS": {
+        "forward": 10.3,
+        "reverse": 10.3
+    },
+    "PGI": {
+        "forward": 1091.0,
+        "reverse": 601.0
+    },
+    "PGK": {
+        "forward": 225.2,
+        "reverse": 437.0
+    },
+    "EDA": {
+        "forward": 66.0,
+        "reverse": 2.0
+    },
+    "PGL": {
+        "forward": 51.34749382522005,
+        "reverse": 51.34749382522005
+    },
+    "RPE": {
+        "forward": 500.0,
+        "reverse": 670.0
+    },
+    "TALA": {
+        "forward": 13.0,
+        "reverse": 13.0
+    },
+    "TKT1": {
+        "forward": 5.65,
+        "reverse": 5.65
+    },
+    "G6PDA": {
+        "forward": 153.0,
+        "reverse": 158.0
+    },
+    "ALCD2x": {
+        "forward": 109.5,
+        "reverse": 220.0
+    },
+    "ALDD2y": {
+        "forward": 2.8,
+        "reverse": 1.35
+    },
+    "RMI": {
+        "forward": 149.5,
+        "reverse": 33.0
+    },
+    "EX_ura_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_val__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_xan_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FMNAT": {
+        "forward": 0.0129,
+        "reverse": 0.0129
+    },
+    "NADDP": {
+        "forward": 0.965,
+        "reverse": 0.965
+    },
+    "NMNAT": {
+        "forward": 1.079,
+        "reverse": 3.6
+    },
+    "HMPK1": {
+        "forward": 0.165,
+        "reverse": 0.165
+    },
+    "NDPK6": {
+        "forward": 55.0,
+        "reverse": 55.0
+    },
+    "NDPK8": {
+        "forward": 55.0,
+        "reverse": 55.0
+    },
+    "PYNP2r": {
+        "forward": 16.25,
+        "reverse": 16.25
+    },
+    "DURIPP": {
+        "forward": 17.5,
+        "reverse": 6.85
+    },
+    "CYSDS": {
+        "forward": 0.67,
+        "reverse": 10.95
+    },
+    "TRPAS2": {
+        "forward": 6.29,
+        "reverse": 6.0
+    },
+    "NDP3": {
+        "forward": 103.7,
+        "reverse": 103.7
+    },
+    "CDPPH": {
+        "forward": 103.55000000000001,
+        "reverse": 103.55000000000001
+    },
+    "NDP7": {
+        "forward": 103.55000000000001,
+        "reverse": 103.55000000000001
+    },
+    "EX_co2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PMDPHT": {
+        "forward": 0.8833333333333333,
+        "reverse": 0.8833333333333333
+    },
+    "ILETA": {
+        "forward": 60.45,
+        "reverse": 13.75
+    },
+    "VALTA": {
+        "forward": 44.8,
+        "reverse": 13.75
+    },
+    "ORPT": {
+        "forward": 0.79,
+        "reverse": 1.96
+    },
+    "RBFSa": {
+        "forward": 0.05585,
+        "reverse": 0.05585
+    },
+    "DHAD2": {
+        "forward": 7.0,
+        "reverse": 7.0
+    },
+    "G1PP": {
+        "forward": 88.5,
+        "reverse": 88.5
+    },
+    "PFL": {
+        "forward": 7.665,
+        "reverse": 7.665
+    },
+    "FRD2": {
+        "forward": 1047.2397870873,
+        "reverse": 1047.2397870873
+    },
+    "POX": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PTAr": {
+        "forward": 415.0,
+        "reverse": 574.5
+    },
+    "ACKr": {
+        "forward": 885.0,
+        "reverse": 1750.0
+    },
+    "EX_hxan_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ile__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_lac__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_leu__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_no3_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_orn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_pro__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_pyr_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_succ_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_thymd_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_tyr__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UDCPDPS": {
+        "forward": 1.92,
+        "reverse": 1.92
+    },
+    "TDSK": {
+        "forward": 2.4,
+        "reverse": 2.4
+    },
+    "EX_btn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ptrc_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_spmd_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_thym_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_xtsn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTPP1": {
+        "forward": 0.815,
+        "reverse": 0.815
+    },
+    "NTPP2": {
+        "forward": 0.8916666666666666,
+        "reverse": 0.8916666666666666
+    },
+    "NTPTP1": {
+        "forward": 4000.0,
+        "reverse": 4000.0
+    },
+    "NTPTP2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "IPMD": {
+        "forward": 15.0,
+        "reverse": 15.0
+    },
+    "AIRC3": {
+        "forward": 13.85,
+        "reverse": 13.85
+    },
+    "ADSL2r": {
+        "forward": 2.32,
+        "reverse": 2.32
+    },
+    "EX_fe2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PUNP5": {
+        "forward": 104.9,
+        "reverse": 6.85
+    },
+    "PUNP6": {
+        "forward": 15.6,
+        "reverse": 3.65
+    },
+    "PUNP7": {
+        "forward": 15.6,
+        "reverse": 6.85
+    },
+    "RNDR1": {
+        "forward": 0.275,
+        "reverse": 0.275
+    },
+    "RNDR3": {
+        "forward": 0.275,
+        "reverse": 0.275
+    },
+    "RNDR4": {
+        "forward": 0.29,
+        "reverse": 0.29
+    },
+    "TMDS": {
+        "forward": 3.6,
+        "reverse": 2.7202796385194654
+    },
+    "TMDK1": {
+        "forward": 0.44,
+        "reverse": 0.44
+    },
+    "PPCDC": {
+        "forward": 1.8666666665,
+        "reverse": 1.8666666665
+    },
+    "EX_glc__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHQTi": {
+        "forward": 31.7,
+        "reverse": 31.7
+    },
+    "PUNP1": {
+        "forward": 10.100000000000001,
+        "reverse": 6.85
+    },
+    "PUNP2": {
+        "forward": 15.6,
+        "reverse": 6.85
+    },
+    "PUNP3": {
+        "forward": 13.3,
+        "reverse": 6.85
+    },
+    "LYSAM": {
+        "forward": 41.5415,
+        "reverse": 41.5415
+    },
+    "DHAD1": {
+        "forward": 7.0,
+        "reverse": 7.0
+    },
+    "IPPMIa": {
+        "forward": 1.9,
+        "reverse": 1.9
+    },
+    "EX_alltn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G3PD7": {
+        "forward": 33.3,
+        "reverse": 33.3
+    },
+    "NADH9": {
+        "forward": 3234.95423978961,
+        "reverse": 3234.95423978961
+    },
+    "NADH10": {
+        "forward": 3234.95423978961,
+        "reverse": 3234.95423978961
+    },
+    "MDH": {
+        "forward": 139.0,
+        "reverse": 224.0
+    },
+    "FUM": {
+        "forward": 510.0,
+        "reverse": 200.0
+    },
+    "PYDXNK": {
+        "forward": 1.2315,
+        "reverse": 0.38
+    },
+    "PYAM5PO": {
+        "forward": 0.103,
+        "reverse": 0.103
+    },
+    "OHPBAT": {
+        "forward": 1.33,
+        "reverse": 1.33
+    },
+    "EX_dgsn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_arab__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fru_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gal_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_xyl__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_duri_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_for_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gly_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_h2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_lys__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ser__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_thm_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_trp__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLUTRR": {
+        "forward": 0.15,
+        "reverse": 0.15
+    },
+    "GLCS1": {
+        "forward": 284.0,
+        "reverse": 284.0
+    },
+    "GLCP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_din_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fmn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gthox_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ADMDC": {
+        "forward": 0.027,
+        "reverse": 0.544
+    },
+    "AGMT": {
+        "forward": 1.516,
+        "reverse": 1.516
+    },
+    "ARGDC": {
+        "forward": 1.4,
+        "reverse": 1.07
+    },
+    "SPMS": {
+        "forward": 1.9,
+        "reverse": 1.9
+    },
+    "G1SAT": {
+        "forward": 0.47,
+        "reverse": 0.47
+    },
+    "KDOCT2": {
+        "forward": 12.5,
+        "reverse": 12.5
+    },
+    "OAADC": {
+        "forward": 75.0,
+        "reverse": 36.5
+    },
+    "MNNH": {
+        "forward": 1.6,
+        "reverse": 1.6
+    },
+    "GUI1": {
+        "forward": 5.2,
+        "reverse": 5.2
+    },
+    "PGAMT": {
+        "forward": 0.31,
+        "reverse": 0.31
+    },
+    "UAGDP": {
+        "forward": 8.0,
+        "reverse": 92.15
+    },
+    "UAGCVT": {
+        "forward": 3.25,
+        "reverse": 3.25
+    },
+    "GLUR": {
+        "forward": 2.0,
+        "reverse": 12.98
+    },
+    "UAG2E": {
+        "forward": 1.8659999999999999,
+        "reverse": 1.8659999999999999
+    },
+    "EX_acald_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_melib_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ICHORS_copy1": {
+        "forward": 2.88,
+        "reverse": 2.34
+    },
+    "EX_sucr_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_tre_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_zn2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HACD5": {
+        "forward": 113.0,
+        "reverse": 113.0
+    },
+    "HPPK2": {
+        "forward": 499.585,
+        "reverse": 499.585
+    },
+    "PTPATi": {
+        "forward": 4.853,
+        "reverse": 4.853
+    },
+    "HEX7": {
+        "forward": 14.0,
+        "reverse": 46.6
+    },
+    "DXPRIi": {
+        "forward": 35.5,
+        "reverse": 37.0
+    },
+    "GHMT2r": {
+        "forward": 11.05,
+        "reverse": 9.25
+    },
+    "DHORD2": {
+        "forward": 44.407050177526,
+        "reverse": 44.407050177526
+    },
+    "ADK4": {
+        "forward": 0.83556034259182,
+        "reverse": 0.83556034259182
+    },
+    "ABTA": {
+        "forward": 8.75,
+        "reverse": 0.016
+    },
+    "SSALx": {
+        "forward": 46.0,
+        "reverse": 46.0
+    },
+    "ASPT": {
+        "forward": 88.0,
+        "reverse": 88.0
+    },
+    "SERD_L": {
+        "forward": 286.0,
+        "reverse": 43.94
+    },
+    "THRD": {
+        "forward": 48.65,
+        "reverse": 45.55
+    },
+    "HEX4": {
+        "forward": 9.5,
+        "reverse": 53.2
+    },
+    "KARA1": {
+        "forward": 0.897,
+        "reverse": 0.98
+    },
+    "KARA2": {
+        "forward": 0.897,
+        "reverse": 0.897
+    },
+    "ACCOAC": {
+        "forward": 8.25,
+        "reverse": 10.85
+    },
+    "NADK": {
+        "forward": 6.73,
+        "reverse": 5.46
+    },
+    "ICHORS_copy2": {
+        "forward": 2.88,
+        "reverse": 2.34
+    },
+    "SUCBZS": {
+        "forward": 120.0,
+        "reverse": 120.0
+    },
+    "DHBD": {
+        "forward": 5.0,
+        "reverse": 5.0
+    },
+    "ICHORT": {
+        "forward": 10.0,
+        "reverse": 10.0
+    },
+    "RBK_L1": {
+        "forward": 67.0,
+        "reverse": 67.0
+    },
+    "RBP4E": {
+        "forward": 20.4,
+        "reverse": 20.4
+    },
+    "NTD2": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "NTD4": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "NTD5": {
+        "forward": 3.55,
+        "reverse": 3.55
+    },
+    "NTD6": {
+        "forward": 3.55,
+        "reverse": 3.55
+    },
+    "LGTHL": {
+        "forward": 983.333333,
+        "reverse": 69.0
+    },
+    "PYDXPP": {
+        "forward": 1.52,
+        "reverse": 1.52
+    },
+    "PDXPP": {
+        "forward": 1.52,
+        "reverse": 1.52
+    },
+    "HACD6": {
+        "forward": 113.0,
+        "reverse": 113.0
+    },
+    "ECOAH1": {
+        "forward": 166.0,
+        "reverse": 166.0
+    },
+    "ECOAH2": {
+        "forward": 191.5,
+        "reverse": 191.5
+    },
+    "ECOAH3": {
+        "forward": 191.5,
+        "reverse": 191.5
+    },
+    "UGLT": {
+        "forward": 98.0,
+        "reverse": 98.0
+    },
+    "DXPS": {
+        "forward": 2.6,
+        "reverse": 0.0225
+    },
+    "MECDPS": {
+        "forward": 2.5,
+        "reverse": 2.5
+    },
+    "DDGLK": {
+        "forward": 6.83,
+        "reverse": 6.83
+    },
+    "XYLI2": {
+        "forward": 3.2649999999999997,
+        "reverse": 0.6000000000000001
+    },
+    "PMANM": {
+        "forward": 7.83,
+        "reverse": 7.83
+    },
+    "ICL": {
+        "forward": 12.2,
+        "reverse": 9.14
+    },
+    "GLYCL": {
+        "forward": 50.00748496288665,
+        "reverse": 50.00748496288665
+    },
+    "HCYSMT": {
+        "forward": 0.38,
+        "reverse": 0.38
+    },
+    "UDPG4E": {
+        "forward": 500.0,
+        "reverse": 66.0
+    },
+    "LACZ": {
+        "forward": 301.5,
+        "reverse": 301.5
+    },
+    "TRE6PH": {
+        "forward": 1.0,
+        "reverse": 1.0
+    },
+    "XYLI1": {
+        "forward": 3.91,
+        "reverse": 3.3499999999999996
+    },
+    "PPC": {
+        "forward": 51.0,
+        "reverse": 51.0
+    },
+    "ALDD4": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G3PT": {
+        "forward": 1.0,
+        "reverse": 1.0
+    },
+    "GOFUCR": {
+        "forward": 0.75,
+        "reverse": 0.75
+    },
+    "PYDXK": {
+        "forward": 1.23,
+        "reverse": 0.38
+    },
+    "GTPCII2": {
+        "forward": 42.0,
+        "reverse": 31.2
+    },
+    "URIC": {
+        "forward": 13.6,
+        "reverse": 13.6
+    },
+    "SADT2": {
+        "forward": 1.645,
+        "reverse": 10.8
+    },
+    "ALCD19": {
+        "forward": 0.5685,
+        "reverse": 0.5685
+    },
+    "RMPA": {
+        "forward": 9.1,
+        "reverse": 9.1
+    },
+    "PFK_2": {
+        "forward": 61.0,
+        "reverse": 61.0
+    },
+    "TGBPA": {
+        "forward": 4.66666667,
+        "reverse": 4.66666667
+    },
+    "PGLYCP": {
+        "forward": 8.26,
+        "reverse": 8.26
+    },
+    "GLXCL": {
+        "forward": 18.9,
+        "reverse": 18.9
+    },
+    "GLCRAL": {
+        "forward": 13.62,
+        "reverse": 13.62
+    },
+    "KAS14": {
+        "forward": 0.036500000000000005,
+        "reverse": 0.036500000000000005
+    },
+    "EDTXS1": {
+        "forward": 131.0,
+        "reverse": 131.0
+    },
+    "EDTXS3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EDTXS4": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_tmao_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NNDPR": {
+        "forward": 6.0,
+        "reverse": 6.0
+    },
+    "HACD4": {
+        "forward": 113.0,
+        "reverse": 113.0
+    },
+    "HACD7": {
+        "forward": 113.0,
+        "reverse": 113.0
+    },
+    "AACPS1": {
+        "forward": 0.016,
+        "reverse": 0.016
+    },
+    "SDPDS": {
+        "forward": 200.0,
+        "reverse": 140.0
+    },
+    "DMSOR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DKGLCNR2y": {
+        "forward": 44.45,
+        "reverse": 44.45
+    },
+    "2DGULRy": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTD9": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "NTD10": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "ADPT": {
+        "forward": 2.8,
+        "reverse": 0.935
+    },
+    "ADK1": {
+        "forward": 0.1,
+        "reverse": 0.1
+    },
+    "OCTDPS": {
+        "forward": 0.005,
+        "reverse": 0.005
+    },
+    "EX_26dap__M_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_acnam_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_amp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dha_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fuc__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_glyald_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AACPS2": {
+        "forward": 0.016,
+        "reverse": 0.016
+    },
+    "AACPS3": {
+        "forward": 0.016,
+        "reverse": 0.016
+    },
+    "AACPS4": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_rmn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ttdca_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AMANK": {
+        "forward": 25.0,
+        "reverse": 25.0
+    },
+    "EX_glyclt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_g6p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_2ddglcn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_galct__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_idon__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_indole_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_3hcinnm_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_acmana_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_galur_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_but_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cbl1_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACNML": {
+        "forward": 5.46,
+        "reverse": 5.5
+    },
+    "CAT": {
+        "forward": 71.0,
+        "reverse": 65.0
+    },
+    "SERASr": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DMSOR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DDGALK": {
+        "forward": 5.2,
+        "reverse": 5.2
+    },
+    "AB6PGH": {
+        "forward": 1.95,
+        "reverse": 1.95
+    },
+    "AMALT1": {
+        "forward": 22.0,
+        "reverse": 22.0
+    },
+    "MLTP2": {
+        "forward": 33.8,
+        "reverse": 33.8
+    },
+    "PACCOAL": {
+        "forward": 40.0,
+        "reverse": 3.42
+    },
+    "GP4GH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACGAMT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gbbtn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_tma_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GMHEPK": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_malttr_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TRE6PS": {
+        "forward": 6.7,
+        "reverse": 6.7
+    },
+    "UDCPDP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TREH": {
+        "forward": 183.0,
+        "reverse": 183.0
+    },
+    "CYTK1": {
+        "forward": 114.0,
+        "reverse": 56.0
+    },
+    "CYTK2": {
+        "forward": 30.0,
+        "reverse": 56.0
+    },
+    "GK1": {
+        "forward": 80.0,
+        "reverse": 70.0
+    },
+    "HACD1": {
+        "forward": 176.7,
+        "reverse": 113.0
+    },
+    "HACD2": {
+        "forward": 113.0,
+        "reverse": 113.0
+    },
+    "EX_hdcea_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACACCT": {
+        "forward": 290.0,
+        "reverse": 290.0
+    },
+    "BUTCT": {
+        "forward": 290.0,
+        "reverse": 290.0
+    },
+    "2DGULRx": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G1PTT": {
+        "forward": 0.555,
+        "reverse": 0.555
+    },
+    "TDPGDH": {
+        "forward": 1.9,
+        "reverse": 1.9
+    },
+    "UDPGALM": {
+        "forward": 5.7,
+        "reverse": 5.7
+    },
+    "TDPDRE": {
+        "forward": 14.8,
+        "reverse": 14.8
+    },
+    "TDPDRR": {
+        "forward": 29.0,
+        "reverse": 29.0
+    },
+    "G3PD6": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALLTN": {
+        "forward": 420.0,
+        "reverse": 420.0
+    },
+    "UAPGR": {
+        "forward": 36.0,
+        "reverse": 36.0
+    },
+    "NDPK7": {
+        "forward": 55.0,
+        "reverse": 55.0
+    },
+    "AOBUTDs": {
+        "forward": 6.55,
+        "reverse": 6.55
+    },
+    "GLYAT": {
+        "forward": 0.16,
+        "reverse": 0.16
+    },
+    "ADNUC": {
+        "forward": 0.78,
+        "reverse": 11.6
+    },
+    "GMHEPPA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "S7PI": {
+        "forward": 0.5,
+        "reverse": 0.5
+    },
+    "TRPS3": {
+        "forward": 2.8,
+        "reverse": 3.84
+    },
+    "FADRx": {
+        "forward": 63.3,
+        "reverse": 64.0
+    },
+    "GTPDPK": {
+        "forward": 1.28,
+        "reverse": 1.31
+    },
+    "NADN": {
+        "forward": 53.6,
+        "reverse": 53.6
+    },
+    "NDPK2": {
+        "forward": 55.0,
+        "reverse": 55.0
+    },
+    "NDPK3": {
+        "forward": 55.0,
+        "reverse": 55.0
+    },
+    "NDPK4": {
+        "forward": 55.0,
+        "reverse": 55.0
+    },
+    "FCLT": {
+        "forward": 0.06,
+        "reverse": 0.06
+    },
+    "PNTK": {
+        "forward": 1.56666667,
+        "reverse": 1.02
+    },
+    "DPCOAK": {
+        "forward": 8.004999999999999,
+        "reverse": 8.004999999999999
+    },
+    "KDOPS": {
+        "forward": 6.1,
+        "reverse": 6.1
+    },
+    "KDOPP": {
+        "forward": 0.4205,
+        "reverse": 0.4205
+    },
+    "GSPMDA": {
+        "forward": 3.5999999999999996,
+        "reverse": 3.5999999999999996
+    },
+    "GSPMDS": {
+        "forward": 2.0,
+        "reverse": 2.8
+    },
+    "GUAD": {
+        "forward": 16.3,
+        "reverse": 16.3
+    },
+    "TMAOR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TMAOR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DGK1": {
+        "forward": 70.0,
+        "reverse": 70.0
+    },
+    "DTMPK": {
+        "forward": 4.03,
+        "reverse": 0.73
+    },
+    "NDPK1": {
+        "forward": 55.0,
+        "reverse": 55.0
+    },
+    "TRDR": {
+        "forward": 6.0,
+        "reverse": 19.3333333
+    },
+    "PGMT": {
+        "forward": 50.0,
+        "reverse": 50.0
+    },
+    "RHCCE": {
+        "forward": 0.15500000000000003,
+        "reverse": 0.28
+    },
+    "KG6PDC": {
+        "forward": 51.0,
+        "reverse": 51.0
+    },
+    "BETALDHx": {
+        "forward": 6.18,
+        "reverse": 6.18
+    },
+    "BETALDHy": {
+        "forward": 6.18,
+        "reverse": 6.18
+    },
+    "MLTG3": {
+        "forward": 19.92,
+        "reverse": 19.92
+    },
+    "DKGLCNR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADTRHD": {
+        "forward": 167.9,
+        "reverse": 167.9
+    },
+    "FMNRx2": {
+        "forward": 28.0,
+        "reverse": 28.0
+    },
+    "ACPS1": {
+        "forward": 0.2,
+        "reverse": 0.2
+    },
+    "EX_nmn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_urea_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GMPS2": {
+        "forward": 2.3449999999999998,
+        "reverse": 2.3
+    },
+    "AMPN": {
+        "forward": 60.0,
+        "reverse": 60.0
+    },
+    "EX_f6p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ADCS": {
+        "forward": 0.53,
+        "reverse": 0.056
+    },
+    "DHAPT": {
+        "forward": 2.520833333333333,
+        "reverse": 2.520833333333333
+    },
+    "EX_lac__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UMPK": {
+        "forward": 175.0,
+        "reverse": 175.0
+    },
+    "DDPGALA": {
+        "forward": 6.8,
+        "reverse": 6.8
+    },
+    "DURIK1": {
+        "forward": 2.3,
+        "reverse": 0.44
+    },
+    "UPPRT": {
+        "forward": 0.505,
+        "reverse": 0.505
+    },
+    "CTPS2": {
+        "forward": 2.49,
+        "reverse": 6.663366581030775
+    },
+    "NTD1": {
+        "forward": 3.55,
+        "reverse": 3.55
+    },
+    "NTD7": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "PAPPT3": {
+        "forward": 5.33,
+        "reverse": 5.33
+    },
+    "UAGPT3": {
+        "forward": 0.72,
+        "reverse": 0.72
+    },
+    "EX_ttdcea_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_h2s_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gthrd_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYCLTDx": {
+        "forward": 67.0,
+        "reverse": 26000.0
+    },
+    "HPYRRy": {
+        "forward": 10.0,
+        "reverse": 47500.0
+    },
+    "ACODA": {
+        "forward": 25.7,
+        "reverse": 25.7
+    },
+    "ADA": {
+        "forward": 5.558333333333334,
+        "reverse": 5.3
+    },
+    "DADA": {
+        "forward": 5.3,
+        "reverse": 5.3
+    },
+    "ADD": {
+        "forward": 61.5,
+        "reverse": 6.0
+    },
+    "ADSS": {
+        "forward": 1.4,
+        "reverse": 0.98
+    },
+    "AGDC": {
+        "forward": 78.0,
+        "reverse": 78.0
+    },
+    "ASNN": {
+        "forward": 30.4,
+        "reverse": 24.0
+    },
+    "ASNS2": {
+        "forward": 1.33,
+        "reverse": 1.05
+    },
+    "ASPCT": {
+        "forward": 47.2,
+        "reverse": 57.4
+    },
+    "DMPPS": {
+        "forward": 3.11,
+        "reverse": 3.11
+    },
+    "MCOATA": {
+        "forward": 7.00231351647449,
+        "reverse": 7.00231351647449
+    },
+    "IPDPS": {
+        "forward": 3.11,
+        "reverse": 3.11
+    },
+    "DAPE": {
+        "forward": 67.0,
+        "reverse": 67.0
+    },
+    "HSK": {
+        "forward": 13.8,
+        "reverse": 13.8
+    },
+    "SDPTA": {
+        "forward": 13.55603882176404,
+        "reverse": 13.55603882176404
+    },
+    "THRS": {
+        "forward": 1.572355451187275,
+        "reverse": 1.572355451187275
+    },
+    "HSST": {
+        "forward": 18.0,
+        "reverse": 18.0
+    },
+    "PPNDH": {
+        "forward": 0.11,
+        "reverse": 0.3539
+    },
+    "DDPA": {
+        "forward": 26.75,
+        "reverse": 24.0
+    },
+    "NMNDA": {
+        "forward": 3.3,
+        "reverse": 3.3
+    },
+    "NNAM": {
+        "forward": 1.5150000000000001,
+        "reverse": 2.1
+    },
+    "P5CD": {
+        "forward": 1.6,
+        "reverse": 1.6
+    },
+    "SPMDAT1": {
+        "forward": 0.6114999999999999,
+        "reverse": 0.6114999999999999
+    },
+    "SPMDAT2": {
+        "forward": 0.6114999999999999,
+        "reverse": 0.6114999999999999
+    },
+    "MALS": {
+        "forward": 27.25,
+        "reverse": 27.25
+    },
+    "TRE6PP": {
+        "forward": 10.325,
+        "reverse": 10.325
+    },
+    "EX_met__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_tartr__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_taur_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_maltpt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_glcur_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ADPRDP": {
+        "forward": 5.0,
+        "reverse": 5.0
+    },
+    "ARAI": {
+        "forward": 33.94166665,
+        "reverse": 2.61
+    },
+    "M1PD": {
+        "forward": 67.8,
+        "reverse": 67.8
+    },
+    "GALS3": {
+        "forward": 0.58,
+        "reverse": 0.58
+    },
+    "FCI": {
+        "forward": 0.1055,
+        "reverse": 0.1055
+    },
+    "FCLPA": {
+        "forward": 19.3,
+        "reverse": 19.3
+    },
+    "ACCOAL": {
+        "forward": 71.5,
+        "reverse": 116.0
+    },
+    "GALUi": {
+        "forward": 40.0,
+        "reverse": 10.0
+    },
+    "U23GAAT": {
+        "forward": 23.0,
+        "reverse": 23.0
+    },
+    "UAAGDS": {
+        "forward": 3.33,
+        "reverse": 3.33
+    },
+    "UAMAS": {
+        "forward": 18.3,
+        "reverse": 18.3
+    },
+    "UAMAGS": {
+        "forward": 999.0,
+        "reverse": 999.0
+    },
+    "UGLYCH": {
+        "forward": 55.0,
+        "reverse": 55.0
+    },
+    "OP4ENH": {
+        "forward": 215.0,
+        "reverse": 215.0
+    },
+    "HOPNTAL": {
+        "forward": 0.6950000000000001,
+        "reverse": 4.07
+    },
+    "AKGDH": {
+        "forward": 160.0,
+        "reverse": 160.0
+    },
+    "HPYRRx": {
+        "forward": 4.3,
+        "reverse": 4.3
+    },
+    "GLYCDx": {
+        "forward": 4.7299999999999995,
+        "reverse": 4.7299999999999995
+    },
+    "ASP1DC": {
+        "forward": 8.015,
+        "reverse": 8.015
+    },
+    "UGMDDS": {
+        "forward": 999.0,
+        "reverse": 999.0
+    },
+    "UHGADA": {
+        "forward": 0.405,
+        "reverse": 0.405
+    },
+    "UAGAAT": {
+        "forward": 9.83,
+        "reverse": 9.83
+    },
+    "ATPPRT": {
+        "forward": 1.855,
+        "reverse": 1.855
+    },
+    "HISTD": {
+        "forward": 1.3984999999999999,
+        "reverse": 1.3984999999999999
+    },
+    "IGPDH": {
+        "forward": 500.86789737571235,
+        "reverse": 500.86789737571235
+    },
+    "PRPPS": {
+        "forward": 40.65,
+        "reverse": 40.65
+    },
+    "PRMICI": {
+        "forward": 3.92,
+        "reverse": 3.92
+    },
+    "SERAT": {
+        "forward": 2200.0,
+        "reverse": 1100.0
+    },
+    "CYSS": {
+        "forward": 134.0,
+        "reverse": 88.0
+    },
+    "BPNT": {
+        "forward": 5.4,
+        "reverse": 5.4
+    },
+    "PAPSR": {
+        "forward": 0.219,
+        "reverse": 0.219
+    },
+    "ASPK": {
+        "forward": 5.723814497521159,
+        "reverse": 5.723814497521159
+    },
+    "ASAD": {
+        "forward": 160.0,
+        "reverse": 160.0
+    },
+    "DAPDC": {
+        "forward": 11.825,
+        "reverse": 11.825
+    },
+    "EX_mmet_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METAT": {
+        "forward": 0.049,
+        "reverse": 0.044
+    },
+    "ACBIPGT": {
+        "forward": 1.8,
+        "reverse": 1.8
+    },
+    "ADOCBLS": {
+        "forward": 0.67,
+        "reverse": 0.67
+    },
+    "ADOCBIK": {
+        "forward": 0.221,
+        "reverse": 0.221
+    },
+    "TMPK": {
+        "forward": 0.063,
+        "reverse": 0.063
+    },
+    "HPPPNDO": {
+        "forward": 29.0,
+        "reverse": 29.0
+    },
+    "DHCINDO": {
+        "forward": 29.0,
+        "reverse": 29.0
+    },
+    "HKNDDH": {
+        "forward": 4.018,
+        "reverse": 4.018
+    },
+    "HKNTDH": {
+        "forward": 4.018,
+        "reverse": 4.018
+    },
+    "GLYCK2": {
+        "forward": 35.1,
+        "reverse": 35.1
+    },
+    "ENTCS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SULR": {
+        "forward": 165.0,
+        "reverse": 165.0
+    },
+    "URDGLYCD": {
+        "forward": 59.53,
+        "reverse": 59.53
+    },
+    "CBMKr": {
+        "forward": 319.0,
+        "reverse": 319.0
+    },
+    "ACM6PH": {
+        "forward": 5.7,
+        "reverse": 5.7
+    },
+    "NNATr": {
+        "forward": 2.5,
+        "reverse": 3.6
+    },
+    "CYTDH": {
+        "forward": 5.4,
+        "reverse": 5.4
+    },
+    "PSERT": {
+        "forward": 1.33,
+        "reverse": 1.33
+    },
+    "AIRC2": {
+        "forward": 5.9,
+        "reverse": 5.9
+    },
+    "GAPD": {
+        "forward": 24.51,
+        "reverse": 24.51
+    },
+    "HEX1": {
+        "forward": 100.3,
+        "reverse": 60.66666666666667
+    },
+    "GND": {
+        "forward": 22.1,
+        "reverse": 21.450000000000003
+    },
+    "TAUDO": {
+        "forward": 3.0,
+        "reverse": 3.0
+    },
+    "DM_amob_c": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ME2": {
+        "forward": 90.75,
+        "reverse": 57.0
+    },
+    "ARGSL": {
+        "forward": 14.0,
+        "reverse": 14.63
+    },
+    "CBPS": {
+        "forward": 5.4350000000000005,
+        "reverse": 3.125
+    },
+    "IPPS": {
+        "forward": 2.4685,
+        "reverse": 2.16
+    },
+    "EX_mg2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACOATA": {
+        "forward": 1.085,
+        "reverse": 0.036500000000000005
+    },
+    "MLTG2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MLTG1": {
+        "forward": 15.46,
+        "reverse": 15.46
+    },
+    "AMALT3": {
+        "forward": 22.0,
+        "reverse": 22.0
+    },
+    "MLTP3": {
+        "forward": 33.8,
+        "reverse": 33.8
+    },
+    "SPODM": {
+        "forward": 40000.0,
+        "reverse": 40000.0
+    },
+    "AHCYSNS": {
+        "forward": 1.315,
+        "reverse": 1.315
+    },
+    "NTPP4": {
+        "forward": 14.3,
+        "reverse": 14.3
+    },
+    "NTPP3": {
+        "forward": 21.6,
+        "reverse": 21.6
+    },
+    "NTPP6": {
+        "forward": 0.8916666666666666,
+        "reverse": 0.8916666666666666
+    },
+    "NTPP7": {
+        "forward": 0.815,
+        "reverse": 0.815
+    },
+    "NTPP8": {
+        "forward": 0.8916666666666666,
+        "reverse": 0.8916666666666666
+    },
+    "P5CR": {
+        "forward": 321.6,
+        "reverse": 330.8
+    },
+    "CYANST": {
+        "forward": 10.016666664999999,
+        "reverse": 10.016666664999999
+    },
+    "G5SADs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GMAND": {
+        "forward": 5.0,
+        "reverse": 5.0
+    },
+    "PPCSCT": {
+        "forward": 14.2,
+        "reverse": 14.2
+    },
+    "DBTS": {
+        "forward": 11.75,
+        "reverse": 11.75
+    },
+    "DCTPD": {
+        "forward": 15.299999999999999,
+        "reverse": 15.299999999999999
+    },
+    "DHDPS": {
+        "forward": 8.00578464476512,
+        "reverse": 8.00578464476512
+    },
+    "G1PACT": {
+        "forward": 828.0,
+        "reverse": 828.0
+    },
+    "CSND": {
+        "forward": 19.71,
+        "reverse": 19.71
+    },
+    "GF6PTA": {
+        "forward": 14.42,
+        "reverse": 14.4
+    },
+    "H2SO": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLUCYS": {
+        "forward": 25.3,
+        "reverse": 25.3
+    },
+    "GLUN": {
+        "forward": 7.74,
+        "reverse": 5.15
+    },
+    "GMPR": {
+        "forward": 0.28200000000000003,
+        "reverse": 0.28200000000000003
+    },
+    "NADS1": {
+        "forward": 0.525,
+        "reverse": 0.525
+    },
+    "NTRIR2x": {
+        "forward": 130.0,
+        "reverse": 130.0
+    },
+    "OCBT": {
+        "forward": 235.0,
+        "reverse": 51.0
+    },
+    "GARFT": {
+        "forward": 0.102,
+        "reverse": 0.102
+    },
+    "GPDDA1": {
+        "forward": 1.6,
+        "reverse": 1.6
+    },
+    "GPDDA2": {
+        "forward": 1.6,
+        "reverse": 1.6
+    },
+    "PHETA1": {
+        "forward": 73.5,
+        "reverse": 33.0
+    },
+    "PPND": {
+        "forward": 20.0,
+        "reverse": 10.5
+    },
+    "TRPS1": {
+        "forward": 2.8,
+        "reverse": 2.8
+    },
+    "PRAMPC": {
+        "forward": 6.13581666428449,
+        "reverse": 6.13581666428449
+    },
+    "MCITL2": {
+        "forward": 100.0,
+        "reverse": 100.0
+    },
+    "SOTA": {
+        "forward": 3.5,
+        "reverse": 3.5
+    },
+    "PTA2": {
+        "forward": 122.6841291919485,
+        "reverse": 122.6841291919485
+    },
+    "ACOTA": {
+        "forward": 1.55,
+        "reverse": 1.55
+    },
+    "PDX5PS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PPBNGS": {
+        "forward": 507.55,
+        "reverse": 507.55
+    },
+    "PPNCL2": {
+        "forward": 1.8916666665,
+        "reverse": 1.8916666665
+    },
+    "PRAGSr": {
+        "forward": 5.6140061085581205,
+        "reverse": 5.6140061085581205
+    },
+    "PRFGS": {
+        "forward": 2.10022299343508,
+        "reverse": 2.10022299343508
+    },
+    "EX_acac_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ETHAAL": {
+        "forward": 22.7,
+        "reverse": 22.7
+    },
+    "AP4AH": {
+        "forward": 7.12,
+        "reverse": 7.12
+    },
+    "AP5AH": {
+        "forward": 1.0,
+        "reverse": 1.0
+    },
+    "ADNCYC": {
+        "forward": 0.79085,
+        "reverse": 0.79085
+    },
+    "MI1PP": {
+        "forward": 4.4,
+        "reverse": 4.4
+    },
+    "MCITS": {
+        "forward": 14.0,
+        "reverse": 14.0
+    },
+    "PPAKr": {
+        "forward": 108.0,
+        "reverse": 108.0
+    },
+    "NTP3": {
+        "forward": 0.137,
+        "reverse": 0.4
+    },
+    "PPM2": {
+        "forward": 114.3,
+        "reverse": 114.3
+    },
+    "EX_adn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ins_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G6PDH2r": {
+        "forward": 202.2,
+        "reverse": 1100.0
+    },
+    "NADH5": {
+        "forward": 3234.95423978961,
+        "reverse": 3234.95423978961
+    },
+    "MOHMT": {
+        "forward": 0.78,
+        "reverse": 0.78
+    },
+    "EX_glyc3p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_lcts_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_nac_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ocdca_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GMPS": {
+        "forward": 2.3449999999999998,
+        "reverse": 2.3449999999999998
+    },
+    "FTHFLi": {
+        "forward": 6.08,
+        "reverse": 6.08
+    },
+    "UDPGD": {
+        "forward": 1.8,
+        "reverse": 4.2
+    },
+    "GLCRD": {
+        "forward": 20.0,
+        "reverse": 20.0
+    },
+    "CHRPL": {
+        "forward": 0.82,
+        "reverse": 0.82
+    },
+    "TDPAGTA": {
+        "forward": 0.38,
+        "reverse": 0.38
+    },
+    "UACMAMO": {
+        "forward": 0.4,
+        "reverse": 0.4
+    },
+    "FBA3": {
+        "forward": 2.83333333,
+        "reverse": 2.83333333
+    },
+    "PMPK": {
+        "forward": 0.07,
+        "reverse": 0.07
+    },
+    "LCADi": {
+        "forward": 2.0,
+        "reverse": 2.0
+    },
+    "ADK3": {
+        "forward": 1.25,
+        "reverse": 1.25
+    },
+    "GLUDC": {
+        "forward": 0.9835,
+        "reverse": 6.2
+    },
+    "ADSK": {
+        "forward": 4.7,
+        "reverse": 4.7
+    },
+    "HSDy": {
+        "forward": 1.43,
+        "reverse": 19.3
+    },
+    "CYSTL": {
+        "forward": 1.5,
+        "reverse": 1.5
+    },
+    "SHSL1": {
+        "forward": 117.0,
+        "reverse": 117.0
+    },
+    "SSALy": {
+        "forward": 46.0,
+        "reverse": 46.0
+    },
+    "EX_dad_2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ser__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gam6p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_15dap_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ocdcea_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cynt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_galctn__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_glyb_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BSORx": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLUtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLYtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLYALDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLYBtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLYCtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLYC3Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLYCLTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GTPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GUAtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "Htex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "H2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "H2Otex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FACOAL160t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAL180t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SPODMpp": {
+        "forward": 40000.0,
+        "reverse": 40000.0
+    },
+    "NO3R1bpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "O2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PHYTSpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PPTHpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PYRt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NO3R2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTP3pp": {
+        "forward": 0.137,
+        "reverse": 0.4
+    },
+    "THD2pp": {
+        "forward": 259.5,
+        "reverse": 259.5
+    },
+    "TMAOR1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TMAOR2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "XANtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DAPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "12PPDStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DDGLCNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "26DAHtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "HCINNMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "HPPPNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACALDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACMANAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACMUMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACACT7r": {
+        "forward": 353.0,
+        "reverse": 353.0
+    },
+    "PSP_L": {
+        "forward": 0.1805,
+        "reverse": 0.182
+    },
+    "ACACT2r": {
+        "forward": 353.0,
+        "reverse": 353.0
+    },
+    "ACACT3r": {
+        "forward": 353.0,
+        "reverse": 353.0
+    },
+    "ACACT4r": {
+        "forward": 353.0,
+        "reverse": 353.0
+    },
+    "SUCCt2_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SUCFUMtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SUCptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TARTRt7pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AHGDx": {
+        "forward": 0.07833333333333334,
+        "reverse": 0.07833333333333334
+    },
+    "THMDt2pp_copy1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ca2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_so3_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "Kt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AKGt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "XYLt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ascb__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ala_B_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_agm_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_minohp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ppt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_hxa_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_lyx__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_acmum_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dca_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_all__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_octa_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_xylu__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gdp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gtp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "THMabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "THMDt2pp_copy2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "THRabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TRPt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TYRt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "URIt2pp_copy1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "URIt2pp_copy2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "VALabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "XTSNt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "XYLabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "XYLUt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "THRt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fruur_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GALtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GALCTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GALCTNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GALTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GALURtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GTPCI": {
+        "forward": 0.039,
+        "reverse": 0.039
+    },
+    "FDMO": {
+        "forward": 0.86,
+        "reverse": 0.86
+    },
+    "FEOXAMabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CBL1abcpp": {
+        "forward": 0.845,
+        "reverse": 0.845
+    },
+    "ACACt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACGAptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACMANAptspp": {
+        "forward": 66.4141801261211,
+        "reverse": 66.4141801261211
+    },
+    "ACNAMt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CHOLD": {
+        "forward": 8.111666666666666,
+        "reverse": 15.6
+    },
+    "DRPA": {
+        "forward": 16.5,
+        "reverse": 16.5
+    },
+    "TKT2": {
+        "forward": 8.3025865702873,
+        "reverse": 5.65
+    },
+    "EX_ch4_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GAMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GBBTNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ARBt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DAPabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CO2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHAtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DMSOR1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARGAGMt7pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASCBptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASNt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASPt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASPt2_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASPt2_3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HIStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "HXAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "HYXNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "IDONtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ILEtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "INSTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "INStex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "Ktex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "D_LACtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NTD8pp": {
+        "forward": 3.55,
+        "reverse": 3.55
+    },
+    "FRULYStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_fad_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GALCTt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GALt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ABUTt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SBTptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TREHpp": {
+        "forward": 183.0,
+        "reverse": 183.0
+    },
+    "CYTBDpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYTBD2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACALDtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fe3dcit_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fe3hox_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fecrm_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_feenter_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_feoxam_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cbi_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_arbtn_fe3_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cpgn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_adocbl_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ATPS4rpp": {
+        "forward": 18.5,
+        "reverse": 18.5
+    },
+    "INDOLEtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "L_LACtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ADEt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ADNt2pp_copy1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ADNt2pp_copy2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALAabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALLabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALLTNt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ECOAH8": {
+        "forward": 191.5,
+        "reverse": 191.5
+    },
+    "GLCDpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GUAtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HYD2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HYXNtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NACtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3DCITabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CPGNtonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLCRtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLCNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLCURtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "O2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_ppa_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OCTAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ORNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ECOAH5": {
+        "forward": 191.5,
+        "reverse": 191.5
+    },
+    "DHFS": {
+        "forward": 0.22,
+        "reverse": 0.22
+    },
+    "CITt7pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CRNt7pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ni2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_no_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CHLabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DGSNt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DINSt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DURIt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE2abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FRUptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FUCtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FUMt2_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FUMt2_3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEENTERtonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CSNt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYNTt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYTDt2pp_copy1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYTDt2pp_copy2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DADNt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DCYTt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DDGLCNt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RMNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_meoh_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MALTTRtexi": {
+        "forward": 8404.68914603691,
+        "reverse": 8404.68914603691
+    },
+    "MALTTTRtexi": {
+        "forward": 8404.68914603691,
+        "reverse": 8404.68914603691
+    },
+    "MALTPTtexi": {
+        "forward": 8404.68914603691,
+        "reverse": 8404.68914603691
+    },
+    "MALTtexi": {
+        "forward": 8404.68914603691,
+        "reverse": 8404.68914603691
+    },
+    "GLCtex_copy1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3DCITtonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PHEtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PItex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACGAMK": {
+        "forward": 5.5185,
+        "reverse": 5.5185
+    },
+    "METS": {
+        "forward": 5.0,
+        "reverse": 5.0
+    },
+    "EX_cu2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TRSARr": {
+        "forward": 243.0,
+        "reverse": 243.0
+    },
+    "EX_pheme_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PNTOtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PPPNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PPTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PTRCtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PYRtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DSERtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SERtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SO4tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SPMDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SUCCtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SUCRtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "TARTRtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "TAURtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "THRtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "THMDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CBIuabcpp": {
+        "forward": 0.845,
+        "reverse": 0.845
+    },
+    "METDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "METtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MNLtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NACtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NH4tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "URIH": {
+        "forward": 2.65,
+        "reverse": 2.65
+    },
+    "XTSNH": {
+        "forward": 2.2,
+        "reverse": 2.2
+    },
+    "INSH": {
+        "forward": 10.1,
+        "reverse": 11.6
+    },
+    "BUTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CHLtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CO2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CRNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PPK2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DINStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DMStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CSNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CYNTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CYStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CYTDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DCAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DCYTtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DGSNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MTHFR2": {
+        "forward": 25.83333335,
+        "reverse": 25.83333335
+    },
+    "ASPO3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASPO4": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASPO6": {
+        "forward": 0.2235,
+        "reverse": 0.2235
+    },
+    "LCTStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LEUtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LYStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LYXtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MANtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MAN6Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MELIBtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DMSOtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DURItex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_mal__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FRUtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FUCtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FUMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACACT5r": {
+        "forward": 353.0,
+        "reverse": 353.0
+    },
+    "FE2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NMNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NO2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DHPS2": {
+        "forward": 0.12,
+        "reverse": 0.12
+    },
+    "MTHFC": {
+        "forward": 134.0,
+        "reverse": 134.0
+    },
+    "MTHFD": {
+        "forward": 14.0,
+        "reverse": 14.0
+    },
+    "BUTt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CADVtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALKP": {
+        "forward": 44.4,
+        "reverse": 44.4
+    },
+    "GDPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_cobalt2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TMAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "TMAOtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "TREtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "L_LACD3": {
+        "forward": 138.5,
+        "reverse": 117.0
+    },
+    "L_LACD2": {
+        "forward": 138.5,
+        "reverse": 117.0
+    },
+    "ACACT6r": {
+        "forward": 353.0,
+        "reverse": 353.0
+    },
+    "TRPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "TSULtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "TYRtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "URAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "UREAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "URItex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "VALtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "XANtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "XYLtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ABUTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FORtppi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DATPHs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLCTR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LIPAabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LIPACabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_mso3_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_23camp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_23cgmp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_23cump_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_3amp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_3gmp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_3ump_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_glyc__R_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_eca4colipa_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYOX3": {
+        "forward": 0.518,
+        "reverse": 0.518
+    },
+    "FDMO3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FDMO4": {
+        "forward": 0.86,
+        "reverse": 0.86
+    },
+    "BUTSO3abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ETHSO3abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_sel_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_hg2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "O16GLCT1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "O16AP2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "O16AP3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "O16A4Lpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHBSH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEOXAMUtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARBTNtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARBTNtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "23CAMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "23CCMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "23CUMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "23CGMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "3AMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "3CMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LADGMDH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALAGLUE": {
+        "forward": 3.3,
+        "reverse": 3.3
+    },
+    "FEENTERtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEENTERtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3HOXUtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEOXAMUtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FECRMUtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3HOXR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PTRCt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FRULYSK": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FDMO6": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SULFACabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ETHSO3tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "BUTSO3tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LIPOtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CYANSTpp": {
+        "forward": 10.016666664999999,
+        "reverse": 10.016666664999999
+    },
+    "MCPST": {
+        "forward": 11.9,
+        "reverse": 11.9
+    },
+    "METSOX1abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GALBDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LIPAHT2ex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LIPAHTex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ECAP1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UDCPDPpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ECAP2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ECA4OALpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3Ri": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3HOXR3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEENTERR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEENTERR3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SULFACtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_sulfac_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_butso3_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ethso3_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NODOy": {
+        "forward": 90.0,
+        "reverse": 90.0
+    },
+    "GALM2pp": {
+        "forward": 1700.0,
+        "reverse": 1700.0
+    },
+    "CU1abcpp": {
+        "forward": 3.08,
+        "reverse": 3.08
+    },
+    "HG2abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLCTR3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LA4NTpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NODOx": {
+        "forward": 120.0,
+        "reverse": 90.0
+    },
+    "NOtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NOtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NHFRBO": {
+        "forward": 0.15,
+        "reverse": 0.15
+    },
+    "N2Otpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "N2Otex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CRNt8pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CRNt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CRNDt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CTBTt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "42A12BOOXpp": {
+        "forward": 6.25,
+        "reverse": 13.5
+    },
+    "TYROXDApp": {
+        "forward": 7.1,
+        "reverse": 13.5
+    },
+    "PACALDt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PEAMNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PACALDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LIPOt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTRIR4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTRIR3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "INOSTt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PHEMEtiex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AGM3PA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYANtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SO3tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "TCYNTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACANTHAT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METSOX2abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METSOX1tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "METSOX2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "3UMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "3GMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FALDtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_tym_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METSOXR1": {
+        "forward": 4.5,
+        "reverse": 4.5
+    },
+    "METSOXR2": {
+        "forward": 4.5,
+        "reverse": 4.5
+    },
+    "DAPAL": {
+        "forward": 42.83,
+        "reverse": 42.83
+    },
+    "AMPTASECG": {
+        "forward": 92.0,
+        "reverse": 92.0
+    },
+    "EX_imp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DOPAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "4HOXPACDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LACZpp": {
+        "forward": 301.5,
+        "reverse": 301.5
+    },
+    "GPDDA1pp": {
+        "forward": 1.6,
+        "reverse": 1.6
+    },
+    "ETHAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "G3PStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FEENTERR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FLVR": {
+        "forward": 11.7,
+        "reverse": 11.7
+    },
+    "FE3HOXR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEENTERexs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3HOXexs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FECRMR3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FDMO2": {
+        "forward": 0.86,
+        "reverse": 0.86
+    },
+    "LALGP": {
+        "forward": 43.3,
+        "reverse": 43.3
+    },
+    "AGM4PApp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AGM4PA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RNDR3b": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RNDR4b": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACGAL1Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACGALtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLCUR1Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "UDPGLCURtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "UDPGALPpp": {
+        "forward": 84.0,
+        "reverse": 84.0
+    },
+    "UACGAMPpp": {
+        "forward": 84.0,
+        "reverse": 84.0
+    },
+    "UACGALPpp": {
+        "forward": 84.0,
+        "reverse": 84.0
+    },
+    "UGLCURPpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEROpp": {
+        "forward": 0.66,
+        "reverse": 0.66
+    },
+    "ISETACabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ISETACtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GUR1PPpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UDPGtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACGAL1PPpp": {
+        "forward": 88.5,
+        "reverse": 88.5
+    },
+    "UDPGALtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACGAM1Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "UACGAMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "UDPACGALtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "AM4PCP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AM3PA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UM4PCP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CBLAT": {
+        "forward": 0.026,
+        "reverse": 0.025
+    },
+    "MSO3abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MSO3tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FECRMR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FECRMR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TDP": {
+        "forward": 0.4,
+        "reverse": 0.4
+    },
+    "3PEPTabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "4PEPTabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AGM3Pt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AGM4Pt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AGMt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FECRMexs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARBTNR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARBTNR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARBTNR3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARBTNexs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEOXAMexs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEOXAMR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEOXAMR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEOXAMR3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARABDI": {
+        "forward": 0.1055,
+        "reverse": 0.1055
+    },
+    "AGt3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CD2t3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ZNabcpp": {
+        "forward": 300.0,
+        "reverse": 300.0
+    },
+    "SKMt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE2t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "R5PPpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PSP_Lpp": {
+        "forward": 0.1805,
+        "reverse": 0.1805
+    },
+    "TYRPpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYC2Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PSERtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "R5Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "THRPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "TYRPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PAPSR2": {
+        "forward": 0.219,
+        "reverse": 0.219
+    },
+    "GRXR": {
+        "forward": 5.725,
+        "reverse": 5.725
+    },
+    "RNDR1b": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RNDR2b": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAE181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAE160": {
+        "forward": 0.037,
+        "reverse": 0.037
+    },
+    "FACOAE140": {
+        "forward": 0.037,
+        "reverse": 0.037
+    },
+    "CPGNR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CPGNR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CPGNR3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CPGNUtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CPGNUtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AAMYL": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AAMYLpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAL80t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PPGPPDP": {
+        "forward": 2.755,
+        "reverse": 2.755
+    },
+    "CPGNabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CPGNexs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CITtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACGAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DDCAtexi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TTDCAtexi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HDCAtexi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GUACYC": {
+        "forward": 28.7,
+        "reverse": 0.79085
+    },
+    "23PDE2pp": {
+        "forward": 3.36,
+        "reverse": 3.36
+    },
+    "23PDE4pp": {
+        "forward": 3.36,
+        "reverse": 3.36
+    },
+    "23PDE9pp": {
+        "forward": 3.36,
+        "reverse": 3.36
+    },
+    "SARCOX": {
+        "forward": 5.8,
+        "reverse": 5.8
+    },
+    "GTPHs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MN6PP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cd2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "F6PP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GDPMNH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAL60t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ILEabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "INDOLEt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "INSt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LYXt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GDPDPK": {
+        "forward": 1.31,
+        "reverse": 1.31
+    },
+    "OCDCAtexi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OCDCEAtexi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G6Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MOBDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NI2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "R1PK": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LEUabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "L_LACt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MALt2_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MALt2_3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MALTabcpp": {
+        "forward": 1.2,
+        "reverse": 1.2
+    },
+    "MALTHXabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MALTPTabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MAN6Pt6_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MANGLYCptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MELIBt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fe3hox_un_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GGPTRCS": {
+        "forward": 5.94,
+        "reverse": 5.94
+    },
+    "EX_23dappa_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RMNtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SERt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SUCCt2_3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MNLptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NAt3_1p5pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NAt3_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NH4tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NMNPtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NO2t2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NO3t7pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PNTOt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FRULYSDG": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METDabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PROabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PROt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PROt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASNNpp": {
+        "forward": 30.4,
+        "reverse": 24.0
+    },
+    "GLUNpp": {
+        "forward": 7.74,
+        "reverse": 5.15
+    },
+    "NTD12": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FECRMtonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARBTNtonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ADOCBLabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_enter_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fecrm_un_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cgly_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_chtbs_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gmp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_h2o2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ump_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_pydam_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CRNabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CRNDabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DNTPPA": {
+        "forward": 2.4,
+        "reverse": 2.4
+    },
+    "CTBTabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTPP9": {
+        "forward": 0.8916666666666666,
+        "reverse": 0.8916666666666666
+    },
+    "NTPP10": {
+        "forward": 22.08,
+        "reverse": 22.08
+    },
+    "NTPP11": {
+        "forward": 22.08,
+        "reverse": 22.08
+    },
+    "NTD10pp": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "NTD1pp": {
+        "forward": 3.55,
+        "reverse": 3.55
+    },
+    "NTD2pp": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "NTD3pp": {
+        "forward": 3.55,
+        "reverse": 3.55
+    },
+    "NTD4pp": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "NTD5pp": {
+        "forward": 3.55,
+        "reverse": 3.55
+    },
+    "NTD6pp": {
+        "forward": 3.55,
+        "reverse": 3.55
+    },
+    "NTD7pp": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "NTD9pp": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "PEAMNOpp": {
+        "forward": 3.75,
+        "reverse": 6.555
+    },
+    "H2O2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ARGDCpp": {
+        "forward": 1.4,
+        "reverse": 1.07
+    },
+    "ALLPI": {
+        "forward": 1071.0,
+        "reverse": 1071.0
+    },
+    "ALLK": {
+        "forward": 10.0,
+        "reverse": 10.0
+    },
+    "ADEtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ADNtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AGMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ALAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "BALAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DALAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "AMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ARBtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ARGtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ASCBtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FACOAL100t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GPDDA3pp": {
+        "forward": 1.9449999999999998,
+        "reverse": 1.9449999999999998
+    },
+    "GPDDA4pp": {
+        "forward": 1.9449999999999998,
+        "reverse": 1.9449999999999998
+    },
+    "GPDDA2pp": {
+        "forward": 1.6,
+        "reverse": 1.6
+    },
+    "FACOAL120t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAL140t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3HOXtonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "COBALT2abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MG2uabcpp": {
+        "forward": 22.5,
+        "reverse": 22.5
+    },
+    "HCYSMT2": {
+        "forward": 0.38,
+        "reverse": 0.38
+    },
+    "MMETtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FE3tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MG2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "Zn2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MMETt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CD2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GLUABUTt7pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLUt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLUt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYALDtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_etha_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACGK": {
+        "forward": 35.9,
+        "reverse": 35.9
+    },
+    "LCTSt3ipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARBt3ipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "14GLUCANabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADPHQR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADPHQR3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADPHQR4": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLBRAN2": {
+        "forward": 500.075,
+        "reverse": 500.075
+    },
+    "ASR": {
+        "forward": 0.14,
+        "reverse": 0.14
+    },
+    "ASO3tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MANGLYCtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_frulys_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METOX1s": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METOX2s": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FRUURt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FRUURtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ECAtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "O16AT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "O16GALFT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "O16GLCT2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "O16AUNDtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "O16AP1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYCAt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYCAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_enlipa_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_hacolipa_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AGM4PCP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "4PCP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "4PCPpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FALDH2": {
+        "forward": 2.5,
+        "reverse": 2.5
+    },
+    "GLYBabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYC3Pt6pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYCLTt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYCtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "H2Otpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HCINNMt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HISt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CBIAT": {
+        "forward": 0.025,
+        "reverse": 0.025
+    },
+    "COBALT2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NTD12pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PPA2": {
+        "forward": 76.0,
+        "reverse": 76.0
+    },
+    "DIMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "3NTD7pp": {
+        "forward": 6.984999999999999,
+        "reverse": 6.984999999999999
+    },
+    "3NTD4pp": {
+        "forward": 6.984999999999999,
+        "reverse": 6.984999999999999
+    },
+    "3NTD2pp": {
+        "forward": 6.984999999999999,
+        "reverse": 6.984999999999999
+    },
+    "3NTD9pp": {
+        "forward": 6.984999999999999,
+        "reverse": 6.984999999999999
+    },
+    "23PDE7pp": {
+        "forward": 3.36,
+        "reverse": 3.36
+    },
+    "GALTptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GALURt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLCNt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLCptspp": {
+        "forward": 229.952856752472,
+        "reverse": 229.952856752472
+    },
+    "GLCRt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLCt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLCURt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACMUMptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_h2o_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ala__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HSTPT": {
+        "forward": 0.0466666667,
+        "reverse": 0.0466666667
+    },
+    "XTSNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_hdca_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_glcr_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GNK": {
+        "forward": 9.4,
+        "reverse": 9.4
+    },
+    "HMBS": {
+        "forward": 0.25,
+        "reverse": 0.25
+    },
+    "FHL": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HYPOE": {
+        "forward": 1.52,
+        "reverse": 1.52
+    },
+    "MEPCT": {
+        "forward": 17.45,
+        "reverse": 16.8
+    },
+    "GLUDy": {
+        "forward": 39.0,
+        "reverse": 50.0
+    },
+    "ZN2abcpp": {
+        "forward": 300.0,
+        "reverse": 300.0
+    },
+    "GLYCLTDy": {
+        "forward": 68.8,
+        "reverse": 70500.0
+    },
+    "LYSDC": {
+        "forward": 10.6,
+        "reverse": 10.6
+    },
+    "DAAD": {
+        "forward": 6.2,
+        "reverse": 6.2
+    },
+    "UREAtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "XANt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PPPNt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PTRCORNt7pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HG2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NTPP5": {
+        "forward": 0.815,
+        "reverse": 0.815
+    },
+    "ATPM": {
+        "forward": 0.10500000000000001,
+        "reverse": 0.14950000000000002
+    },
+    "NADPPPS": {
+        "forward": 44.4,
+        "reverse": 44.4
+    },
+    "EX_mnl_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTD3": {
+        "forward": 3.55,
+        "reverse": 3.55
+    },
+    "GLYOX": {
+        "forward": 383.5,
+        "reverse": 240.0
+    },
+    "DADNtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ETOHtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "AGM4PCPpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GTPDPDP": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "RNDR2": {
+        "forward": 0.275,
+        "reverse": 0.275
+    },
+    "EX_asn__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_mal__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "XAND": {
+        "forward": 86.0,
+        "reverse": 108.0
+    },
+    "EX_no2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HACD3": {
+        "forward": 113.0,
+        "reverse": 113.0
+    },
+    "ACACtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ACNAMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ARBTNabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NNDMBRT": {
+        "forward": 1.6,
+        "reverse": 1.6
+    },
+    "THRA2": {
+        "forward": 1.30037482842091,
+        "reverse": 1.30037482842091
+    },
+    "H2Stex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PPK": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OMCDC": {
+        "forward": 15.7,
+        "reverse": 15.7
+    },
+    "ABUTD": {
+        "forward": 9.365,
+        "reverse": 9.365
+    },
+    "E4PD": {
+        "forward": 20.0,
+        "reverse": 20.0
+    },
+    "EX_nh4_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DADK": {
+        "forward": 152.0,
+        "reverse": 0.1
+    },
+    "DUTPDP": {
+        "forward": 12.3,
+        "reverse": 19.45
+    },
+    "EX_ddca_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTP5": {
+        "forward": 0.515,
+        "reverse": 0.515
+    },
+    "FORt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_r5p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_glyc2p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MTAN": {
+        "forward": 2.3,
+        "reverse": 2.3
+    },
+    "DPR": {
+        "forward": 16.8,
+        "reverse": 16.8
+    },
+    "THRD_L": {
+        "forward": 27.15,
+        "reverse": 27.15
+    },
+    "EX_malt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "4PEPTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NAMNPP": {
+        "forward": 0.25,
+        "reverse": 0.25
+    },
+    "EX_pnto__R_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYCLTt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GUAt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HPPPNt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ANHMK": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHFR": {
+        "forward": 12.6,
+        "reverse": 11.8
+    },
+    "EX_cit_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PRAIi": {
+        "forward": 32.0,
+        "reverse": 32.0
+    },
+    "TYRTA": {
+        "forward": 35.7,
+        "reverse": 69.0
+    },
+    "SHKK": {
+        "forward": 35.0,
+        "reverse": 35.0
+    },
+    "EX_gam_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_inost_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_mobd_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_so4_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLUSy": {
+        "forward": 25.3,
+        "reverse": 25.3
+    },
+    "GUAPRT": {
+        "forward": 0.193,
+        "reverse": 0.4735
+    },
+    "EX_phe__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_thr__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_uri_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PDH": {
+        "forward": 33.95748496288665,
+        "reverse": 33.95748496288665
+    },
+    "DMSOR2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "H2St1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HYD3pp": {
+        "forward": 293.5,
+        "reverse": 293.5
+    },
+    "NO3R1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_halipa_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AACPS5": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MANptspp": {
+        "forward": 66.4141801261211,
+        "reverse": 66.4141801261211
+    },
+    "EX_cmp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTD8": {
+        "forward": 3.55,
+        "reverse": 3.55
+    },
+    "GALCTD": {
+        "forward": 4.8,
+        "reverse": 4.8
+    },
+    "EX_malthx_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MLTG4": {
+        "forward": 15.46,
+        "reverse": 15.46
+    },
+    "UDPGDC": {
+        "forward": 0.3025,
+        "reverse": 0.3025
+    },
+    "PUNP4": {
+        "forward": 15.6,
+        "reverse": 3.65
+    },
+    "AMAOTr": {
+        "forward": 0.08,
+        "reverse": 0.10500000000000001
+    },
+    "EX_csn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_etoh_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_his__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_k_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_na1_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARGORNt7pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dmso_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_12ppd__S_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_pppn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_acgam1p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTD11pp": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "EX_galt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DKGLCNR2x": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACGS": {
+        "forward": 3.3333333333333335,
+        "reverse": 3.3333333333333335
+    },
+    "PDE1": {
+        "forward": 0.00155,
+        "reverse": 0.00155
+    },
+    "CU2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FECRMUtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALAALAr": {
+        "forward": 4.91666667,
+        "reverse": 11.83
+    },
+    "CLtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CELBpts": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACACT1r": {
+        "forward": 353.0,
+        "reverse": 465.0
+    },
+    "MALTptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_glcur1p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_thrp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_pydxn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "Kt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AGM3PApp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SUCOAS": {
+        "forward": 25.3558628776291,
+        "reverse": 2.25
+    },
+    "NTP1": {
+        "forward": 0.10500000000000001,
+        "reverse": 0.14950000000000002
+    },
+    "GALKr": {
+        "forward": 8.7,
+        "reverse": 0.8
+    },
+    "PANTS": {
+        "forward": 3.4,
+        "reverse": 1.74
+    },
+    "YUMPS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHQS": {
+        "forward": 3.15,
+        "reverse": 3.15
+    },
+    "PGCD": {
+        "forward": 464.0,
+        "reverse": 464.0
+    },
+    "EX_cys__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gsn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_orot_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ADSL1r": {
+        "forward": 2.32,
+        "reverse": 2.32
+    },
+    "SERD_D": {
+        "forward": 5.6000000000000005,
+        "reverse": 5.6000000000000005
+    },
+    "FRUpts2pp": {
+        "forward": 66.4141801261211,
+        "reverse": 66.4141801261211
+    },
+    "G6Pt6_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PROtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SBTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PFK": {
+        "forward": 61.0,
+        "reverse": 61.0
+    },
+    "PGM": {
+        "forward": 57.0,
+        "reverse": 77.0
+    },
+    "TPI": {
+        "forward": 6013.0,
+        "reverse": 6013.0
+    },
+    "RPI": {
+        "forward": 1070.0,
+        "reverse": 1070.0
+    },
+    "PERD": {
+        "forward": 1.2000000000000002,
+        "reverse": 1.2000000000000002
+    },
+    "PYDAMK": {
+        "forward": 0.38,
+        "reverse": 0.38
+    },
+    "AKGtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ALLTNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ASNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FE3HOXabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FADRx2": {
+        "forward": 23.8,
+        "reverse": 36.0
+    },
+    "EX_o2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gal_bD_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PDE4": {
+        "forward": 0.0031,
+        "reverse": 0.0031
+    },
+    "AGM4PH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AM4PA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dump_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_o2s_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_gal1p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dcmp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_23ccmp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_3cmp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ATHRDHr": {
+        "forward": 6.55,
+        "reverse": 6.55
+    },
+    "LSERDHr": {
+        "forward": 11.0,
+        "reverse": 11.0
+    },
+    "DSERDHr": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_skm_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ag_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cys__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_acser_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cu_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_arbtn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dopa_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_hom__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OBTFL": {
+        "forward": 7.665,
+        "reverse": 7.665
+    },
+    "THRt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_LalaDgluMdapDala_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_LalaDgluMdap_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_anhgm_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fald_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G6PP": {
+        "forward": 700.0,
+        "reverse": 700.0
+    },
+    "MMCD": {
+        "forward": 78.25,
+        "reverse": 78.25
+    },
+    "GLNS": {
+        "forward": 7.06,
+        "reverse": 7.06
+    },
+    "TYMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GTHS": {
+        "forward": 25.5,
+        "reverse": 26.5
+    },
+    "EX_g3pe_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_pacald_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DUMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "XMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "3PEPTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ANHGMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "UPLA4FNT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UPLA4FNF": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ULA4Ntppi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FALDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "AMALT2": {
+        "forward": 22.0,
+        "reverse": 22.0
+    },
+    "MLTP1": {
+        "forward": 33.8,
+        "reverse": 33.8
+    },
+    "HEPT2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYSDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CYSDabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HXAND": {
+        "forward": 108.0,
+        "reverse": 81.75
+    },
+    "EX_acgal_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_so2_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dms_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G3PItex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "G3PGtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "G3PEtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "G3PCtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MOAT3C": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RHAT1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GALT1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLCTR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UDPGPpp": {
+        "forward": 31.15,
+        "reverse": 31.15
+    },
+    "EX_acgal1p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cyan_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_tyrp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_uacgam_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_udpacgal_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_udpg_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_udpgal_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_udpglcur_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_14glucan_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_pser__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_aso3_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_tcynt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fe3dhbzs_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PPPGO": {
+        "forward": 0.02895,
+        "reverse": 0.02895
+    },
+    "EX_feoxam_un_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_g3pc_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_g3pg_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_g3pi_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_g3ps_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_peamn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_34dhpac_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DAMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DCMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DGMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DTMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "IMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "UMPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "G1Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ADNK1": {
+        "forward": 0.73278017129591,
+        "reverse": 0.5
+    },
+    "CUt3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ZN2t3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SKMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MNt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GAL1Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "O2Stex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "HEPK1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HEPT3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HEPK2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALDD3y": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "R5PP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_xmp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_damp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYSSADS": {
+        "forward": 0.9,
+        "reverse": 0.9
+    },
+    "EX_dimp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CPPPGO2": {
+        "forward": 0.03,
+        "reverse": 0.03
+    },
+    "EX_isetac_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AGM3PH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HOMt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HOMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SO2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SO2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LDH_D2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SUCBZL": {
+        "forward": 53.81,
+        "reverse": 53.81
+    },
+    "CYSDDS": {
+        "forward": 72.0,
+        "reverse": 72.0
+    },
+    "CYStpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACSERtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACSERtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LALDO3": {
+        "forward": 1.05,
+        "reverse": 1.05
+    },
+    "NTP10": {
+        "forward": 103.4,
+        "reverse": 103.4
+    },
+    "GDMANE": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GPDDA4": {
+        "forward": 1.9449999999999998,
+        "reverse": 1.9449999999999998
+    },
+    "LPLIPAL2E140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2E180": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "LPLIPAL2G161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2G181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPE120tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AACPS6": {
+        "forward": 0.016,
+        "reverse": 0.016
+    },
+    "G3PGabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G3PIabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G3PSabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "QMO2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "QMO3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2E141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2E161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2E181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2G180": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2G141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPA120tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPG180tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "IPDDI": {
+        "forward": 0.7875,
+        "reverse": 0.7875
+    },
+    "2AGPGAT180": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPGAT181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATG120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1E140pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1E160pp": {
+        "forward": 630.0,
+        "reverse": 630.0
+    },
+    "PLIPA1E161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AACPS8": {
+        "forward": 0.016,
+        "reverse": 0.016
+    },
+    "HXCT": {
+        "forward": 290.0,
+        "reverse": 290.0
+    },
+    "DURADx": {
+        "forward": 0.515,
+        "reverse": 0.515
+    },
+    "ECOAH7": {
+        "forward": 191.5,
+        "reverse": 191.5
+    },
+    "G1PPpp": {
+        "forward": 88.5,
+        "reverse": 88.5
+    },
+    "GALCTND": {
+        "forward": 5.74,
+        "reverse": 5.74
+    },
+    "HISTP": {
+        "forward": 174.0,
+        "reverse": 50.0
+    },
+    "LDH_D": {
+        "forward": 410.0,
+        "reverse": 380.0
+    },
+    "AMALT4": {
+        "forward": 22.0,
+        "reverse": 22.0
+    },
+    "NTD11": {
+        "forward": 5.415,
+        "reverse": 5.415
+    },
+    "ORNDC": {
+        "forward": 0.5,
+        "reverse": 0.5
+    },
+    "UPP3MT": {
+        "forward": 38.0,
+        "reverse": 38.0
+    },
+    "KAS15": {
+        "forward": 1.63,
+        "reverse": 1.63
+    },
+    "ALAALAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FACOAL181t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "T2DECAI": {
+        "forward": 11.4344405066373,
+        "reverse": 11.4344405066373
+    },
+    "3OAS161": {
+        "forward": 0.08,
+        "reverse": 0.08
+    },
+    "EAR141y": {
+        "forward": 1.5,
+        "reverse": 1.5
+    },
+    "EAR161x": {
+        "forward": 5.53,
+        "reverse": 5.53
+    },
+    "DASYN160": {
+        "forward": 5.6,
+        "reverse": 5.6
+    },
+    "DASYN161": {
+        "forward": 5.6,
+        "reverse": 5.6
+    },
+    "DASYN181": {
+        "forward": 5.6,
+        "reverse": 5.6
+    },
+    "PSSA140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPGAT141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAE180": {
+        "forward": 0.037,
+        "reverse": 0.037
+    },
+    "FACOAE100": {
+        "forward": 0.037,
+        "reverse": 0.037
+    },
+    "FACOAE80": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAE60": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1E120pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MALtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NO3tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "3OAS141": {
+        "forward": 0.08,
+        "reverse": 0.08
+    },
+    "3OAR121": {
+        "forward": 133.05,
+        "reverse": 102.0
+    },
+    "CFAS160G": {
+        "forward": 0.12,
+        "reverse": 0.12
+    },
+    "URAt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAE141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAE161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TTDCEAtexi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HDCEAtexi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALAALAD": {
+        "forward": 42.65,
+        "reverse": 42.65
+    },
+    "2AGPEAT181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPGAT140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1E181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1G180pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1G181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALAALAabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HEXt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G3PEabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G3PCabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPGAT161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AMPTASEPG": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PROGLYabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GTHRDabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPG140tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPG160tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPG141tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPG161tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPG181tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPEAT140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPEAT120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPEAT161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPEAT141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPGAT160": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATG140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATG141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATG160": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATG180": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATG161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATG181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLPNS180pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLPNS181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PG161abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGP120abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGP161abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGP181abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PA120abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1G120pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLPNS120pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALPATE160pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALPATG160pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPGAT120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATE120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATE140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATE160": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATE180": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATE141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATE161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2ATE181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAL141t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAL161t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PA160abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PA181abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "12DGR141tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGPP140pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGPP141pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGPP160pp": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "PGPP180pp": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "CLPNH141pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLPNH160pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLPNH161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLPNH181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1E180pp": {
+        "forward": 630.0,
+        "reverse": 630.0
+    },
+    "PLIPA1G140pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1G161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLPNS160pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLPNS161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PG160abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGP140abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAPA120pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAPA140pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAPA141pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAPA161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAPA180pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3HOXUtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACGAM1PPpp": {
+        "forward": 88.5,
+        "reverse": 88.5
+    },
+    "EX_dgmp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GAMptspp": {
+        "forward": 66.4141801261211,
+        "reverse": 66.4141801261211
+    },
+    "GSNt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_4hoxpacd_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GSNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FORtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "D_LACt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RIBtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "FLVRx": {
+        "forward": 4.75,
+        "reverse": 4.75
+    },
+    "THMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "XYLUtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_manglyc_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALLtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GGPTRCO": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_metsox_R__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "34dhpactex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MALTHXtexi": {
+        "forward": 8404.68914603691,
+        "reverse": 8404.68914603691
+    },
+    "12PPDStpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HYD1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cl_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3DHBZStonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AACTOOR": {
+        "forward": 5.4,
+        "reverse": 6.555
+    },
+    "H2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "23DAPPAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ECAP3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEOXAMtonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FMNRx": {
+        "forward": 1.7,
+        "reverse": 56.0
+    },
+    "EX_3hpppn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_man6p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_tsul_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PHEt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHBS": {
+        "forward": 3.19,
+        "reverse": 3.19
+    },
+    "EX_n2o_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MDDCP1pp": {
+        "forward": 6.300000000000001,
+        "reverse": 6.300000000000001
+    },
+    "GUI2": {
+        "forward": 5.2,
+        "reverse": 5.2
+    },
+    "OMBZLM": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_maltttr_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYCK": {
+        "forward": 275.0,
+        "reverse": 275.0
+    },
+    "MLTG5": {
+        "forward": 15.46,
+        "reverse": 15.46
+    },
+    "GPDDA3": {
+        "forward": 1.9449999999999998,
+        "reverse": 1.9449999999999998
+    },
+    "UDCPPtppi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AGMH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MPTG": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MPTG2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MCTP1App": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MCTP2App": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MCTP1Bpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MELIBt3ipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_lipoate_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_pydx_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_g1p_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLCtex_copy2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NAt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SFGTHi": {
+        "forward": 0.755,
+        "reverse": 0.755
+    },
+    "DHORDfum": {
+        "forward": 10.55,
+        "reverse": 10.55
+    },
+    "K2L4Aabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DSBCGT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DSBGGT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AMPMS2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DM_oxam_c": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "THIORDXi": {
+        "forward": 9.75,
+        "reverse": 9.75
+    },
+    "PPPGO3": {
+        "forward": 0.02895,
+        "reverse": 0.02895
+    },
+    "PDX5POi": {
+        "forward": 0.185,
+        "reverse": 0.103
+    },
+    "PDX5PO2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1A181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2A141": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "HG2t3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYTBO3_4pp": {
+        "forward": 810.094741014671,
+        "reverse": 810.094741014671
+    },
+    "EAR141x": {
+        "forward": 5.53,
+        "reverse": 5.53
+    },
+    "EAR181x": {
+        "forward": 5.53,
+        "reverse": 5.53
+    },
+    "EAR181y": {
+        "forward": 1.5,
+        "reverse": 1.5
+    },
+    "G3PAT141": {
+        "forward": 0.01022,
+        "reverse": 0.01022
+    },
+    "G3PAT181": {
+        "forward": 0.01022,
+        "reverse": 0.01022
+    },
+    "DASYN140": {
+        "forward": 5.6,
+        "reverse": 5.6
+    },
+    "DASYN180": {
+        "forward": 5.6,
+        "reverse": 5.6
+    },
+    "DASYN141": {
+        "forward": 5.6,
+        "reverse": 5.6
+    },
+    "PGSA141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_alaala_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dtmp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "5DOAN": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DM_5drib_c": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MINOHPtexi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "12PPDRtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FACOAE120": {
+        "forward": 0.037,
+        "reverse": 0.037
+    },
+    "3OAR120": {
+        "forward": 109.75,
+        "reverse": 11.0
+    },
+    "3HAD80": {
+        "forward": 1.9000000000000001,
+        "reverse": 1.9000000000000001
+    },
+    "3HAD120": {
+        "forward": 1.9000000000000001,
+        "reverse": 1.9000000000000001
+    },
+    "EAR180x": {
+        "forward": 5.53,
+        "reverse": 5.53
+    },
+    "SO4t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EAR180y": {
+        "forward": 1.5,
+        "reverse": 1.5
+    },
+    "PGPP120": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "DAGK120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PSSA141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "COLIPAabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2A140pp": {
+        "forward": 4.38,
+        "reverse": 4.38
+    },
+    "PLIPA2A141pp": {
+        "forward": 4.38,
+        "reverse": 4.38
+    },
+    "PLIPA2A180pp": {
+        "forward": 4.38,
+        "reverse": 4.38
+    },
+    "GAM6Pt6_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PPALtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CA2tex": {
+        "forward": 98.0,
+        "reverse": 98.0
+    },
+    "CUtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SUCDi": {
+        "forward": 117.976038814366,
+        "reverse": 117.976038814366
+    },
+    "LPLIPAL1E141pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LALDO2x": {
+        "forward": 70500.0,
+        "reverse": 70500.0
+    },
+    "12PPDRtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LPLIPAL1E160pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1E180pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1E181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1G160pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1G161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1G120pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2E140pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2E160pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2A161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2A181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "F6Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GAMAN6Ptex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "ALR4x": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1G141pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1G180pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1G181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACONIs": {
+        "forward": 9750.0,
+        "reverse": 9750.0
+    },
+    "ACONTb": {
+        "forward": 5.25,
+        "reverse": 5.25
+    },
+    "GLCP2": {
+        "forward": 33.8,
+        "reverse": 33.8
+    },
+    "F6Pt6_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PPALtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2E141pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2E181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2G140pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2G160pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2G181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASNS1": {
+        "forward": 1.47,
+        "reverse": 1.05
+    },
+    "3OAR181": {
+        "forward": 133.05,
+        "reverse": 102.0
+    },
+    "EAR121y": {
+        "forward": 1.5,
+        "reverse": 1.5
+    },
+    "GTHRDHpp": {
+        "forward": 12.45,
+        "reverse": 12.45
+    },
+    "PROGLYtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_progly_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MDDCP2pp": {
+        "forward": 6.300000000000001,
+        "reverse": 6.300000000000001
+    },
+    "MDDCP3pp": {
+        "forward": 6.300000000000001,
+        "reverse": 6.300000000000001
+    },
+    "3OAS181": {
+        "forward": 0.023,
+        "reverse": 0.023
+    },
+    "EAR161y": {
+        "forward": 1.5,
+        "reverse": 1.5
+    },
+    "G3PAT140": {
+        "forward": 0.01022,
+        "reverse": 0.01022
+    },
+    "G3PAT160": {
+        "forward": 0.01022,
+        "reverse": 0.01022
+    },
+    "G3PAT161": {
+        "forward": 0.01022,
+        "reverse": 0.01022
+    },
+    "MLDCP1App": {
+        "forward": 160.0,
+        "reverse": 160.0
+    },
+    "EAR160y": {
+        "forward": 1.5,
+        "reverse": 1.5
+    },
+    "3OAR141": {
+        "forward": 133.05,
+        "reverse": 102.0
+    },
+    "3OAR161": {
+        "forward": 133.05,
+        "reverse": 102.0
+    },
+    "EAR121x": {
+        "forward": 5.53,
+        "reverse": 5.53
+    },
+    "PSD140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MICITDr": {
+        "forward": 18.861514290788,
+        "reverse": 18.861514290788
+    },
+    "PGSA140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1A141pp": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "LPLIPAL1A180pp": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "LPLIPAL1E140pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1E161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1G140pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACONTa": {
+        "forward": 5.25,
+        "reverse": 5.25
+    },
+    "MLDCP2App": {
+        "forward": 160.0,
+        "reverse": 160.0
+    },
+    "12DGR140tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "12DGR160tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "12DGR180tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGPP120pp": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "PGPP181pp": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "CLPNH120pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLPNH140pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_12ppd__R_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGPP140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGPP141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MDDCP5pp": {
+        "forward": 6.300000000000001,
+        "reverse": 6.300000000000001
+    },
+    "MLTGY3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "G3PAT180": {
+        "forward": 0.01022,
+        "reverse": 0.01022
+    },
+    "MLDCP2Bpp": {
+        "forward": 160.0,
+        "reverse": 160.0
+    },
+    "3OAR140": {
+        "forward": 109.75,
+        "reverse": 11.0
+    },
+    "3OAR160": {
+        "forward": 109.75,
+        "reverse": 11.0
+    },
+    "PGPP160": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "PGPP180": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "PGPP161": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "PGPP181": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "PE141abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PE160abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PE161abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PSD141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PG140abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PG141abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PG180abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PG181abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGP141abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGP160abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGP180abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAPA181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PA140abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "12DGR120tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MDDCP4pp": {
+        "forward": 6.300000000000001,
+        "reverse": 6.300000000000001
+    },
+    "CLPNS140pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLPNS141pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PG120abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PE140abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CFAS160E": {
+        "forward": 0.12,
+        "reverse": 0.12
+    },
+    "CFAS180E": {
+        "forward": 0.12,
+        "reverse": 0.12
+    },
+    "CFAS180G": {
+        "forward": 0.12,
+        "reverse": 0.12
+    },
+    "PAPA180": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAPA181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PETNT161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DAGK140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DAGK160": {
+        "forward": 0.4,
+        "reverse": 0.4
+    },
+    "DAGK141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DAGK161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MDDEP3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MDDEP4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MLTGY1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CGLYtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PLIPA1E141pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "3OAR60": {
+        "forward": 109.75,
+        "reverse": 11.0
+    },
+    "3OAR80": {
+        "forward": 109.75,
+        "reverse": 11.0
+    },
+    "MLDCP3App": {
+        "forward": 160.0,
+        "reverse": 160.0
+    },
+    "MLDCP1Bpp": {
+        "forward": 160.0,
+        "reverse": 160.0
+    },
+    "2AGPE181tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPA140tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPA160tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPA180tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPA141tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_urate_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1G160pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1G141pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2E160": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "LPLIPAL2G140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2G160": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPE140tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPE160tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPE180tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPE141tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPE161tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPA161tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPA181tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2AGPG120tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2G120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PA141abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PA161abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PA180abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PGPP161pp": {
+        "forward": 24.0,
+        "reverse": 24.0
+    },
+    "PE120abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PE180abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAPA140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAPA141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAPA161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GTHOXtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DSBAO1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DSBAO2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DSBDR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TDSR1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CGLYabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2A120pp": {
+        "forward": 4.38,
+        "reverse": 4.38
+    },
+    "PLIPA2A160pp": {
+        "forward": 4.38,
+        "reverse": 4.38
+    },
+    "CLPNH180pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2E120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EAR160x": {
+        "forward": 5.53,
+        "reverse": 5.53
+    },
+    "3OAS121": {
+        "forward": 0.08,
+        "reverse": 0.08
+    },
+    "3OAR40": {
+        "forward": 133.05,
+        "reverse": 102.0
+    },
+    "3OAR100": {
+        "forward": 109.75,
+        "reverse": 11.0
+    },
+    "3HAD60": {
+        "forward": 1.9000000000000001,
+        "reverse": 1.9000000000000001
+    },
+    "3HAD100": {
+        "forward": 1.9000000000000001,
+        "reverse": 1.9000000000000001
+    },
+    "3HAD140": {
+        "forward": 1.9000000000000001,
+        "reverse": 1.9000000000000001
+    },
+    "3HAD160": {
+        "forward": 1.9000000000000001,
+        "reverse": 1.9000000000000001
+    },
+    "DASYN120": {
+        "forward": 5.6,
+        "reverse": 5.6
+    },
+    "MLDEP1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MLDEP2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MLTGY2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MLTGY4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PE181abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "12DGR161tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "12DGR181tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NTP11": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "3OAS180": {
+        "forward": 0.08,
+        "reverse": 0.08
+    },
+    "PAPA120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cpgn_un_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MDDEP1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MDDEP2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DAGK180": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DAGK181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2E120pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2G141pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2G161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1A120pp": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "LPLIPAL1A140pp": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "LPLIPAL1A181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1E120pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "3OAR180": {
+        "forward": 133.05,
+        "reverse": 102.0
+    },
+    "G3PAT120": {
+        "forward": 0.01022,
+        "reverse": 0.01022
+    },
+    "TDSR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GTHRDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GTHRDabc2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OMMBLHX3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADHPO": {
+        "forward": 23.3,
+        "reverse": 23.3
+    },
+    "ACOAD7f": {
+        "forward": 6.0,
+        "reverse": 6.0
+    },
+    "ACOAD8f": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACOAD5f": {
+        "forward": 6.0,
+        "reverse": 6.0
+    },
+    "ACOAD3f": {
+        "forward": 6.0,
+        "reverse": 6.0
+    },
+    "ACOAD6f": {
+        "forward": 6.0,
+        "reverse": 6.0
+    },
+    "NADH16pp": {
+        "forward": 45.32,
+        "reverse": 45.32
+    },
+    "NADH18pp": {
+        "forward": 45.32,
+        "reverse": 45.32
+    },
+    "EX_tartr__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYBt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DSERt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALAt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LYSt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_tungs_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CTBTCAL2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BGLA1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_crn__D_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OPHHX3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FA140ACPHi": {
+        "forward": 0.72,
+        "reverse": 0.72
+    },
+    "CRNDCAL2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CRNCAL2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CHLt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FRULYSE": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FRULYSt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_psclys_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TUNGStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "COBALT2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OXCDC": {
+        "forward": 74.35,
+        "reverse": 74.35
+    },
+    "LPLIPAL2A140": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "LPLIPAL2A160": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "LPLIPAL2A161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL2A180": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "LPLIPAL2A181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DM_aacald_c": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UM3PL": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UM4PL": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ZN2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NI2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "COBALT2t3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "23DAPPAt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1A120pp": {
+        "forward": 630.0,
+        "reverse": 630.0
+    },
+    "PLIPA1A140pp": {
+        "forward": 630.0,
+        "reverse": 630.0
+    },
+    "PLIPA1A141pp": {
+        "forward": 630.0,
+        "reverse": 630.0
+    },
+    "PLIPA1A160pp": {
+        "forward": 630.0,
+        "reverse": 630.0
+    },
+    "PLIPA1A161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA1A180pp": {
+        "forward": 630.0,
+        "reverse": 630.0
+    },
+    "LPLIPAL2A120": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "CAt6pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "5DGLCNt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GALCTNt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GALCTNLtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_galctn__L_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "KDUI": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CA2t3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADH17pp": {
+        "forward": 45.32,
+        "reverse": 45.32
+    },
+    "FA161ACPHi": {
+        "forward": 0.72,
+        "reverse": 0.72
+    },
+    "FA141ACPHi": {
+        "forward": 0.72,
+        "reverse": 0.72
+    },
+    "ARGt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FA160ACPHi": {
+        "forward": 0.72,
+        "reverse": 0.72
+    },
+    "MALDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "OROTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PPAt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OROTt2_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MALDt2_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "5DGLCNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_5dglcn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DTARTD": {
+        "forward": 7.3,
+        "reverse": 7.3
+    },
+    "PLIPA2E161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2E180pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2G120pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PLIPA2G180pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1A161pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LPLIPAL1A160pp": {
+        "forward": 968.55,
+        "reverse": 968.55
+    },
+    "PSCLYSt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LYSt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALAt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BALAt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DALAt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MN2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MG2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NI2t3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PPAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "GALCTNLt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "THYMt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PSCLYStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "THYMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "CU2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE2t3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MN2t3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MG2t3_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CD2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ETHAt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "THRA": {
+        "forward": 1.30037482842091,
+        "reverse": 1.30037482842091
+    },
+    "GLDBRAN2": {
+        "forward": 500.075,
+        "reverse": 500.075
+    },
+    "CLt3_2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_ppal_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "POR5": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HACD8": {
+        "forward": 113.0,
+        "reverse": 113.0
+    },
+    "CTECOAI8": {
+        "forward": 33.0,
+        "reverse": 33.0
+    },
+    "CTECOAI6": {
+        "forward": 33.0,
+        "reverse": 33.0
+    },
+    "MTHTHFSs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SELGTHR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SELGTHR3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_slnt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MALCOAMT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OGMEACPS": {
+        "forward": 4.35963626957169,
+        "reverse": 4.35963626957169
+    },
+    "OGMEACPR": {
+        "forward": 12.7678639510541,
+        "reverse": 12.7678639510541
+    },
+    "OPMEACPS": {
+        "forward": 21.5147234296153,
+        "reverse": 21.5147234296153
+    },
+    "LIPAabctex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DGUNC": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CDGUNPD": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LDGUNPD": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MPTAT": {
+        "forward": 0.0012,
+        "reverse": 0.0012
+    },
+    "MOADSUx": {
+        "forward": 3.52885853252618,
+        "reverse": 3.52885853252618
+    },
+    "CMtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FUSAtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RFAMPtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MINCYCtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "MINCYCtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DOXRBCNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "DOXRBCNtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ETOHtrpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "REPHACCOAI": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACPPAT141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACPPAT161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACPPAT180": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APG3PAT160": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APG3PAT161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APG3PAT180": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ICYSDS": {
+        "forward": 3.52885853252618,
+        "reverse": 3.52885853252618
+    },
+    "I4FE4SR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "S2FE2ST": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BMOCOS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BWCOS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BWCOGDS1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BWCOGDS2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHNPTE": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHMPTR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NOVBCNtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LALALGLUtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LALADGLUtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "I2FE2SS": {
+        "forward": 3.52885853252618,
+        "reverse": 3.52885853252618
+    },
+    "I2FE2ST": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "I2FE2SS2": {
+        "forward": 3.52885853252618,
+        "reverse": 3.52885853252618
+    },
+    "I4FE4ST": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "S4FE4ST": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "S2FE2SS2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BTS5": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "5MTRtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LALADGLUtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "LALALGLUtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "3HPPtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_LalaDglu_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CDGR": {
+        "forward": 0.08,
+        "reverse": 0.08
+    },
+    "MSAR": {
+        "forward": 57.605,
+        "reverse": 57.605
+    },
+    "EX_LalaLglu_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACPPAT120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SHCHCS3": {
+        "forward": 147.0,
+        "reverse": 147.0
+    },
+    "EX_ttrcyc_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_mincyc_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DM_4crsol_c": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "POAACR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACPPAT160": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACPPAT181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APH141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APH161": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APH180": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APH181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GTHPi": {
+        "forward": 52.9,
+        "reverse": 44.03
+    },
+    "SEPHCHCS": {
+        "forward": 0.233333333,
+        "reverse": 0.233333333
+    },
+    "DHNCOAS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHNCOAT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FESD1s": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_doxrbcn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_fusa_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cm_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_novbcn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "I2FE2SR": {
+        "forward": 3.52885853252618,
+        "reverse": 3.52885853252618
+    },
+    "THZPSN3": {
+        "forward": 3.52885853252618,
+        "reverse": 3.52885853252618
+    },
+    "APG3PAT120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APH120": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MOCDS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FUSAtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "NOVBCNtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_rfamp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "QUIN2tex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_quin_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FORCT": {
+        "forward": 4.4,
+        "reverse": 4.4
+    },
+    "DHPTDCs2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_3hpp_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PACCOAE": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "HADPCOADH3": {
+        "forward": 113.0,
+        "reverse": 113.0
+    },
+    "O16A4COLIPAabctex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "COLIPAabctex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ENLIPAabctex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DM_mththf_c": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PYROX": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BMOGDS1": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MPTS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MOCOS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BMOGDS2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FESD2s": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "S2FE2SR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACACT8r": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CTECOAI7": {
+        "forward": 33.0,
+        "reverse": 33.0
+    },
+    "CLIPAabctex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "K2L4Aabctex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FDH4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FDH5pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACPPAT140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APG3PAT140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APG3PAT141": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APG3PAT181": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APH140": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APH160": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OPMEACPD": {
+        "forward": 6.0199473284890495,
+        "reverse": 6.0199473284890495
+    },
+    "EPMEACPR": {
+        "forward": 1.5,
+        "reverse": 1.5
+    },
+    "AOXSr2": {
+        "forward": 0.06,
+        "reverse": 0.06
+    },
+    "MEOHtrpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SCYSDS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "S2FE2SS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "S4FE4SR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SELtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SELR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OGMEACPD": {
+        "forward": 6.0199473284890495,
+        "reverse": 6.0199473284890495
+    },
+    "EGMEACPR": {
+        "forward": 1.5,
+        "reverse": 1.5
+    },
+    "OPMEACPR": {
+        "forward": 12.7678639510541,
+        "reverse": 12.7678639510541
+    },
+    "PMEACPE": {
+        "forward": 6.1,
+        "reverse": 6.1
+    },
+    "MEOHtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_5mtr_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MECDPDH5": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RNTR1c2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RNTR2c2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RNTR3c2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RNTR4c2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FLDR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CDGS": {
+        "forward": 5.4,
+        "reverse": 5.4
+    },
+    "5MTRtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TTRCYCtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "TTRCYCtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FESR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OXCOAHDH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHACOAH": {
+        "forward": 191.5,
+        "reverse": 191.5
+    },
+    "THFAT": {
+        "forward": 14.4,
+        "reverse": 14.4
+    },
+    "FOMETRi": {
+        "forward": 16.4,
+        "reverse": 16.4
+    },
+    "SLNTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SELGTHR2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GDPTPDP": {
+        "forward": 2.755,
+        "reverse": 2.755
+    },
+    "COLIPAKpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "3HPPtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MPTSS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LIPOCT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LIPOS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OCTNLL": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LIPATPT": {
+        "forward": 0.219,
+        "reverse": 0.219
+    },
+    "LIPAMPL": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALDD19xr": {
+        "forward": 20.8,
+        "reverse": 20.8
+    },
+    "MMM": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MOGDS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "WCOS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RFAMPtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACOLIPAabctex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ECA4COLIPAabctex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "COLIPAPabctex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CH4tex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TARTRDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "3OXCOAT": {
+        "forward": 7.816666665,
+        "reverse": 7.816666665
+    },
+    "BTNt2ipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BTNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "2DGULRGx": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2DGULRGy": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARBTptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARBTtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "EX_arbt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DMSOtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PYDXtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PYDXtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SUCASPtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SUCMALtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PYDXNtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PYDXNtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PYDAMtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "PYDAMtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "13PPDH2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TARTt2_3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SUCTARTtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "APCS": {
+        "forward": 1.9,
+        "reverse": 1.9
+    },
+    "CHTBSptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CHTBStex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "TRPtipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TYRtipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GHBDHx": {
+        "forward": 1329.0,
+        "reverse": 1329.0
+    },
+    "APPLDHr": {
+        "forward": 0.16,
+        "reverse": 0.16
+    },
+    "SPMDt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PHEtipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MALt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CITt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHNPA2r": {
+        "forward": 0.07,
+        "reverse": 0.07
+    },
+    "QUIN2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYC2Pabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CRNDtex": {
+        "forward": 467.91937022135,
+        "reverse": 467.91937022135
+    },
+    "SHGO": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADHXD": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADPHHR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADPHHS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADHHS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADHXE": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SELabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PYK2": {
+        "forward": 62.2,
+        "reverse": 0.0803523333335
+    },
+    "PYK3": {
+        "forward": 66.0,
+        "reverse": 0.0803523333335
+    },
+    "PYK4": {
+        "forward": 62.2,
+        "reverse": 0.0803523333335
+    },
+    "NADPHXD": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADHHR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "NADPHXE": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALAtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHBSZ3FEabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3DHBZS3R": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DXYLONtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DXYLTD": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2DDARAA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2DGLCptspp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GNP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALLTAMH2": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UGCIAMH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METGLCUR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACOAD1fr": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "23DOGULNt4pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FE3DCITexs": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEENTERES": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FEENTERR4": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DXYLONtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PSURItex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ALR2x": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OMPHHXy": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CHLt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYBt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AI2tpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "Ftpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SQVOSI": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "6D6SPA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHPStr": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SQtr": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHPStex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FMNtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dxylnt_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AI2K": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLBtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACOXT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_mththf_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2HESR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CHOLID": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CHOLATEtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "4ABZGLUH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "4ABZGLUtr": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PHDA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "TEO2M": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PACOAT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYSItpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHPTDNR": {
+        "forward": 28.9,
+        "reverse": 28.9
+    },
+    "DHPTDNRN": {
+        "forward": 28.9,
+        "reverse": 28.9
+    },
+    "PCNO": {
+        "forward": 29.0,
+        "reverse": 29.0
+    },
+    "HPACOAT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PUACGAMtr": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DC6PDA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PIt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LEUt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LCTStpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ILEt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GSNt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CLtipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "5DKGR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PItpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LEUt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "INSt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "INDOLEt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ILEt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GLYtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PYK6": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FADt": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FADtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AI2abcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAI2I": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "4HBZt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CURR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "LKDRA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METNA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "XYHDL": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2DGLCtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "E4PP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PUACGAMS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RU5PP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "6D6SFK": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "3SLAR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SQtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_dhps_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "URATEtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_cs1_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CBL1tonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CBItonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARHGDx": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CPL": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_mepn_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CH4t2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "INOSTO": {
+        "forward": 0.1831666665,
+        "reverse": 0.1831666665
+    },
+    "HPYRP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PSURIK": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "Ftex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYSItex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SERtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "QUINDHyi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHGLYH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PNSPA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_sq_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "URATEtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CS1tex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ADOCBLtonex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PETNT181pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ARMEPNS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RPNTPH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PRCPD": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MEPNtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "UDPGPT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MEPNabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OMMBLHXy": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "OPHHXy": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PROD3": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "F1PP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACP1p": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_4abzglu_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "3HPADHi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "4ABZGLUtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "2HPTCOAT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_metglcur_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MC6PH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SLNTabcpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "VALt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "VALt3pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "MN2tipp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PSURItpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CYSTA": {
+        "forward": 101.0,
+        "reverse": 101.0
+    },
+    "FE3DCITR5": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "4HTHRA": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "GAPP": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METGLCURt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "METGLCURtex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FMNt": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "AI2tex": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "PAI2T": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CUt2pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "DHCURR": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "RHMND": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "3HBZCT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "CXSAMS": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "EX_2dglc_e": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "THRt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SERt2rpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ACOAD1f": {
+        "forward": 0.6575,
+        "reverse": 0.6575
+    },
+    "AMPNTAT": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SQGH": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "URAtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "ASPtpp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "FUMt1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SUCCt1pp": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "QUINDH": {
+        "forward": 0.109,
+        "reverse": 0.109
+    },
+    "LCARSyi": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BIOMASS_Ec_iML1515_core_75p37M": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "BIOMASS_Ec_iML1515_WT_75p37M": {
+        "forward": NaN,
+        "reverse": NaN
+    },
+    "SHK3Dr_reverse": {
+        "forward": NaN,
+        "reverse": NaN
+    }
+}
