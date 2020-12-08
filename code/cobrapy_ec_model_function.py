@@ -10,6 +10,7 @@ import json
 import cobra
 import math
 import re
+import statistics
 from cobra.core import Reaction
 from cobra.io.dict import model_to_dict
 from cobra.util.solver import set_objective
@@ -971,3 +972,56 @@ def get_enz_model_use_enz_usage(enz_ratio, reaction_flux_file, reaction_kcat_mw_
 
     enz_model = get_enzyme_constraint_model(json_output_file)
     return enz_model
+
+def gap_kcat_fill_for_enz_reaction(reaction_kcat_file,type_of_default_kcat_selection,path):
+    reactions_kcat_mapping_database = json_load(reaction_kcat_file)
+    all_kcats = [x["forward"] for x in reactions_kcat_mapping_database.values()] + \
+                [x["reverse"] for x in reactions_kcat_mapping_database.values()]
+    all_kcats = [x for x in all_kcats if not math.isnan(x)]
+
+    if type_of_default_kcat_selection == "median":
+        default_kcat = statistics.median(all_kcats)
+    elif type_of_default_kcat_selection == "mean":
+        default_kcat = statistics.mean(all_kcats)
+    elif type_of_default_kcat_selection == "random":
+        default_kcat = random.choice(all_kcats)
+
+    for reaction_id in reactions_kcat_mapping_database.keys():
+        forward_kcat = reactions_kcat_mapping_database[reaction_id]["forward"]
+        reverse_kcat = reactions_kcat_mapping_database[reaction_id]["reverse"]
+        if math.isnan(forward_kcat):
+            reactions_kcat_mapping_database[reaction_id]["forward"] = default_kcat
+        if math.isnan(reverse_kcat):
+            reactions_kcat_mapping_database[reaction_id]["reverse"] = default_kcat
+    json_write(path, reactions_kcat_mapping_database)
+
+def gap_kcat_fill_for_model_reaction(model,reaction_kcat_file,type_of_default_kcat_selection,path):
+    reactions_kcat_mapping_database = json_load(reaction_kcat_file)
+    all_kcats = [x["forward"] for x in reactions_kcat_mapping_database.values()] + \
+                [x["reverse"] for x in reactions_kcat_mapping_database.values()]
+    all_kcats = [x for x in all_kcats if not math.isnan(x)]
+
+    if type_of_default_kcat_selection == "median":
+        default_kcat = statistics.median(all_kcats)
+    elif type_of_default_kcat_selection == "mean":
+        default_kcat = statistics.mean(all_kcats)
+    elif type_of_default_kcat_selection == "random":
+        default_kcat = random.choice(all_kcats)
+
+    for r in model.reactions:
+        reaction_id = r.id
+        if re.search('_num',reaction_id):
+            reaction_id = reaction_id.split('_num')[0]
+            
+        if reaction_id in reactions_kcat_mapping_database.keys():
+            forward_kcat = reactions_kcat_mapping_database[reaction_id]["forward"]
+            reverse_kcat = reactions_kcat_mapping_database[reaction_id]["reverse"]
+            if math.isnan(forward_kcat):
+                reactions_kcat_mapping_database[reaction_id]["forward"] = default_kcat
+            if math.isnan(reverse_kcat):
+                reactions_kcat_mapping_database[reaction_id]["reverse"] = default_kcat
+        else:
+            reactions_kcat_mapping_database[reaction_id] = {}
+            reactions_kcat_mapping_database[reaction_id]["forward"] = default_kcat
+            reactions_kcat_mapping_database[reaction_id]["reverse"] = default_kcat
+    json_write(path, reactions_kcat_mapping_database)
