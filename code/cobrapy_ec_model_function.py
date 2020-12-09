@@ -598,7 +598,7 @@ def calibration_kcat(need_change_reaction, reaction_kcat_mw_file, json_model_pat
     for eachreaction in need_change_reaction:
         kcat_ori = reaction_kappori.loc[eachreaction, 'kcat']
         kcat_smoment_adj = kcat_data_colect.loc[eachreaction,
-                                                adj_kcat_title] * 2 * 3600
+                                                adj_kcat_title] * 3600
         if kcat_ori < kcat_smoment_adj:
             reaction_kappori.loc[eachreaction, 'kcat'] = kcat_smoment_adj
         reaction_kappori.loc[eachreaction, 'kcat_MW'] = reaction_kappori.loc[eachreaction,
@@ -772,11 +772,11 @@ def change_reaction_kcat_by_database(select_reaction, kcat_data_colect_file, rea
         else:
             eachreaction = reaction
         if eachreaction in kcat_data_colect.index:
-            if reaction_kcat_mw.loc[reaction, 'kcat'] < kcat_data_colect.loc[eachreaction, 'kcat'] * 2 * 3600:
+            if reaction_kcat_mw.loc[reaction, 'kcat'] < kcat_data_colect.loc[eachreaction, 'kcat'] * 3600:
                 reaction_kcat_mw.loc[reaction,
-                                     'kcat'] = kcat_data_colect.loc[eachreaction, 'kcat'] * 2 * 3600
+                                     'kcat'] = kcat_data_colect.loc[eachreaction, 'kcat'] * 3600
                 reaction_kcat_mw.loc[reaction, 'kcat_MW'] = kcat_data_colect.loc[eachreaction,
-                                                                                 'kcat'] * 2 * 3600/reaction_kcat_mw.loc[reaction, 'MW']
+                                                                                 'kcat'] * 3600/reaction_kcat_mw.loc[reaction, 'MW']
                 reaction_kcat_mw.loc[reaction,
                                      'source'] = kcat_data_colect.loc[eachreaction, 'SOURCE']
                 reaction_change_accord_fold.append(reaction)
