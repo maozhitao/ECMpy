@@ -10,6 +10,7 @@ import json
 import cobra
 import math
 import re
+import random
 import statistics
 from cobra.core import Reaction
 from cobra.io.dict import model_to_dict
@@ -737,7 +738,16 @@ def draw_different_model_cb_figure(model_data, insvg, outsvg):
     rclass = ['st6', 'st15', 'st18', 'st16']
     draw_svg(cb_df, 'flux_cb2', insvg, outsvg, rclass)
 
+def draw_different_model_cb_figure2(model_data, insvg, outsvg):
+    cb_df = pd.DataFrame()
+    for index, row in model_data.iterrows():
+        flux_cb = str(round(row['C13'], 2))+' # '+' # '+str(round(row['Orimodel_fluxes'], 2))+' # '+' # '+str(round(row['ECMpy_fluxes'], 2))+' # ' \
+            + ' # '+str(round(row['model_gecko_adj_subunit_fluxes'], 2)) + \
+            ' # '+str(round(row['model_smoment_adj_subunit_fluxes'], 2))
+        cb_df.loc[index, 'flux_cb2'] = flux_cb
 
+    rclass = ['st6', 'st15', 'st18', 'st16']
+    draw_svg(cb_df, 'flux_cb2', insvg, outsvg, rclass)
 def get_fluxes_detail_in_model(model, fluxes_outfile, reaction_kcat_mw_file):
     model_pfba_solution = cobra.flux_analysis.pfba(model)
     model_pfba_solution = model_pfba_solution.to_frame()
@@ -1025,3 +1035,10 @@ def gap_kcat_fill_for_model_reaction(model,reaction_kcat_file,type_of_default_kc
             reactions_kcat_mapping_database[reaction_id]["forward"] = default_kcat
             reactions_kcat_mapping_database[reaction_id]["reverse"] = default_kcat
     json_write(path, reactions_kcat_mapping_database)
+
+def change_reaction_kcat_by_manual(reaction_data,reaction_kcat_MW_file,reaction_kcat_MW_outfile):
+    reaction_kcat_mw = pd.read_csv(reaction_kcat_MW_file, index_col=0)
+    reaction_kcat_mw.loc[reaction_data[0],'MW'] = reaction_data[1]
+    reaction_kcat_mw.loc[reaction_data[0],'kcat'] = reaction_data[2]
+    reaction_kcat_mw.loc[reaction_data[0],'kcat_MW'] = reaction_data[3]
+    reaction_kcat_mw.to_csv(reaction_kcat_MW_outfile)
